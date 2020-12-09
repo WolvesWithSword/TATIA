@@ -24,16 +24,18 @@ def allCategoryClass(entities,attributes):
 
 ALL_CATEGORIES  = allCategoryClass(ENTITIES,ATTRIBUTES)
 
-df_cols = ["id", "text"]
-for category in ALL_CATEGORIES:
-    df_cols.append(category)
 
-rows = []
 
 def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
     xtree = et.parse("train_data.xml")
-
     x_reviews = xtree.getroot()
+
+    df_cols = ["id", "text"]
+    for category in ALL_CATEGORIES:
+        df_cols.append(category)
+
+    rows = []
+
     for node_review in x_reviews: 
         for node_sentences in node_review:
             for node_sentence in node_sentences:
