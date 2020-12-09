@@ -1,5 +1,27 @@
 import pandas as pd 
-import xml.etree.ElementTree as et 
+import string
+import xml.etree.ElementTree as et
+
+#sklearn
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import accuracy_score
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.metrics import confusion_matrix
+
+# nltk
+from nltk import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
+
+PONCTUATION = set(string.punctuation)
+STOP_WORDS = stopwords.words("english")
+
+STOP_WORDS.extend(PONCTUATION)
 
 
 ENTITIES = ["LAPTOP", "DISPLAY", "KEYBOARD", "MOUSE", "MOTHERBOARD",
@@ -73,5 +95,54 @@ def binaryCategoryTab(all_categories,current_categories):
     
     return res
 
+def tokenize(text):
+    text = text.lower()
+    tokens = word_tokenize(text)
+    tokens_without_stopwords = [word for word in tokens if word not in STOP_WORDS]
+    return tokens_without_stopwords
+
+def lemmatize(tokens):
+    lemma = WordNetLemmatizer()
+    tokens_lemmatize = [lemma.lemmatize(word,'a') for word in tokens]
+    tokens_lemmatize = [lemma.lemmatize(word,'v') for word in tokens]
+    tokens_lemmatize = [lemma.lemmatize(word,'n') for word in tokens]
+    return tokens_lemmatize
+
+def preProcessing(text):
+    tokens = tokenize(text)
+    tokens_lemmatize = lemmatize(tokens)
+    return " ".join(tokens_lemmatize)
+
+
+def classification(df):
+    df = df.drop(labels = ['id'], axis=1)
+    vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(2,5), norm='l2')
+    matrice = vectorizer.fit_transform(df.text)
+
+    #voir pour avoir le fichier de test
+    x_train = vectorizer.transform(df.text)
+    y_train = df.drop(labels = ['text'], axis=1)
+
+    # Using pipeline for applying logistic regression and one vs rest classifier
+    LogReg_pipeline = Pipeline([
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag'), n_jobs=-1)),
+            ])
+
+    for category in ALL_CATEGORIES:
+        print('**Processing {} comments...**'.format(category))
+    
+        # Training logistic regression model on train data
+        LogReg_pipeline.fit(x_train, y_train[category])
+    
+        # calculating test accuracy
+        prediction = LogReg_pipeline.predict(x_train)
+        print('Test accuracy is {}'.format(accuracy_score(y_train[category], prediction)))
+        print(confusion_matrix(y_train[category],prediction))
+        print("\n")
+
 df = getDFFromXML()
 print(df)
+df['text'] = df.text.apply(lambda text : preProcessing(text))
+print(df)
+print("\n\n#################################################################################################\n\n")
+classification(df)
