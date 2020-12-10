@@ -17,7 +17,6 @@ from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-
 PONCTUATION = set(string.punctuation)
 STOP_WORDS = stopwords.words("english")
 
@@ -116,7 +115,7 @@ def preProcessing(text):
 
 def classification(df):
     df = df.drop(labels = ['id'], axis=1)
-    vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(2,5), norm='l2')
+    vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
     matrice = vectorizer.fit_transform(df.text)
 
     #voir pour avoir le fichier de test
@@ -125,7 +124,7 @@ def classification(df):
 
     # Using pipeline for applying logistic regression and one vs rest classifier
     LogReg_pipeline = Pipeline([
-                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag'), n_jobs=-1)),
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=2000), n_jobs=-1)),
             ])
 
     for category in ALL_CATEGORIES:
