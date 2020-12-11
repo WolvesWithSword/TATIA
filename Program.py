@@ -113,6 +113,7 @@ def preProcessing(text):
     return " ".join(tokens_lemmatize)
 
 
+
 def classification(df):
     df = df.drop(labels = ['id'], axis=1)
     vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
@@ -121,10 +122,10 @@ def classification(df):
     #voir pour avoir le fichier de test
     x_train = vectorizer.transform(df.text)
     y_train = df.drop(labels = ['text'], axis=1)
-
+    
     # Using pipeline for applying logistic regression and one vs rest classifier
     LogReg_pipeline = Pipeline([
-                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=2000), n_jobs=-1)),
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
             ])
 
     for category in ALL_CATEGORIES:
@@ -139,9 +140,44 @@ def classification(df):
         print(confusion_matrix(y_train[category],prediction))
         print("\n")
 
+
+def CreateClassifieur(df):
+    df = df.drop(labels = ['id'], axis=1)
+    vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
+    matrice = vectorizer.fit_transform(df.text)
+
+    #voir pour avoir le fichier de test
+    x_train = vectorizer.transform(df.text)
+    y_train = df.drop(labels = ['text'], axis=1)
+    
+    Classifieur = dict()
+   
+    for category in ALL_CATEGORIES:
+        print('**Processing {} comments...**'.format(category))
+         # Using pipeline for applying logistic regression and one vs rest classifier
+        LogReg_pipeline = Pipeline([
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+            ])
+
+        # Training logistic regression model on train data
+        Classifieur[category] = LogReg_pipeline.fit(x_train, y_train[category])
+    
+    return Classifieur,vectorizer
+
+def ClassifyString(Classifieur,vectorizer,string):
+    for category in ALL_CATEGORIES:
+        preComputeString = vectorizer.transform([preProcessing(string)])
+        prediction = Classifieur[category].predict(preComputeString)
+        if(prediction[0]==1):
+            print(category)
+
+
 df = getDFFromXML()
 print(df)
 df['text'] = df.text.apply(lambda text : preProcessing(text))
 print(df)
 print("\n\n#################################################################################################\n\n")
-classification(df)
+#classification(df)
+
+Classifieur,vectorizer = CreateClassifieur(df)
+ClassifyString(Classifieur,vectorizer,"The power supply is really on top, everything charges quickly")
