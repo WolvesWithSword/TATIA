@@ -124,7 +124,7 @@ def classification(df):
 
     # Using pipeline for applying logistic regression and one vs rest classifier
     LogReg_pipeline = Pipeline([
-                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=2000), n_jobs=-1)),
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
             ])
 
     for category in ALL_CATEGORIES:

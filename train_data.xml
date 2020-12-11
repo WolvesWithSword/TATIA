@@ -5350,13 +5350,13 @@
                 </Opinions>
             </sentence>
             <sentence id="366:4">
-                <text>I droped this once from thetable when my baby girl grabed me one day and IT is still working with NO issues!</text>
+                <text>I droped this once from the table when my baby girl grabed me one day and IT is still working with NO issues!</text>
                 <Opinions>
                     <Opinion category="LAPTOP#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="366:5">
-                <text>I love the easy to see screen, and It works well for work, persoal or just play.</text>
+                <text>I love the easy to see screen, and It works well for work, personal or just play.</text>
                 <Opinions>
                     <Opinion category="DISPLAY#USABILITY" polarity="positive"/>
                     <Opinion category="LAPTOP#MISCELLANEOUS" polarity="positive"/>
@@ -11093,6 +11093,248 @@
                 <text>Other than that I don't have one complaint in the world!</text>
                 <Opinions>
                     <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+
+        </sentences>
+    </Review>
+	   <Review rid="198">
+        <sentences>
+            <sentence id="198:0">
+                <text>You get used to the screen quickly, great for working.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:1">
+                <text>I can no longer read anything on the screen after an hour of work, the constrate needs to be reviewed.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:2">
+                <text>The location of the cooling fan is perfect.</text>
+                <Opinions>
+                    <Opinion category="FANS_COOLING#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:3">
+                <text>The place where the cooling fans are put makes me constantly hear the hiss ... annoying.</text>
+                <Opinions>
+                    <Opinion category="FANS_COOLING#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:4">
+                <text>The location of the ports are really not easy to access.</text>
+                <Opinions>
+                    <Opinion category="PORTS#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:5">
+                <text>I love the layout of the computer ports, we can really see that it has been thought through.</text>
+                <Opinions>
+                    <Opinion category="PORTS#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:6">
+                <text>None of my ports are working anymore, what's happend ?</text>
+                <Opinions>
+                    <Opinion category="PORTS#OPERATION_PERFORMANCE" polarity="negative"/>
+					<Opinion category="PORTS#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:7">
+                <text>Since the time I have it my USB ports have always worked, I'm very happy with that.</text>
+                <Opinions>
+                    <Opinion category="PORTS#OPERATION_PERFORMANCE" polarity="positive"/>
+					<Opinion category="PORTS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:8">
+                <text>This battery is not really good on any point.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:9">
+                <text>An incredible battery in every sense of the word.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:10">
+                <text>The way the graphics are handled means that you can run anything that does not require a graphic card.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:11">
+                <text>Most graphics are handled other than by the graphics card, not very smart.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:12">
+                <text>WHAT! but who put the loudspeakers here, it's nonsense.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:13">
+                <text>I think the speakers are really where they need to be.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00FU83YWS_26_A3I7Q5Y8IIS1YE:0">
+                <text>Built in mike is really poor and unusable for Skype or any other purpose.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#USABILITY" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_248_ALFFLXZLA8653:2">
+                <text>Dell support was awful to deal with.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:14">
+                <text>I really took a long time to find the charger but that's it.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:15">
+                <text>The power supply is really on top, everything charges quickly.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:16">
+                <text>The size of the charger is really not suitable...</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B0096VDM8G_65_A1AQ8JT2A3UWMY:6">
+                <text>4.Loud fan when watching 4K video off YouTube.</text>
+				<Opinions>
+                    <Opinion category="FANS_COOLING#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B0096VDM8G_65_A1AQ8JT2A3UWMY:7">
+                <text>Sounds like a washer.</text>
+				<Opinions>
+                    <Opinion category="FANS_COOLING#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:17">
+                <text>The fans are really of extraordinary quality.</text>
+                <Opinions>
+                    <Opinion category="FANS_COOLING#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_149_A3J4TEK6ANKJHC:4">
+                <text>The mouse click is a bit loud, but it really isn't a problem.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_158_A290OAUA8EAMP3:2">
+                <text>The mouse pad however is very loud which is why i gave it four stars.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_109_A1EUFUJPPD4V05:1">
+                <text>They are loud and clunky but I figured I'd get used to it.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00FU83YWS_260_A2YQ3TFBY1MASP:5">
+                <text>The touchpad hasn't worked correctly since delivery though in the beginning, I thought perhaps it was just a bit of a quirk since most touchpads I've worked with have some inherent oddities.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00FU83YWS_260_A2YQ3TFBY1MASP:6">
+                <text>This one however, is now very loose and I have to either tap hard or repeatedly push to click in order for it to work, Then suddenly, I can barely touch it at all and it clicks on its own.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_109_A1EUFUJPPD4V05:0">
+                <text>Immediately didn't like the track buttons.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00D7Z84OY_3_A3Q8WSIN4LWVLK:1">
+                <text>Most of the things about the laptop is awesome except the touchpad.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00FU83YWS_260_A2YQ3TFBY1MASP:4">
+                <text>Unless you plan on using a mouse with this laptop, don't buy this.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B0096VDM8G_34_A1B3PJ2QZABWXO:2">
+                <text>The retina screen is absolutely beautiful and the touchpad is the best touchpad to date.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#GENERAL" polarity="positive"/>
+                    <Opinion category="MOUSE#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_109_A1EUFUJPPD4V05:0">
+                <text>Immediately didn't like the track buttons.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="198:18">
+                <text>Pay 500 € to have the increased waranty, they laugh at us.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#PRICE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_193_A20GPA6RDO8DT7:4">
+                <text>Now the graphics are not HD...and the reason that it is light is that it is really basic (medium low grade) plastic.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#QUALITY" polarity="negative"/>
+                    <Opinion category="LAPTOP#DESIGN_FEATURES" polarity="neutral"/>
+                    <Opinion category="LAPTOP#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KMRGF28_227_A1JSUB9AKX4S7H:1">
+                <text>slow processor, just not it</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="LAPTOP#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00KB3MXH4_6_A1OJE3DZ64LB6H:1">
+                <text>The processor shows a speed of 1.7gz.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+			<sentence id="B00FU83YWS_61_A1TAIZR02ODKET:0">
+                <text>Overall good but processing power isn't very good.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
         </sentences>
