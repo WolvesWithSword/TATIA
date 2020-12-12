@@ -162,6 +162,12 @@ def CreateClassifieur(df):
         # Training logistic regression model on train data
         Classifieur[category] = LogReg_pipeline.fit(x_train, y_train[category])
     
+        if(category == "CLASS_LAPTOP#PRICE" or category == "CLASS_PORTS#QUALITY" or category == "CLASS_WARRANTY#MISCELLANEOUS" 
+        or category == "CLASS_SUPPORT#GENERAL"):
+            prediction = Classifieur[category].predict(x_train)
+            print(confusion_matrix(y_train[category],prediction))
+
+
     return Classifieur,vectorizer
 
 def ClassifyString(Classifieur,vectorizer,string):
@@ -180,4 +186,4 @@ print("\n\n#####################################################################
 #classification(df)
 
 Classifieur,vectorizer = CreateClassifieur(df)
-ClassifyString(Classifieur,vectorizer,"The power supply is really on top, everything charges quickly")
+ClassifyString(Classifieur,vectorizer,"The graphics card produces a good image.")

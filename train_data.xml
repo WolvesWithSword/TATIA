@@ -11337,6 +11337,45 @@
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:19">
+                <text>This laptop is very impressive.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:20">
+                <text>This laptop is really stylish.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:21">
+                <text>I find it really efficient and ergonomic.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="LAPTOP#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:22">
+                <text>I like it because the keyboard doesn't take up too much space and the keys light up.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:23">
+                <text>The pad is practical and it is not too large.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:24">
+                <text>The graphics card produces a good image.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>
