@@ -11577,9 +11577,113 @@
                 </Opinions>
             </sentence>
             <sentence id="198:72">
-                <text>The fast charge is really excellent, in 30 min my computer goes back to 100%</text>
+                <text>The fast charge is really excellent, in 30 min my computer goes back to 100%.</text>
                 <Opinions>
                     <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:73">
+                <text>The power supply works fine on either 110v or 220-240v AC.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:74">
+                <text>My power cable got tangled and I had a lot of difficulty charging my pc.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:75">
+                <text>I had a bad contact with my power cable but I managed to get out with a little tape.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:76">
+                <text>I ordered a new power cable and I received the wrong one, so I can no longer charge my pc.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="negative"/>
+                    <Opinion category="SHIPPING#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:77">
+                <text>I am still looking for a solution to place my cable so as not to bother me.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:78">
+                <text>It's also a good thing to have a DVD ROM that works properly in this laptop.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:79">
+                <text>The laptop's DVD player is made by a serious company, no wonder it works so well.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:80">
+                <text>A dvd player that works half the time is a real shame.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:81">
+                <text>I noticed that in summer or when it's hot the computer loses its battery faster.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:82">
+                <text>There is not as much selectable profile on the graphics card as I expected.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:83">
+                <text>The graphics card does the job for hungry software but not that much for gaming.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:84">
+                <text>This is a preliminary review of the Nitro 5 with the NVIDIA GeForce GTX 1650.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:85">
+                <text>It's only got a GTX1650, so you're not looking at Anthem at Ultra settings with this.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:86">
+                <text>First is it takes several steps to activate the Geforce GTX 1650 video card in the Windows settings as it is disabled on arrival.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:87">
+                <text>The computer's built-in microphone is below my expectations, it's hard to be heard with.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#USABILITY" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:88">
+                <text>On zoom, the camera is clear unlike my colleagues on other pc models.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:89">
+                <text>I have a problem with Zoom that never detects my native microphone.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#MISCELLANEOUS" polarity="negative"/>
                 </Opinions>
             </sentence>
         </sentences>
