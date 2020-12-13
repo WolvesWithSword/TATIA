@@ -11,6 +11,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from imblearn.over_sampling import ADASYN
 
 # nltk
 from nltk import word_tokenize
@@ -33,6 +35,9 @@ ATTRIBUTES = ["GENERAL", "PRICE", "QUALITY", "DESIGN_FEATURES",
 "OPERATION_PERFORMANCE", "USABILITY", "PORTABILITY",
 "CONNECTIVITY", "MISCELLANEOUS"]
 
+POLARITY_DIC = {"negative" : 0, "positive":1, "neutral":3}
+POLARITY_DIC_ANSWER = {0 :"negative" , 1:"positive", 3:"neutral"}
+
 def allCategoryClass(entities,attributes):
     all_cat = []
 
@@ -51,7 +56,7 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
     xtree = et.parse("train_data.xml")
     x_reviews = xtree.getroot()
 
-    df_cols = ["id", "text"]
+    df_cols = ["id", "text","polarity"]
     for category in ALL_CATEGORIES:
         df_cols.append(category)
 
@@ -63,10 +68,14 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
                 s_id = node_sentence.attrib.get("id")
                 s_text = node_sentence.find("text").text if node_sentence is not None else None
 
+                s_polarity = "neutral" #For case where no opinions is present.     
+
                 category_list = []
                 for node_opinions in node_sentence:
                     for node_opinion in node_opinions:
                         category_list.append(node_opinion.attrib.get("category"))
+
+                        s_polarity = node_opinion.attrib.get("polarity")#For now keep only the last.
 
                 binary_category_tab = binaryCategoryTab(ALL_CATEGORIES,category_list)
 
@@ -74,6 +83,7 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
                 dictionary = {}
                 dictionary["id"] = s_id
                 dictionary["text"] = s_text
+                dictionary["polarity"] = POLARITY_DIC[s_polarity]#Convert into int
 
                 for i in range(len(ALL_CATEGORIES)):
                     dictionary[ALL_CATEGORIES[i]] = binary_category_tab[i]
@@ -115,7 +125,8 @@ def preProcessing(text):
 
 
 def classification(df):
-    df = df.drop(labels = ['id'], axis=1)
+    df = df.drop(labels = ['id'], axis=1)#No use
+
     vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
     matrice = vectorizer.fit_transform(df.text)
 
@@ -141,8 +152,10 @@ def classification(df):
         print("\n")
 
 
+
 def CreateClassifieur(df):
-    df = df.drop(labels = ['id'], axis=1)
+    df = df.drop(labels = ['id'], axis=1) #No Use
+
     vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
     matrice = vectorizer.fit_transform(df.text)
 
@@ -159,31 +172,63 @@ def CreateClassifieur(df):
                 ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
             ])
 
-        # Training logistic regression model on train data
-        Classifieur[category] = LogReg_pipeline.fit(x_train, y_train[category])
-    
-        if(category == "CLASS_LAPTOP#PRICE" or category == "CLASS_PORTS#QUALITY" or category == "CLASS_WARRANTY#MISCELLANEOUS" 
-        or category == "CLASS_SUPPORT#GENERAL"):
-            prediction = Classifieur[category].predict(x_train)
-            print(confusion_matrix(y_train[category],prediction))
+        #INCREASE POPULATION 
+        ADA = ADASYN(sampling_strategy='minority',n_neighbors = 4)
+        
+        nb_class = getNumberOfClass(y_train[category])
+        if(nb_class > 1): #can't resample if there is one class.
+            x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
+        else :
+            x_resample, y_resample = x_train,y_train[category]
 
+        # Training logistic regression model on train data
+        Classifieur[category] = LogReg_pipeline.fit(x_resample, y_resample)
+    
+        prediction = Classifieur[category].predict(x_resample)
+        print(classification_report(y_resample,prediction))
+
+    #POLARITY
+    print('**Processing polarity...**')
+    Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
+    prediction = Classifieur['polarity'].predict(x_train)
+    print(classification_report(y_train['polarity'],prediction))
 
     return Classifieur,vectorizer
 
 def ClassifyString(Classifieur,vectorizer,string):
+
+    preComputeString = vectorizer.transform([preProcessing(string)])
+
     for category in ALL_CATEGORIES:
-        preComputeString = vectorizer.transform([preProcessing(string)])
+        
         prediction = Classifieur[category].predict(preComputeString)
         if(prediction[0]==1):
             print(category)
 
+    #POLARITY
+    predictionPol = Classifieur['polarity'].predict(preComputeString)
+    print("The polarity is :",POLARITY_DIC_ANSWER[predictionPol[0]])
+
+def getNumberOfClass(y_tab):
+    class_list = []
+    nb = 0
+
+    for c_class in y_tab :
+        if(c_class not in class_list):
+            nb += 1
+            class_list.append(c_class)
+    
+    return nb
+
 
 df = getDFFromXML()
 print(df)
+
 df['text'] = df.text.apply(lambda text : preProcessing(text))
 print(df)
 print("\n\n#################################################################################################\n\n")
 #classification(df)
 
 Classifieur,vectorizer = CreateClassifieur(df)
-ClassifyString(Classifieur,vectorizer,"The graphics card produces a good image.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,"This is a very good laptop that is very capable of AAA gaming at high settings.")
