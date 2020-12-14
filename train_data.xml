@@ -11774,7 +11774,13 @@
             <sentence id="198:106">
                 <text>This resolution is beautiful.</text>
                 <Opinions>
-                    <Opinion category="SHIPPING#QUALITY" polarity="negative"/>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:107">
+                <text>Being delivered so quickly is a pleasure.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
         </sentences>
