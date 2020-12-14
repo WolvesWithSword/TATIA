@@ -35,8 +35,8 @@ ATTRIBUTES = ["GENERAL", "PRICE", "QUALITY", "DESIGN_FEATURES",
 "OPERATION_PERFORMANCE", "USABILITY", "PORTABILITY",
 "CONNECTIVITY", "MISCELLANEOUS"]
 
-POLARITY_DIC = {"negative" : 0, "positive":1, "neutral":3}
-POLARITY_DIC_ANSWER = {0 :"negative" , 1:"positive", 3:"neutral"}
+POLARITY_DIC = {"negative" : 0, "positive":1, "neutral":2}
+POLARITY_DIC_ANSWER = {0 :"negative" , 1:"positive", 2:"neutral"}
 
 def allCategoryClass(entities,attributes):
     all_cat = []
@@ -171,7 +171,7 @@ def CreateClassifieur(df):
         LogReg_pipeline = Pipeline([
                 ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
             ])
-
+        '''
         #INCREASE POPULATION 
         ADA = ADASYN(sampling_strategy='minority',n_neighbors = 4)
         
@@ -180,6 +180,8 @@ def CreateClassifieur(df):
             x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
         else :
             x_resample, y_resample = x_train,y_train[category]
+        '''
+        x_resample, y_resample = x_train,y_train[category]
 
         # Training logistic regression model on train data
         Classifieur[category] = LogReg_pipeline.fit(x_resample, y_resample)
@@ -231,4 +233,12 @@ print("\n\n#####################################################################
 
 Classifieur,vectorizer = CreateClassifieur(df)
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"This is a very good laptop that is very capable of AAA gaming at high settings.")
+ClassifyString(Classifieur,vectorizer,"I love this laptop")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,"An incredible sound.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,"this computer crashes every hour.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,"I was delivered 3 years late.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,"This resolution is beautiful I feel like I'm playing minecraft, lol.")

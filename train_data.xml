@@ -11253,7 +11253,6 @@
                 <text>It's very slow.</text>
                 <Opinions>
                     <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="negative"/>
-                    <Opinion category="HARDWARE#QUALITY" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:26">
@@ -11305,12 +11304,6 @@
                 <text>The fan is made of plastic, it broke as soon as a grain of sand got into it.</text>
                 <Opinions>
                     <Opinion category="FANS_COOLING#QUALITY" polarity="negative"/>
-                </Opinions>
-            </sentence>
-            <sentence id="198:34">
-                <text>My computer fell a week ago but I had a warranty and got it fixed right away, great!</text>
-                <Opinions>
-                    <Opinion category="WARRANTY#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="198:35">
@@ -11424,12 +11417,6 @@
                     <Opinion category="COMPANY#GENERAL" polarity="negative"/>
                 </Opinions>
             </sentence>
-            <sentence id="198:50">
-                <text>The warranty is worth it.</text>
-                <Opinions>
-                    <Opinion category="WARRANTY#QUALITY" polarity="positive"/>
-                </Opinions>
-            </sentence>
             <sentence id="198:51">
                 <text>The touchpad is just not very accurate.</text>
                 <Opinions>
@@ -11446,7 +11433,6 @@
             <sentence id="198:53">
                 <text>Thankfully it is under warranty and I'll be able to get it fixed, but the estimated time of repair is 15 days.</text>
                 <Opinions>
-                    <Opinion category="WARRANTY#QUALITY" polarity="neutral"/>
                     <Opinion category="WARRANTY#GENERAL" polarity="neutral"/>
                 </Opinions>
             </sentence>
@@ -11684,6 +11670,111 @@
                 <text>I have a problem with Zoom that never detects my native microphone.</text>
                 <Opinions>
                     <Opinion category="MULTIMEDIA_DEVICES#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:90">
+                <text>The computer components are really poor quality.</text>
+                <Opinions>
+                    <Opinion category="HARDWARE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:91">
+                <text>I love this laptop because it is low priced with very advanced hardware.</text>
+                <Opinions>
+                    <Opinion category="HARDWARE#QUALITY" polarity="positive"/>
+                    <Opinion category="LAPTOP#PRICE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:92">
+                <text>Their warranty is great, quick replacement.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:93">
+                <text>The guarantee is overpriced, do not take it.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#PRICE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:94">
+                <text>I was browsing a site and saw a more enticing warranty.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:95">
+                <text>I spent about $1,050.00 total, including the 4 year extended warranty.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:96">
+                <text>It is under full warranty.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:97">
+                <text>Acer cannot or does not support its warranty.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:98">
+                <text>The price of delivery is more expensive than the computer no kidding.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#PRICE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:99">
+                <text>Delivery is free if you buy it directly from their site !!!</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#PRICE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:100">
+                <text>Troubleshooted with customer support on the phone.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:101">
+                <text>This is a very good laptop that is very capable of AAA gaming at high settings.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="GRAPHICS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:102">
+                <text>I love this laptop.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:103">
+                <text>An incredible sound.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="positive"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:104">
+                <text>This computer crashes every hour.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:105">
+                <text>I was delivered 3 months late.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:106">
+                <text>This resolution is beautiful.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#QUALITY" polarity="negative"/>
                 </Opinions>
             </sentence>
         </sentences>
