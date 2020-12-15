@@ -9,6 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
@@ -166,28 +167,42 @@ def CreateClassifieur(df):
     Classifieur = dict()
    
     for category in ALL_CATEGORIES:
-        print('**Processing {} comments...**'.format(category))
-         # Using pipeline for applying logistic regression and one vs rest classifier
-        LogReg_pipeline = Pipeline([
-                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
-            ])
-        '''
-        #INCREASE POPULATION 
-        ADA = ADASYN(sampling_strategy='minority',n_neighbors = 4)
+        correct = False
+        nbExec = 0
+        while(not correct):
+            print('**Processing {} comments...**'.format(category))
+            # Using pipeline for applying logistic regression and one vs rest classifier
+            LogReg_pipeline = Pipeline([
+                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+                ])
+            '''
+            #INCREASE POPULATION 
+            ADA = ADASYN(sampling_strategy='minority',n_neighbors = 4)
         
-        nb_class = getNumberOfClass(y_train[category])
-        if(nb_class > 1): #can't resample if there is one class.
-            x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
-        else :
+            nb_class = getNumberOfClass(y_train[category])
+            if(nb_class > 1): #can't resample if there is one class.
+                x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
+            else :
+                x_resample, y_resample = x_train,y_train[category]
+            '''
             x_resample, y_resample = x_train,y_train[category]
-        '''
-        x_resample, y_resample = x_train,y_train[category]
 
-        # Training logistic regression model on train data
-        Classifieur[category] = LogReg_pipeline.fit(x_resample, y_resample)
+            # Training logistic regression model on train data
+            Classifieur[category] = LogReg_pipeline.fit(x_resample, y_resample)
     
-        prediction = Classifieur[category].predict(x_resample)
-        print(classification_report(y_resample,prediction))
+            prediction = Classifieur[category].predict(x_resample)
+
+            #si incorrect on refait le train
+            precision_Score = precision_score(y_resample, prediction, average=None)
+            if(len(precision_Score) == 2):
+                if(precision_Score[1]<0.01 and nbExec<10):
+                    nbExec+=1
+                    continue
+
+            #on garde la classification
+            correct=True
+            report = classification_report(y_resample,prediction)
+            print(report)
 
     #POLARITY
     print('**Processing polarity...**')
