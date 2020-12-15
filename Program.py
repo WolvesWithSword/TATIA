@@ -28,7 +28,7 @@ STOP_WORDS.extend(PONCTUATION)
 ENTITIES = ["LAPTOP", "DISPLAY", "KEYBOARD", "MOUSE", "MOTHERBOARD",
 "CPU", "FANS_COOLING", "PORTS", "MEMORY", "POWER_SUPPLY",
 "OPTICAL_DRIVES", "BATTERY", "GRAPHICS", "HARD_DISK",
-"MULTIMEDIA_DEVICES", "HARDWARE", "SOFTWARE, OS",
+"MULTIMEDIA_DEVICES", "HARDWARE", "SOFTWARE", "OS",
 "WARRANTY", "SHIPPING", "SUPPORT", "COMPANY"]
 
 ATTRIBUTES = ["GENERAL", "PRICE", "QUALITY", "DESIGN_FEATURES",
@@ -191,6 +191,9 @@ def CreateClassifieur(df):
 
     #POLARITY
     print('**Processing polarity...**')
+    LogReg_pipeline = Pipeline([
+        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+    ])
     Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
     prediction = Classifieur['polarity'].predict(x_train)
     print(classification_report(y_train['polarity'],prediction))

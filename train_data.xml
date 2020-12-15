@@ -11783,6 +11783,12 @@
                     <Opinion category="SHIPPING#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:108">
+                <text>I was delivered in less than 2 days it's fabulous.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>
