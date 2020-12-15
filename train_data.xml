@@ -927,7 +927,7 @@
                 </Opinions>
             </sentence>
             <sentence id="384:1">
-                <text>Apparently they are defective since they are not securely attached.</text>
+                <text>Apparently the ports are defective since they are not securely attached.</text>
                 <Opinions>
                     <Opinion category="PORTS#QUALITY" polarity="negative"/>
                 </Opinions>
@@ -5584,7 +5584,7 @@
     <Review rid="289">
         <sentences>
             <sentence id="289:0">
-                <text>The acer one compuer is a great computer.</text>
+                <text>The acer one computer is a great computer.</text>
                 <Opinions>
                     <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
                 </Opinions>
@@ -11787,6 +11787,157 @@
                 <text>I was delivered in less than 2 days it's fabulous.</text>
                 <Opinions>
                     <Opinion category="SHIPPING#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:109">
+                <text>The laptop has a such good sound, wow</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:110">
+                <text>The battery does last a long time and it does charge relatively quickly.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="BATTERY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:111">
+                <text>The battery does last a long time and it does charge relatively quickly.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="LAPTOP#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:112">
+                <text>Battery life seems OK.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="neutral"/>
+                    <Opinion category="BATTERY#QUALITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:113">
+                <text>This is a fine motherboard.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:114">
+                <text>Certainly better than what I would call a low-end motherboard.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:115">
+                <text>The plastic around the ports prevents me from properly connecting my HDMI cable.</text>
+                <Opinions>
+                    <Opinion category="PORTS#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:116">
+                <text>I never had bad contact when I plug in my USB key</text>
+                <Opinions>
+                    <Opinion category="PORTS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:117">
+                <text>If your looking for a cheap good looking laptop with amazing battery life this is the one!!!</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="LAPTOP#PRICE" polarity="positive"/>
+                    <Opinion category="LAPTOP#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:116">
+                <text>long battery use without the need of charging.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:117">
+                <text>Long battery use without the need of charging.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:118">
+                <text>It has a long battery life and is very lightweight.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="LAPTOP#PORTABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:119">
+                <text>Edited review after 4 months... key pad is unresponsive.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#QUALITY" polarity="negative"/>
+                    <Opinion category="KEYBOARD#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:120">
+                <text>I hate this laptop so much.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:121">
+                <text>The sounds is ok, which I don't really need.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:122">
+                <text>I’ve been using this laptop for about a month, and I’ve been very impressed with its performance.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:123">
+                <text>I’ve been using this laptop for about a month, and I’ve been very impressed with its performance.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:124">
+                <text>I’ve heard Acer doesn’t have the best reputation for quality but this laptop is fantastic.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:125">
+                <text>What a great laptop for its built quality and performance.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#QUALITY" polarity="positive"/>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:126">
+                <text>Display is incredibly clear and fast.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:127">
+                <text>However, I would say the keyboard is extremely satisfying to type on and I sometimes even use it instead of my mechanical keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:128">
+                <text>This laptop will run the game on high settings, however the fans will be very loud and the CPU will be working very hard.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="FANS_COOLING#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:129">
+                <text>As a stand alone laptop it is outstanding, especially at the $700 price point.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#PRICE" polarity="positive"/>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
                 </Opinions>
             </sentence>
         </sentences>
