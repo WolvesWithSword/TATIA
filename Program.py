@@ -124,36 +124,6 @@ def preProcessing(text):
     return " ".join(tokens_lemmatize)
 
 
-
-def classification(df):
-    df = df.drop(labels = ['id'], axis=1)#No use
-
-    vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
-    matrice = vectorizer.fit_transform(df.text)
-
-    #voir pour avoir le fichier de test
-    x_train = vectorizer.transform(df.text)
-    y_train = df.drop(labels = ['text'], axis=1)
-    
-    # Using pipeline for applying logistic regression and one vs rest classifier
-    LogReg_pipeline = Pipeline([
-                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
-            ])
-
-    for category in ALL_CATEGORIES:
-        print('**Processing {} comments...**'.format(category))
-    
-        # Training logistic regression model on train data
-        LogReg_pipeline.fit(x_train, y_train[category])
-    
-        # calculating test accuracy
-        prediction = LogReg_pipeline.predict(x_train)
-        print('Test accuracy is {}'.format(accuracy_score(y_train[category], prediction)))
-        print(confusion_matrix(y_train[category],prediction))
-        print("\n")
-
-
-
 def CreateClassifieur(df):
     df = df.drop(labels = ['id'], axis=1) #No Use
 
@@ -167,7 +137,22 @@ def CreateClassifieur(df):
     Classifieur = dict()
    
     for category in ALL_CATEGORIES:
+
+        
+        #INCREASE POPULATION 
+        ADA = ADASYN(sampling_strategy='auto',n_neighbors = 4)
+    
+        nb_class = getNumberOfClass(y_train[category])
+        if(nb_class > 1): #can't resample if there is one class.
+            x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
+        else :
+            x_resample, y_resample = x_train,y_train[category]
+        
+        x_resample, y_resample = x_train,y_train[category]
+
         correct = False
+        bestClf = None
+        bestClfPrecision = 0
         nbExec = 0
         while(not correct):
             print('**Processing {} comments...**'.format(category))
@@ -175,34 +160,37 @@ def CreateClassifieur(df):
             LogReg_pipeline = Pipeline([
                     ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
                 ])
-            '''
-            #INCREASE POPULATION 
-            ADA = ADASYN(sampling_strategy='minority',n_neighbors = 4)
-        
-            nb_class = getNumberOfClass(y_train[category])
-            if(nb_class > 1): #can't resample if there is one class.
-                x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
-            else :
-                x_resample, y_resample = x_train,y_train[category]
-            '''
-            x_resample, y_resample = x_train,y_train[category]
 
             # Training logistic regression model on train data
-            Classifieur[category] = LogReg_pipeline.fit(x_resample, y_resample)
+            currentClf = LogReg_pipeline.fit(x_resample, y_resample)
     
-            prediction = Classifieur[category].predict(x_resample)
+            prediction = currentClf.predict(x_resample)
 
             #si incorrect on refait le train
             precision_Score = precision_score(y_resample, prediction, average=None)
+
             if(len(precision_Score) == 2):
-                if(precision_Score[1]<0.01 and nbExec<10):
+
+                #on a pas de clasifieur on l'ajoute
+                if(bestClf==None or precision_Score[1]>bestClfPrecision):
+                    bestClf = currentClf
+                    bestClfPrecision = precision_Score[1]
+
+                #On relance si la precision n'est pas suffisante (pour nous)
+                if(precision_Score[1]<0.8 and nbExec<10):
                     nbExec+=1
                     continue
+            else: #si on a pas de classification c'est le meillieur
+                bestClf = currentClf
 
             #on garde la classification
             correct=True
-            report = classification_report(y_resample,prediction)
-            print(report)
+
+        Classifieur[category] = bestClf
+        prediction = bestClf.predict(x_resample)
+        report = classification_report(y_resample,prediction)
+        print(report)
+
 
     #POLARITY
     print('**Processing polarity...**')
@@ -216,7 +204,7 @@ def CreateClassifieur(df):
     return Classifieur,vectorizer
 
 def ClassifyString(Classifieur,vectorizer,string):
-
+    print(string, " -> ")
     preComputeString = vectorizer.transform([preProcessing(string)])
 
     for category in ALL_CATEGORIES:
@@ -251,12 +239,61 @@ print("\n\n#####################################################################
 
 Classifieur,vectorizer = CreateClassifieur(df)
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"I love this laptop")
+ClassifyString(Classifieur,vectorizer,"What a great laptop for its built quality and performance.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"An incredible sound.")
+ClassifyString(Classifieur,vectorizer,"Display is incredibly clear and fast.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"this computer crashes every hour.")
+ClassifyString(Classifieur,vectorizer,"However, I would say the keyboard is extremely satisfying to type on and I sometimes even use it instead of my mechanical keyboard.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"I was delivered 3 years late.")
+ClassifyString(Classifieur,vectorizer,"This laptop will run the game on high settings, however the fans will be very loud and the CPU will be working very hard.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"This resolution is beautiful I feel like I'm playing minecraft, lol.")
+ClassifyString(Classifieur,vectorizer,"As a stand alone laptop it is outstanding, especially at the $700 price point.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def classification(df):
+#     df = df.drop(labels = ['id'], axis=1)#No use
+
+#     vectorizer = TfidfVectorizer(strip_accents='unicode', analyzer='word', ngram_range=(1,8), norm='l2')
+#     matrice = vectorizer.fit_transform(df.text)
+
+#     #voir pour avoir le fichier de test
+#     x_train = vectorizer.transform(df.text)
+#     y_train = df.drop(labels = ['text'], axis=1)
+    
+#     # Using pipeline for applying logistic regression and one vs rest classifier
+#     LogReg_pipeline = Pipeline([
+#                 ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+#             ])
+
+#     for category in ALL_CATEGORIES:
+#         print('**Processing {} comments...**'.format(category))
+    
+#         # Training logistic regression model on train data
+#         LogReg_pipeline.fit(x_train, y_train[category])
+    
+#         # calculating test accuracy
+#         prediction = LogReg_pipeline.predict(x_train)
+#         print('Test accuracy is {}'.format(accuracy_score(y_train[category], prediction)))
+#         print(confusion_matrix(y_train[category],prediction))
+#         print("\n")

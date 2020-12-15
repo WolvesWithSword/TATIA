@@ -11940,6 +11940,117 @@
                     <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
                 </Opinions>
             </sentence>
+
+            <sentence id="199:1">
+                <text>PhotoShop is really too expensive.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#PRICE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:2">
+                <text>All software is included for this price, it's fabulous.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#PRICE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:3">
+                <text>The software package really pays off.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#PRICE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:4">
+                <text>The software is not profitable.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#PRICE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+
+            <sentence id="199:6">
+                <text>Photoshop is really fabulous software.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                    <Opinion category="SOFTWARE#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:7">
+                <text>All software include is really good.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                    <Opinion category="SOFTWARE#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:8">
+                <text>All software include is really good.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                    <Opinion category="SOFTWARE#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:9">
+                <text>The computer is really good, but the software needs to be reviewed</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="negative"/>
+                    <Opinion category="SOFTWARE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+
+            <sentence id="199:10">
+                <text>Windows is a really good operating system</text>
+                <Opinions>
+                    <Opinion category="OS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:11">
+                <text>Windows is a really good OS</text>
+                <Opinions>
+                    <Opinion category="OS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:12">
+                <text>I can't use this operating system, I hate interface</text>
+                <Opinions>
+                    <Opinion category="OS#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:13">
+                <text>The OS interface is very intuitive</text>
+                <Opinions>
+                    <Opinion category="OS#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:14">
+                <text>The OS interface is realy bad</text>
+                <Opinions>
+                    <Opinion category="OS#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+
+            <sentence id="199:15">
+                <text>I have buy the windows 7 system for upgrade my os.</text>
+                <Opinions>
+                    <Opinion category="OS#MISCELLANEOUS" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:16">
+                <text>I changed the operating system because it is slow</text>
+                <Opinions>
+                    <Opinion category="OS#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:17">
+                <text>I prefer my old OS.</text>
+                <Opinions>
+                    <Opinion category="OS#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="199:17">
+                <text>There are many different operating systems.</text>
+                <Opinions>
+                    <Opinion category="OS#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>
