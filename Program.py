@@ -53,8 +53,8 @@ ALL_CATEGORIES  = allCategoryClass(ENTITIES,ATTRIBUTES)
 
 
 
-def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
-    xtree = et.parse("train_data.xml")
+def getDFFromXML(fileName): #WORK ONLY FOR OUR XML TRAIN FILE
+    xtree = et.parse(fileName)
     x_reviews = xtree.getroot()
 
     df_cols = ["id", "text","polarity"]
@@ -70,7 +70,7 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
                 s_text = node_sentence.find("text").text if node_sentence is not None else None
 
                 category_list = []
-                polarity_list =[] 
+                polarity_list =[]
 
                 for node_opinions in node_sentence:
                     for node_opinion in node_opinions:
@@ -157,7 +157,7 @@ def CreateClassifieur(df):
             print('**Processing {} comments...**'.format(category))
             # Using pipeline for applying logistic regression and one vs rest classifier
             LogReg_pipeline = Pipeline([
-                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=100 , n_jobs=-1), n_jobs=-1)),
                 ])
 
             # Training logistic regression model on train data
@@ -194,7 +194,7 @@ def CreateClassifieur(df):
     #POLARITY
     print('**Processing polarity...**')
     LogReg_pipeline = Pipeline([
-        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000), n_jobs=-1)),
+        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=100,n_jobs=-1), n_jobs=-1)),
     ])
     Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
     prediction = Classifieur['polarity'].predict(x_train)
@@ -240,7 +240,27 @@ def getGeneralPolarity(polarities):
 
     return POLARITY_DIC[currentPol]
 
-df = getDFFromXML()
+
+def predictTestData(Classifieur,vectorizer,dfTest):
+    dfTest = dfTest.drop(labels = ['id'], axis=1) #No Use
+
+    #voir pour avoir le fichier de test
+    x_test = vectorizer.transform(dfTest.text)
+    y_test = dfTest.drop(labels = ['text'], axis=1)
+    for category in ALL_CATEGORIES:
+        print("Pour la categorie ",category," :")
+        prediction = Classifieur[category].predict(x_test)
+
+        print(classification_report(y_test[category],prediction))
+
+    #polarity classification
+    predictionPol = Classifieur['polarity'].predict(x_test)
+    print(classification_report(y_test['polarity'],predictionPol))
+
+
+
+
+df = getDFFromXML("train_data.xml")
 print(df)
 
 df['text'] = df.text.apply(lambda text : preProcessing(text))
@@ -249,6 +269,9 @@ print("\n\n#####################################################################
 #classification(df)
 
 Classifieur,vectorizer = CreateClassifieur(df)
+
+dfTest = getDFFromXML("test_data.xml")
+predictTestData(Classifieur,vectorizer,dfTest)
 print("\n\n#################################################################################################\n\n")
 ClassifyString(Classifieur,vectorizer,"What a great laptop for its built quality and performance.")
 print("\n\n#################################################################################################\n\n")
