@@ -1,6 +1,7 @@
 import pandas as pd 
 import string
 import xml.etree.ElementTree as et
+import numpy as np
 
 #sklearn
 from sklearn.model_selection import train_test_split
@@ -19,6 +20,9 @@ from imblearn.over_sampling import ADASYN
 from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+
+#graphique
+import matplotlib.pyplot as plt
 
 PONCTUATION = set(string.punctuation)
 STOP_WORDS = stopwords.words("english")
@@ -44,7 +48,7 @@ def allCategoryClass(entities,attributes):
 
     for entity in entities:
         for attribute in attributes:
-            all_cat.append("CLASS_"+entity+"#"+attribute)
+            all_cat.append(entity+"#"+attribute)
 
     return all_cat
 
@@ -97,7 +101,7 @@ def binaryCategoryTab(all_categories,current_categories):
     res = []
 
     for category in all_categories:
-        if(category[6:] in current_categories):
+        if(category in current_categories):
             res.append(1)
         else:
             res.append(0)
@@ -134,6 +138,8 @@ def CreateClassifieur(df):
     y_train = df.drop(labels = ['text'], axis=1)
     
     Classifieur = dict()
+
+    ClassifyCategory = []
    
     for category in ALL_CATEGORIES:
 
@@ -144,8 +150,9 @@ def CreateClassifieur(df):
         nb_class = getNumberOfClass(y_train[category])
         if(nb_class > 1): #can't resample if there is one class.
             x_resample, y_resample =  ADA.fit_resample(x_train,y_train[category])
+            ClassifyCategory.append(category)
         else :
-            x_resample, y_resample = x_train,y_train[category]
+            continue
         
         x_resample, y_resample = x_train,y_train[category]
 
@@ -157,7 +164,7 @@ def CreateClassifieur(df):
             print('**Processing {} comments...**'.format(category))
             # Using pipeline for applying logistic regression and one vs rest classifier
             LogReg_pipeline = Pipeline([
-                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=100 , n_jobs=-1), n_jobs=-1)),
+                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000, n_jobs=-1), n_jobs=-1)),
                 ])
 
             # Training logistic regression model on train data
@@ -167,7 +174,6 @@ def CreateClassifieur(df):
 
             #si incorrect on refait le train
             precision_Score = precision_score(y_resample, prediction, average=None)
-
             if(len(precision_Score) == 2):
 
                 #on a pas de clasifieur on l'ajoute
@@ -194,19 +200,19 @@ def CreateClassifieur(df):
     #POLARITY
     print('**Processing polarity...**')
     LogReg_pipeline = Pipeline([
-        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=100,n_jobs=-1), n_jobs=-1)),
+        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000 ,n_jobs=-1), n_jobs=-1)),
     ])
     Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
     prediction = Classifieur['polarity'].predict(x_train)
     print(classification_report(y_train['polarity'],prediction))
 
-    return Classifieur,vectorizer
+    return Classifieur,vectorizer,ClassifyCategory
 
-def ClassifyString(Classifieur,vectorizer,string):
+def ClassifyString(Classifieur,vectorizer,ClassifyCategory,string):
     print(string, " -> ")
     preComputeString = vectorizer.transform([preProcessing(string)])
 
-    for category in ALL_CATEGORIES:
+    for category in ClassifyCategory:
         
         prediction = Classifieur[category].predict(preComputeString)
         if(prediction[0]==1):
@@ -241,21 +247,33 @@ def getGeneralPolarity(polarities):
     return POLARITY_DIC[currentPol]
 
 
-def predictTestData(Classifieur,vectorizer,dfTest):
+def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     dfTest = dfTest.drop(labels = ['id'], axis=1) #No Use
 
     #voir pour avoir le fichier de test
     x_test = vectorizer.transform(dfTest.text)
     y_test = dfTest.drop(labels = ['text'], axis=1)
-    for category in ALL_CATEGORIES:
+
+    names=[]
+    scores = []
+    for category in ClassifyCategory:
         print("Pour la categorie ",category," :")
         prediction = Classifieur[category].predict(x_test)
 
         print(classification_report(y_test[category],prediction))
+        scores.append(np.mean(precision_score(y_test[category],prediction,average=None)))
+        names.append(category)
 
     #polarity classification
     predictionPol = Classifieur['polarity'].predict(x_test)
     print(classification_report(y_test['polarity'],predictionPol))
+
+    plt.bar(names, scores)
+    plt.xticks(rotation="vertical")
+    plt.show()
+
+
+
 
 
 
@@ -268,20 +286,20 @@ print(df)
 print("\n\n#################################################################################################\n\n")
 #classification(df)
 
-Classifieur,vectorizer = CreateClassifieur(df)
+Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df)
 
 dfTest = getDFFromXML("test_data.xml")
-predictTestData(Classifieur,vectorizer,dfTest)
+predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"What a great laptop for its built quality and performance.")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"What a great laptop for its built quality and performance.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"Display is incredibly clear and fast.")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Display is incredibly clear and fast.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"However, I would say the keyboard is extremely satisfying to type on and I sometimes even use it instead of my mechanical keyboard.")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"However, I would say the keyboard is extremely satisfying to type on and I sometimes even use it instead of my mechanical keyboard.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"This laptop will run the game on high settings, however the fans will be very loud and the CPU will be working very hard.")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"This laptop will run the game on high settings, however the fans will be very loud and the CPU will be working very hard.")
 print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,"As a stand alone laptop it is outstanding, especially at the $700 price point.")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"As a stand alone laptop it is outstanding, especially at the $700 price point.")
 
 
 
