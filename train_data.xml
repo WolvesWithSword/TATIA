@@ -5872,7 +5872,7 @@
             <sentence id="31:7">
                 <text>Skype is just so dang cool with this machine too.</text>
                 <Opinions>
-                    <Opinion  category="SOFTWARE#GENERAL" polarity="positive"/>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="31:8">
@@ -6861,7 +6861,7 @@
                 </Opinions>
             </sentence>
             <sentence id="88:4">
-                <text>Very dissappointed becase I have had toshibas for years, and never a issue.</text>
+                <text>Very dissappointed because I have had toshibas for years, and never a issue.</text>
                 <Opinions>
                     <Opinion category="LAPTOP#GENERAL" polarity="negative"/>
                     <Opinion category="COMPANY#GENERAL" polarity="positive"/>
@@ -11802,13 +11802,6 @@
                     <Opinion category="BATTERY#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
-            <sentence id="198:111">
-                <text>The battery does last a long time and it does charge relatively quickly.</text>
-                <Opinions>
-                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
-                    <Opinion category="LAPTOP#GENERAL" polarity="negative"/>
-                </Opinions>
-            </sentence>
             <sentence id="198:112">
                 <text>Battery life seems OK.</text>
                 <Opinions>
@@ -11965,7 +11958,6 @@
                     <Opinion category="SOFTWARE#PRICE" polarity="negative"/>
                 </Opinions>
             </sentence>
-
             <sentence id="199:6">
                 <text>Photoshop is really fabulous software.</text>
                 <Opinions>
@@ -11974,13 +11966,6 @@
                 </Opinions>
             </sentence>
             <sentence id="199:7">
-                <text>All software include is really good.</text>
-                <Opinions>
-                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
-                    <Opinion category="SOFTWARE#QUALITY" polarity="positive"/>
-                </Opinions>
-            </sentence>
-            <sentence id="199:8">
                 <text>All software include is really good.</text>
                 <Opinions>
                     <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
@@ -11997,36 +11982,35 @@
             </sentence>
 
             <sentence id="199:10">
-                <text>Windows is a really good operating system</text>
+                <text>Windows is a really good operating system.</text>
                 <Opinions>
                     <Opinion category="OS#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="199:11">
-                <text>Windows is a really good OS</text>
+                <text>Windows is a really good OS.</text>
                 <Opinions>
                     <Opinion category="OS#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="199:12">
-                <text>I can't use this operating system, I hate interface</text>
+                <text>I can't use this operating system, I hate interface.</text>
                 <Opinions>
                     <Opinion category="OS#DESIGN_FEATURES" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="199:13">
-                <text>The OS interface is very intuitive</text>
+                <text>The OS interface is very intuitive.</text>
                 <Opinions>
                     <Opinion category="OS#DESIGN_FEATURES" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="199:14">
-                <text>The OS interface is realy bad</text>
+                <text>The OS interface is really bad.</text>
                 <Opinions>
                     <Opinion category="OS#DESIGN_FEATURES" polarity="negative"/>
                 </Opinions>
             </sentence>
-
             <sentence id="199:15">
                 <text>I have buy the windows 7 system for upgrade my os.</text>
                 <Opinions>
@@ -12034,7 +12018,7 @@
                 </Opinions>
             </sentence>
             <sentence id="199:16">
-                <text>I changed the operating system because it is slow</text>
+                <text>I changed the operating system because it is slow.</text>
                 <Opinions>
                     <Opinion category="OS#MISCELLANEOUS" polarity="negative"/>
                 </Opinions>
@@ -12049,6 +12033,315 @@
                 <text>There are many different operating systems.</text>
                 <Opinions>
                     <Opinion category="OS#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:130">
+                <text>After an hour of use I still have a blue screen.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:131">
+                <text>The screen hits 320 nits brightness, pretty close to ideal.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:132">
+                <text>The screen is bright enough.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:133">
+                <text>No jaggies, no pauses, no split-screens.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#MISCELLANEOUS" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:134">
+                <text>It's like hardly anything fits on the screen.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#MISCELLANEOUS" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:135">
+                <text>Aside from the Turbo button, there's also a Predator button on the keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:136">
+                <text>It has in take slits above the keyboard for increased cooling. </text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                     <Opinion category="FANS_COOLING#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:137">
+                <text>I returned it because the keyboard was not registering keyboard clicks very consistently.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:138">
+                <text>The keyboard is solid.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:139">
+                <text>I really like the keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:140">
+                <text>The laptop is fast, the keyboard feels fine, and it ran games very well.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:141">
+                <text>The keyboard feels pretty nice and the LEDs in the keyboard have a auto shutoff mode (on by default) if you're not using it.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:142">
+                <text>The keyboard...is horrible, it’s not just mushy, it’s unresponsive and requires hard pushes.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                    <Opinion category="KEYBOARD#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:143">
+                <text>You can change the brightness of the backlit keyboard which I did love.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:144">
+                <text>Keyboard lights only turn on when a key is pressed and automatically turn off after 30 seconds.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:145">
+                <text>The keyboard is responsive.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:146">
+                <text>The motherboard works fine but I also decided not to update the bios.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:147">
+                <text>Overall, a solid product, and I'd definitely recommend an Intel motherboard for a first-time PC builder.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:148">
+                <text>It has two cooling fans rotating at high speed for more performance.</text>
+                <Opinions>
+                    <Opinion category="FANS_COOLING#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:149">
+                <text>The chassis is built to dissipate heat, and the two fans work really well.</text>
+                <Opinions>
+                    <Opinion category="FANS_COOLING#OPERATION_PERFORMANCE" polarity="positive"/>
+                     <Opinion category="FANS_COOLING#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:150">
+                <text>I am using a mouse by USB port and it keeps disconnecting.</text>
+                <Opinions>
+                    <Opinion category="PORTS#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:151">
+                <text>Charge part is on the right side of laptop towards the middle which can be minor inconvenience when using a mouse.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:152">
+                <text>Speaking of the power cable... It must have been a desperate decision to seat it on the righthand side of the laptop.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:153">
+                <text>The power cable has a 90 degree bend.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:154">
+                <text>But I prefer/recommend plugging in the power cord when I know I'm about to sit down for a long session of questing.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:154">
+                <text>Don't look for a good battery in gaming machine.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:155">
+                <text>I Got My Laptop With A Defective Power Cable , Acer Refused To Send Me A Replace , Highly Not Recommended.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#QUALITY" polarity="negative"/>
+                    <Opinion category="WARRANTY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:156">
+                <text>I timed it from 100% down to 10% when the low battery Signal would come on, it lasted three hour and 54 minutes.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:157">
+                <text>The battery life lets me do work for long periods of time without even having to charge it.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="BATTERY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:159">
+                <text>The battery life is kinda short though.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:160">
+                <text>Good battery life.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:161">
+                <text>It is an extremely good quality battery.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:162">
+                <text>The sound quality is surprising very good, crisp, and clean.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="positive"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:162">
+                <text>The sound is also excellent.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:162">
+                <text>Sound is decent, but not stellar.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:163">
+                <text>External sound suppressor is really well done on this computer.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:164">
+                <text>The blurring of the background on the camera is very practical in a professional setting.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:165">
+                <text>The software suite given with the pc is really great.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:166">
+                <text>I always use free photo editing software.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#PRICE" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:167">
+                <text>All the software I was able to use works correctly on this pc.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:168">
+                <text>The photoshop extension that adds image recognition doesn't seem to work out yet.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:169">
+                <text>The file explorer is intuitive and clear.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:170">
+                <text>I spend hours on the built-in computer games.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#MISCELLANEOUS" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:171">
+                <text>The ergonomic redesign of the application really helps you get started.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:172">
+                <text>The ergonomic redesign of the application really helps you get started.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:173">
+                <text>The computer comes with a one-year limited warranty that protects you from hardware defects.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:174">
+                <text>The computer comes with a one-year limited warranty that protects you from hardware defects.</text>
+                <Opinions>
+                    <Opinion category="WARRANTY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:175">
+                <text>Acer uses remote hardware troubleshooting over the phone which works quite well.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:175">
+                <text>3 days that I try to reach technical support but no one answers me.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:176">
+                <text>The quality leaves something to be desired for this Apple software.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#QUALITY" polarity="negative"/>
                 </Opinions>
             </sentence>
         </sentences>
