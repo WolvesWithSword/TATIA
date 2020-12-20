@@ -36,8 +36,8 @@ ATTRIBUTES = ["GENERAL", "PRICE", "QUALITY", "DESIGN_FEATURES",
 "OPERATION_PERFORMANCE", "USABILITY", "PORTABILITY",
 "CONNECTIVITY", "MISCELLANEOUS"]
 
-POLARITY_DIC = {"negative" : 0, "positive":1, "neutral":2}
-POLARITY_DIC_ANSWER = {0 :"negative" , 1:"positive", 2:"neutral"}
+POLARITY_DIC = {"negative" : 0, "positive":1, "neutral":2, "mixed":3}
+POLARITY_DIC_ANSWER = {0 :"negative" , 1:"positive", 2:"neutral", 3:"mixed"}
 
 def allCategoryClass(entities,attributes):
     all_cat = []
@@ -69,14 +69,13 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
                 s_id = node_sentence.attrib.get("id")
                 s_text = node_sentence.find("text").text if node_sentence is not None else None
 
-                s_polarity = "neutral" #For case where no opinions is present.     
-
                 category_list = []
+                polarity_list =[] 
+
                 for node_opinions in node_sentence:
                     for node_opinion in node_opinions:
                         category_list.append(node_opinion.attrib.get("category"))
-
-                        s_polarity = node_opinion.attrib.get("polarity")#For now keep only the last.
+                        polarity_list.append(node_opinion.attrib.get("polarity"))
 
                 binary_category_tab = binaryCategoryTab(ALL_CATEGORIES,category_list)
 
@@ -84,7 +83,7 @@ def getDFFromXML(): #WORK ONLY FOR OUR XML TRAIN FILE
                 dictionary = {}
                 dictionary["id"] = s_id
                 dictionary["text"] = s_text
-                dictionary["polarity"] = POLARITY_DIC[s_polarity]#Convert into int
+                dictionary["polarity"] = getGeneralPolarity(polarity_list)#Convert into int
 
                 for i in range(len(ALL_CATEGORIES)):
                     dictionary[ALL_CATEGORIES[i]] = binary_category_tab[i]
@@ -228,6 +227,18 @@ def getNumberOfClass(y_tab):
     
     return nb
 
+def getGeneralPolarity(polarities):
+    currentPol = "neutral"#For case where no opinions is present.     
+
+    for polarity in polarities:
+        if(currentPol == "neutral"): #Positive or negative win on neutral
+            currentPol = polarity 
+
+        #negative and positive opinion create a mixed opinion
+        if((currentPol == "positive" and polarity == "negative") or (currentPol == "negative" and polarity == "positive")):
+            currentPol = "mixed"
+
+    return POLARITY_DIC[currentPol]
 
 df = getDFFromXML()
 print(df)
