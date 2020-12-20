@@ -1,0 +1,1854 @@
+Pour la categorie  CLASS_LAPTOP#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.87      0.88      0.87       547
+           1       0.68      0.66      0.67       214
+
+    accuracy                           0.82       761
+   macro avg       0.77      0.77      0.77       761
+weighted avg       0.81      0.82      0.82       761
+
+Pour la categorie  CLASS_LAPTOP#PRICE  :
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98       701
+           1       0.73      0.72      0.72        60
+
+    accuracy                           0.96       761
+   macro avg       0.85      0.85      0.85       761
+weighted avg       0.96      0.96      0.96       761
+
+Pour la categorie  CLASS_LAPTOP#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96       690
+           1       0.73      0.31      0.44        71
+
+    accuracy                           0.93       761
+   macro avg       0.83      0.65      0.70       761
+weighted avg       0.91      0.93      0.91       761
+
+Pour la categorie  CLASS_LAPTOP#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       0.91      0.99      0.94       670
+           1       0.72      0.25      0.37        91
+
+    accuracy                           0.90       761
+   macro avg       0.81      0.62      0.66       761
+weighted avg       0.88      0.90      0.88       761
+
+Pour la categorie  CLASS_LAPTOP#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       0.90      0.98      0.94       642
+           1       0.79      0.45      0.57       119
+
+    accuracy                           0.89       761
+   macro avg       0.85      0.71      0.76       761
+weighted avg       0.89      0.89      0.88       761
+
+Pour la categorie  CLASS_LAPTOP#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97       722
+           1       0.43      0.38      0.41        39
+
+    accuracy                           0.94       761
+   macro avg       0.70      0.68      0.69       761
+weighted avg       0.94      0.94      0.94       761
+
+Pour la categorie  CLASS_LAPTOP#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       753
+           1       0.25      0.25      0.25         8
+
+    accuracy                           0.98       761
+   macro avg       0.62      0.62      0.62       761
+weighted avg       0.98      0.98      0.98       761
+
+Pour la categorie  CLASS_LAPTOP#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       0.97      1.00      0.99       737
+           1       1.00      0.17      0.29        24
+
+    accuracy                           0.97       761
+   macro avg       0.99      0.58      0.64       761
+weighted avg       0.97      0.97      0.96       761
+
+Pour la categorie  CLASS_LAPTOP#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       0.93      0.98      0.95       697
+           1       0.46      0.17      0.25        64
+
+    accuracy                           0.91       761
+   macro avg       0.69      0.58      0.60       761
+weighted avg       0.89      0.91      0.89       761
+
+Pour la categorie  CLASS_DISPLAY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       748
+           1       0.80      0.31      0.44        13
+
+    accuracy                           0.99       761
+   macro avg       0.89      0.65      0.72       761
+weighted avg       0.98      0.99      0.98       761
+
+Pour la categorie  CLASS_DISPLAY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_DISPLAY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.97      0.98       739
+           1       0.45      0.82      0.58        22
+
+    accuracy                           0.97       761
+   macro avg       0.72      0.89      0.78       761
+weighted avg       0.98      0.97      0.97       761
+
+Pour la categorie  CLASS_DISPLAY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       752
+           1       0.29      0.67      0.40         9
+
+    accuracy                           0.98       761
+   macro avg       0.64      0.82      0.69       761
+weighted avg       0.99      0.98      0.98       761
+
+Pour la categorie  CLASS_DISPLAY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       757
+           1       0.00      0.00      0.00         4
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_DISPLAY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      0.99      1.00       761
+
+Pour la categorie  CLASS_DISPLAY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_DISPLAY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_DISPLAY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       756
+           1       0.30      0.60      0.40         5
+
+    accuracy                           0.99       761
+   macro avg       0.65      0.80      0.70       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_KEYBOARD#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       758
+           1       1.00      0.33      0.50         3
+
+    accuracy                           1.00       761
+   macro avg       1.00      0.67      0.75       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.98      0.99       750
+           1       0.37      0.64      0.47        11
+
+    accuracy                           0.98       761
+   macro avg       0.68      0.81      0.73       761
+weighted avg       0.99      0.98      0.98       761
+
+Pour la categorie  CLASS_KEYBOARD#OPERATION_PERFORMANCE  :
+C:\Users\Yohann\AppData\Local\Programs\Python\Python38\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       752
+           1       0.20      0.22      0.21         9
+
+    accuracy                           0.98       761
+   macro avg       0.60      0.61      0.60       761
+weighted avg       0.98      0.98      0.98       761
+
+Pour la categorie  CLASS_KEYBOARD#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_KEYBOARD#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOUSE#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       757
+           1       0.00      0.00      0.00         4
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_MOUSE#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOUSE#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      1.00       756
+           1       0.00      0.00      0.00         5
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_MOUSE#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       755
+           1       0.00      0.00      0.00         6
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.98      0.99      0.99       761
+
+Pour la categorie  CLASS_MOUSE#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       749
+           1       0.22      0.17      0.19        12
+
+    accuracy                           0.98       761
+   macro avg       0.60      0.58      0.59       761
+weighted avg       0.97      0.98      0.98       761
+
+Pour la categorie  CLASS_MOUSE#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       751
+           1       0.40      0.20      0.27        10
+
+    accuracy                           0.99       761
+   macro avg       0.69      0.60      0.63       761
+weighted avg       0.98      0.99      0.98       761
+
+Pour la categorie  CLASS_MOUSE#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOUSE#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOUSE#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MOTHERBOARD#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#QUALITY  :
+C:\Users\Yohann\AppData\Local\Programs\Python\Python38\lib\site-packages\sklearn\metrics\_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       749
+           1       1.00      0.08      0.15        12
+
+    accuracy                           0.99       761
+   macro avg       0.99      0.54      0.57       761
+weighted avg       0.99      0.99      0.98       761
+
+Pour la categorie  CLASS_CPU#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_CPU#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       759
+           1       0.14      0.50      0.22         2
+
+    accuracy                           0.99       761
+   macro avg       0.57      0.75      0.61       761
+weighted avg       1.00      0.99      0.99       761
+
+Pour la categorie  CLASS_FANS_COOLING#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.49      0.50       761
+weighted avg       1.00      0.99      0.99       761
+
+Pour la categorie  CLASS_FANS_COOLING#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_FANS_COOLING#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_PORTS#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       756
+           1       0.22      0.80      0.35         5
+
+    accuracy                           0.98       761
+   macro avg       0.61      0.89      0.67       761
+weighted avg       0.99      0.98      0.99       761
+
+Pour la categorie  CLASS_MEMORY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MEMORY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       760
+           1       0.20      1.00      0.33         1
+
+    accuracy                           0.99       761
+   macro avg       0.60      1.00      0.67       761
+weighted avg       1.00      0.99      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.97      0.99       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.97       761
+   macro avg       0.50      0.49      0.49       761
+weighted avg       1.00      0.97      0.99       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_POWER_SUPPLY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       758
+           1       0.00      0.00      0.00         3
+
+    accuracy                           0.98       761
+   macro avg       0.50      0.49      0.50       761
+weighted avg       0.99      0.98      0.99       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OPTICAL_DRIVES#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       758
+           1       1.00      0.33      0.50         3
+
+    accuracy                           1.00       761
+   macro avg       1.00      0.67      0.75       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       760
+           1       0.08      1.00      0.15         1
+
+    accuracy                           0.99       761
+   macro avg       0.54      0.99      0.57       761
+weighted avg       1.00      0.99      0.99       761
+
+Pour la categorie  CLASS_BATTERY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       745
+           1       0.62      0.81      0.70        16
+
+    accuracy                           0.99       761
+   macro avg       0.81      0.90      0.85       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_BATTERY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_BATTERY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_GRAPHICS#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARD_DISK#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       758
+           1       0.00      0.00      0.00         3
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       750
+           1       0.80      0.73      0.76        11
+
+    accuracy                           0.99       761
+   macro avg       0.90      0.86      0.88       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_MULTIMEDIA_DEVICES#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       759
+           1       0.00      0.00      0.00         2
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_HARDWARE#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       752
+           1       1.00      0.11      0.20         9
+
+    accuracy                           0.99       761
+   macro avg       0.99      0.56      0.60       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_SOFTWARE#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       759
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_SOFTWARE#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SOFTWARE#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       758
+           1       0.00      0.00      0.00         3
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      1.00      0.99       761
+
+Pour la categorie  CLASS_OS#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.98      1.00      0.99       743
+           1       0.00      0.00      0.00        18
+
+    accuracy                           0.98       761
+   macro avg       0.49      0.50      0.49       761
+weighted avg       0.95      0.98      0.96       761
+
+Pour la categorie  CLASS_OS#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OS#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OS#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OS#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       758
+           1       0.00      0.00      0.00         3
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       0.99      1.00      0.99       761
+
+Pour la categorie  CLASS_OS#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       752
+           1       0.33      0.11      0.17         9
+
+    accuracy                           0.99       761
+   macro avg       0.66      0.55      0.58       761
+weighted avg       0.98      0.99      0.98       761
+
+Pour la categorie  CLASS_OS#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OS#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_OS#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.49      0.50       761
+weighted avg       1.00      0.99      0.99       761
+
+Pour la categorie  CLASS_WARRANTY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_WARRANTY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       761
+   macro avg       0.50      0.49      0.49       761
+weighted avg       1.00      0.98      0.99       761
+
+Pour la categorie  CLASS_SHIPPING#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       760
+           1       0.00      0.00      0.00         1
+
+    accuracy                           0.99       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      0.99      0.99       761
+
+Pour la categorie  CLASS_SHIPPING#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SHIPPING#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       1.00      0.99      1.00       760
+           1       0.14      1.00      0.25         1
+
+    accuracy                           0.99       761
+   macro avg       0.57      1.00      0.62       761
+weighted avg       1.00      0.99      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99       756
+           1       0.17      0.20      0.18         5
+
+    accuracy                           0.99       761
+   macro avg       0.58      0.60      0.59       761
+weighted avg       0.99      0.99      0.99       761
+
+Pour la categorie  CLASS_SUPPORT#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_SUPPORT#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+           1       0.00      0.00      0.00         0
+
+    accuracy                           1.00       761
+   macro avg       0.50      0.50      0.50       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#GENERAL  :
+              precision    recall  f1-score   support
+
+           0       0.98      0.99      0.99       743
+           1       0.36      0.28      0.31        18
+
+    accuracy                           0.97       761
+   macro avg       0.67      0.63      0.65       761
+weighted avg       0.97      0.97      0.97       761
+
+Pour la categorie  CLASS_COMPANY#PRICE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#QUALITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#DESIGN_FEATURES  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#OPERATION_PERFORMANCE  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#USABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#PORTABILITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#CONNECTIVITY  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
+
+Pour la categorie  CLASS_COMPANY#MISCELLANEOUS  :
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       761
+
+    accuracy                           1.00       761
+   macro avg       1.00      1.00      1.00       761
+weighted avg       1.00      1.00      1.00       761
