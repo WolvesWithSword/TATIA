@@ -157,7 +157,7 @@ def CreateClassifieur(df):
             print('**Processing {} comments...**'.format(category))
             # Using pipeline for applying logistic regression and one vs rest classifier
             LogReg_pipeline = Pipeline([
-                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=100 , n_jobs=-1), n_jobs=-1)),
+                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000 , n_jobs=-1), n_jobs=-1)),
                 ])
 
             # Training logistic regression model on train data
