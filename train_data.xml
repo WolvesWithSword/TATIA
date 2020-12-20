@@ -12516,6 +12516,48 @@
                     <Opinion category="SHIPPING#PRICE" polarity="negative"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:202">
+                <text>I love this bios</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:203">
+                <text>the BIOS is really complete and easy to use</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:204">
+                <text>The motherboard automatically detects a new ram it's realy good.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:205">
+                <text>I can't change the frequency of the RAM because the bios sucks.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:206">
+                <text>The motherboard crash for nothing.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:207">
+                <text>I cant dual boot it's a realy bad motherboard.</text>
+                <Opinions>
+                    <Opinion category="MOTHERBOARD#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:208">
+                <text>The cpu quickly adapts its power according to the task.</text>
+                <Opinions>
+                    <Opinion category="CPU#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>
