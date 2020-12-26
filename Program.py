@@ -164,7 +164,7 @@ def CreateClassifieur(df):
             print('**Processing {} comments...**'.format(category))
             # Using pipeline for applying logistic regression and one vs rest classifier
             LogReg_pipeline = Pipeline([
-                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000, n_jobs=-1), n_jobs=-1)),
+                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=500, n_jobs=-1), n_jobs=-1)),
                 ])
 
             # Training logistic regression model on train data
@@ -200,7 +200,7 @@ def CreateClassifieur(df):
     #POLARITY
     print('**Processing polarity...**')
     LogReg_pipeline = Pipeline([
-        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000 ,n_jobs=-1), n_jobs=-1)),
+        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=500 ,n_jobs=-1), n_jobs=-1)),
     ])
     Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
     prediction = Classifieur['polarity'].predict(x_train)
@@ -257,7 +257,10 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     names=[]
     scores = []
     for category in ClassifyCategory:
-        print("Pour la categorie ",category," :")
+        if(sum(y_test[category]) == 0) : 
+            continue
+
+        print("Pour la categorie",category,":")
         prediction = Classifieur[category].predict(x_test)
 
         print(classification_report(y_test[category],prediction))
@@ -283,24 +286,33 @@ print(df)
 
 df['text'] = df.text.apply(lambda text : preProcessing(text))
 print(df)
+
+dfTest = getDFFromXML("test_data.xml")
+print(dfTest)
+dfTest['text'] = dfTest.text.apply(lambda text : preProcessing(text))
+print(dfTest)
+
 print("\n\n#################################################################################################\n\n")
 #classification(df)
 
 Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df)
 
-dfTest = getDFFromXML("test_data.xml")
 predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
-print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,ClassifyCategory,"What a great laptop for its built quality and performance.")
-print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Display is incredibly clear and fast.")
-print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,ClassifyCategory,"However, I would say the keyboard is extremely satisfying to type on and I sometimes even use it instead of my mechanical keyboard.")
-print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,ClassifyCategory,"This laptop will run the game on high settings, however the fans will be very loud and the CPU will be working very hard.")
-print("\n\n#################################################################################################\n\n")
-ClassifyString(Classifieur,vectorizer,ClassifyCategory,"As a stand alone laptop it is outstanding, especially at the $700 price point.")
 
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"W7 Pro with W8 pro upgrade is nice, but it frequently freezes for a few seconds here and there.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"It took some getting used to on the Widows 8.1, after being an XP user for many years.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Other than a hate of windows 8, she just loves it.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"So with this new order, all the upgrades and windows 8 really caught my eye and I got this for the long haul.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The Windows 8.1 used to boot in just 2s and that was freaking awesome.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"I liked the fact that it came with Windows 7, but also included Windows 8 to install later if I need it.")
+print("\n\n#################################################################################################\n\n")
+ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The 8.1 windows is a major disappointment.")
 
 
 

@@ -12823,13 +12823,13 @@
                 </Opinions>
             </sentence>
             <sentence id="198:236.7">
-                <text>I wish I had bought Windows 7 instead of Windows 8.1.</text>
+                <text>I wish I had bought W7 instead of W8.1.</text>
                 <Opinions>
                     <Opinion category="OS#GENERAL" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:236.8">
-                <text>Windows 8.1 is a lesser evil than Windows 8.</text>
+                <text>W8.1 is a lesser evil than W8.</text>
                 <Opinions>
                     <Opinion category="OS#GENERAL" polarity="neutral"/>
                 </Opinions>
