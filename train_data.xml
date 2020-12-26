@@ -2848,7 +2848,7 @@
                 </Opinions>
             </sentence>
             <sentence id="16:2">
-                <text>I Contacted HP  about this situation and was given excuses, without results.</text>
+                <text>I Contacted DELL about this situation and was given excuses, without results.</text>
                 <Opinions>
                     <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
                 </Opinions>
@@ -6931,7 +6931,7 @@
                 </Opinions>
             </sentence>
             <sentence id="71:1">
-                <text>In those three years, I've had a couple of minor problems and both were resolved by Apple quickly and easily.</text>
+                <text>In those three years, I've had a couple of minor problems and both were resolved by DELL quickly and easily.</text>
                 <Opinions>
                     <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
                 </Opinions>
@@ -7004,7 +7004,7 @@
                 </Opinions>
             </sentence>
             <sentence id="50:4">
-                <text>HP is more interested in selling extended warranties (which cost more than the netbook new) then they are in helping or fixing.</text>
+                <text>DELL is more interested in selling extended warranties (which cost more than the netbook new) then they are in helping or fixing.</text>
                 <Opinions>
                     <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
                     <Opinion category="WARRANTY#PRICE" polarity="negative"/>
@@ -7468,7 +7468,7 @@
                 </Opinions>
             </sentence>
             <sentence id="152:3">
-                <text>I actually contact Toshiba before I started having problem and was given run around after I supplied serial number in order to delay me sending in laptop until after warrenty expired.</text>
+                <text>I actually contact DELL before I started having problem and was given run around after I supplied serial number in order to delay me sending in laptop until after warrenty expired.</text>
                 <Opinions>
                     <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
                 </Opinions>
@@ -12556,6 +12556,324 @@
                 <text>The cpu quickly adapts its power according to the task.</text>
                 <Opinions>
                     <Opinion category="CPU#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:209">
+                <text>Sometimes the "j" key on the keyboard gets stuck and you can't press it anymore.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:210">
+                <text>The mouse click is a little too loud for my taste.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:210.1">
+                <text>The touchpad is just too loud.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:210.2">
+                <text>This laptop won't get five stars because of its overly loud touchpad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:211">
+                <text>I wish the keyboard was smaller my palm wouldn't stop touching it unintentionally.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:212">
+                <text>The touchscreen keyboard is too large and we keep making unintentional clicks.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:213">
+                <text>Even a 4 GB RAM is not sufficient for correct use.</text>
+                <Opinions>
+                    <Opinion category="MEMORY#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:214">
+                <text>The power cord broke because the plastic is of poor quality.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:215">
+                <text>My DVD player no longer opens.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:216">
+                <text>The disc player no longer works, I put a DVD in it, it broke into a thousand pieces.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="negative"/>
+                    <Opinion category="OPTICAL_DRIVES#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:217">
+                <text>Cannot play a CD with the disc drive.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:218">
+                <text>the disc drive keeps opening for no reason.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:219">
+                <text>the cd player is of very good quality and function very well.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:220">
+                <text>The disk drive does not want to open, already that it was not working ...</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="negative"/>
+                    <Opinion category="OPTICAL_DRIVES#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:221">
+                <text>The pc is cool with a good battery.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:221">
+                <text>The battery could have been better.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:222">
+                <text>I have a lot of problem with this battery.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:223">
+                <text>I have a lot of problem with this battery.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:224">
+                <text>The battery is cool and solid.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:225">
+                <text>The poor battery life brings many other problems.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="BATTERY#MISCELLANEOUS" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:226">
+                <text>The battery is super strong, I dropped it but it is intact.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:227">
+                <text>The charger is really stylish with the neon lights all around.</text>
+                <Opinions>
+                    <Opinion category="POWER_SUPPLY#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:228">
+                <text>Do not deal with DELL support, it is a nightmare.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:229">
+                <text>My experience with DELL support was awful.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:229.1">
+                <text>It was horrible to deal with Toshiba support team.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:230">
+                <text>Very glad it was shipped on time.</text>
+                <Opinions>
+                    <Opinion category="SHIPPING#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:231">
+                <text>I hate window 7 but even more window 8.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:232">
+                <text>I had a bad install with Windows 7 online so I took the PC back to factory specs for clean install of 8.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:233">
+                <text>To be serious here, this is the best version of windows I've ever used.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:234">
+                <text>Window 8 is very powerful, its fast, and I've never had this version of windows crash on me.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="positive"/>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:235">
+                <text>It seems a lot of the hate for Windows 8 is based on the start screen which is not very ergonomic.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236">
+                <text>Yes Microsoft made some mistakes with Windows 8, but it is hardly unusable.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:237">
+                <text>Some of the behavior of Windows 8 is inconsistent as well.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:238">
+                <text>If there is anything I have against Windows, it's the large amounts of updates I encounter when I sign into Windows. </text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:239">
+                <text>This of Windows software is functionally awkward at best.</text>
+                <Opinions>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:240">
+                <text>But hate the Windows 8.1 user interface.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:241">
+                <text>The return of our computer went well and the refund was prompt.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.1">
+                <text>Windows is great.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.2">
+                <text>Overall I didn't like Windows 8, but I upgraded to Windows 10, which I like much better.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.3">
+                <text>The only gripe I have with windows 8.1 is the interface. </text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.4">
+                <text>I'm not a very big fan of it, but windows 10 is coming out soon so I shouldn't be complaining.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.5">
+                <text>Window 8.1 is not a stable program, i doesn't run well, so I quickly downloaded Window 10. </text>
+                <Opinions>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.6">
+                <text>Must admit that Windows 8.1 works well on older machine and hardware.</text>
+                <Opinions>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.7">
+                <text>I wish I had bought Windows 7 instead of Windows 8.1.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.8">
+                <text>Windows 8.1 is a lesser evil than Windows 8.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.9">
+                <text>It takes forever to get used to Windows 7, but hang in there once you do it is pretty easy.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:236.10">
+                <text>Window works Nice after I finally got used to it.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:237">
+                <text>I did NOT like Windows 8.1.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:238">
+                <text>Using it for three weeks, Windows 8 is a bit disappointing compared to past versions.</text>
+                <Opinions>
+                    <Opinion category="OS#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:239">
+                <text>This part of Windows 8.1 is quite nice and run well.</text>
+                <Opinions>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:240">
+                <text>I really like the rest of what Windows 8 brings to the table that is a bit 'new and improved'.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:241">
+                <text>Windows 8 is horrible - the user interface is a lame fusion of touch screen and non-touch screen.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
                 </Opinions>
             </sentence>
         </sentences>
