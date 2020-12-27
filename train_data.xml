@@ -13421,6 +13421,33 @@
                     <Opinion category="LAPTOP#USABILITY" polarity="positive"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:325">
+                <text>The touchpad is so big that i always have to type cautiously.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:326">
+                <text>A smaller touchpad would make life easier and I have to click multiple times for it to work.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:327">
+                <text>The Trackpad is working fine but I'm not using it, it is too sensitive.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:327">
+                <text>The touchpad is the worst touchpad to date use a mouse or don't buy this.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>
