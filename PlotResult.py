@@ -34,7 +34,7 @@ def plotTrueData(names, scores, support):
     x = np.arange(len(names))  # the label locations
     width = 0.4  # the width of the bars
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(20, 10))
     rects1 = ax.bar(x - width/2, scoresCut, width, color='b', label='Precision')
     ax2 = ax.twinx()
     rects2 = ax2.bar(x + width/2, support, width, color='g', label='Support')
@@ -58,6 +58,8 @@ def plotTrueData(names, scores, support):
     fig.tight_layout()
 
     plt.subplots_adjust(left=0.05, bottom=0.45, right=0.86, top=0.95, wspace=0.2, hspace=0.2)
+    plt.savefig("true_data_plot.png")
+
     plt.show()
 
 def plotData(names, scores, f1score):
@@ -68,7 +70,7 @@ def plotData(names, scores, f1score):
     x = np.arange(len(names))  # the label locations
     width = 0.4  # the width of the bars
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(20, 10))
     rects1 = ax.bar(x - width/2, scoresCut, width, color='b', label='precision')
     ax2 = ax.twinx()
     rects2 = ax2.bar(x + width/2, f1Cut, width, color='g', label='f1-score')
@@ -92,4 +94,7 @@ def plotData(names, scores, f1score):
     fig.tight_layout()
 
     plt.subplots_adjust(left=0.05, bottom=0.45, right=0.86, top=0.95, wspace=0.2, hspace=0.2)
+
+    plt.savefig("data_plot.png")
+
     plt.show()
