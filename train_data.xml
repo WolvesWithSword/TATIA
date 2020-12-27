@@ -12876,6 +12876,551 @@
                     <Opinion category="OS#USABILITY" polarity="negative"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:242">
+                <text>The battery is really not great.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:243">
+                <text>Its got decent battery.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:244">
+                <text>Battery life is decent.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#OPERATION_PERFORMANCE" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:245">
+                <text>Battery works better than expect still (4-5 hours on battery saver).</text>
+                <Opinions>
+                    <Opinion category="BATTERY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:246">
+                <text>The battery is ok.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:247">
+                <text>Truly amazing HD graphics.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:248">
+                <text>Graphic quality that will take your breath away.</text>
+                <Opinions>
+                    <Opinion category="GRAPHICS#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:249">
+                <text>Windows run with difficulties.</text>
+                <Opinions>
+                    <Opinion category="OS#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:250">
+                <text>The speakers are amazing, but not this is not the case of the webcam.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:251">
+                <text>The speakers are muddy and weak.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:252">
+                <text>The camera and speakers are subpar, and the unit is mostly plastic.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:253">
+                <text>Bass sound is nonexistent.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:254">
+                <text>the built-in mic doesnt work and is unusable</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:255">
+                <text>The speakers sound fantastic.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:256">
+                <text>I recently had a black screen.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:257">
+                <text>The touch screen works correctly and its response time is ok.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:258">
+                <text>The screen works fine.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:259">
+                <text>I can play minecraft with full settings.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:260">
+                <text>The CD player is made of plastic, I broke it after a week.</text>
+                <Opinions>
+                    <Opinion category="OPTICAL_DRIVES#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:261">
+                <text>Apple always disappoints me as much.</text>
+                <Opinions>
+                    <Opinion category="COMPANY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:262">
+                <text>I wouldn't buy anything from Lenovo anymore it's over.</text>
+                <Opinions>
+                    <Opinion category="COMPANY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:263">
+                <text>Do not buy from Acer, they are incompetent.</text>
+                <Opinions>
+                    <Opinion category="COMPANY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:264">
+                <text>Acer knows how to make a good computer.</text>
+                <Opinions>
+                    <Opinion category="COMPANY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:265">
+                <text>I have some problems with the pc battery.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:266">
+                <text>The battery could be better, but still it works well.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:267">
+                <text>The software preloaded on the computer bothers me.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:268">
+                <text>Facial recognition is awesome.</text>
+                <Opinions>
+                    <Opinion category="SOFTWARE#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:269">
+                <text>An easy-to-use large screen.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="LAPTOP#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:270">
+                <text>The screen is wide, it's great.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:271">
+                <text>Big screen and super good quality.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#DESIGN_FEATURES" polarity="positive"/>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:272">
+                <text>A screen too large for my taste.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:273">
+                <text>The screen is wide and super well sized.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:274">
+                <text>The keyboard on this laptop is excellent.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:275">
+                <text>The 'W' key on the keyboard is held down.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:276">
+                <text>It's seems the touchpad is unresponsive.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:277">
+                <text>The touchpad doesn't work at all it is unresponsive..</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:278">
+                <text>The touchpad is too sensitive, and sometimes it just unrespondable at all.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:279">
+                <text>The touchpad works correctly.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:280">
+                <text>It takes a while to get used to window 8.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:281">
+                <text>I am getting used to windows.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:282">
+                <text>Using windows is painful.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:283">
+                <text>I have changed my OS I have to get used to it.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:284">
+                <text>It will take a little time for me to use window properly.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:285">
+                <text>Plenty of RAM, good to know.</text>
+                <Opinions>
+                    <Opinion category="MEMORY#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:286">
+                <text>The main drawback is the time it takes to adapt to the touchpad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:287">
+                <text>A smaller touchpad would have been a real plus for use.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:288">
+                <text>The click button on the touchpad is really badly located.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:289">
+                <text>The screen broke after a week.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:290">
+                <text>The resolution is gorgeous and provides excellent clarity.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:291">
+                <text>The picture quality is a bit poor and the display is unbearable.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:292">
+                <text>The display is clear,bright and has good quality.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:293">
+                <text>The color accuracy is not great but at least the screen is bright.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:138.1">
+                <text>The keyboard looks good.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:138.2">
+                <text>The keyboard is fantastic.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:138.3">
+                <text>The keyboard is awful</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:138.4">
+                <text>The keyboard is really not up to par.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:294">
+                <text>The speakers are too poor quality for proper use.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#QUALITY" polarity="negative"/>
+                    <Opinion category="MULTIMEDIA_DEVICES#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:295">
+                <text>The only (very minor) issue I have is the size of the touch pad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:296">
+                <text>I would rather have a small touch pad and a slightly larger keyboard.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:297">
+                <text>Also the touchpad (which is pretty good overall) could be bigger.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="positive"/>
+                    <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:298">
+                <text>The sound not working properly and now my touchpad is only working 80 percent of the time.</text>
+                <Opinions>
+                    <Opinion category="MULTIMEDIA_DEVICES#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:299">
+                <text>Only complaint is the mouse pad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:300">
+                <text>Seems nice at first but one day the mouse pad stopped responding.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:301">
+                <text>The cursor for the mouse would drag itself around the screen, completely oblivious to the trackpad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:302">
+                <text>When using the mousepad, the mouse will in fact jump and or not click when you click and does not move smoothly, oftentimes won't move at all.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:303">
+                <text>The mouse will randomly teleport across screen or wont move when using trackpad.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:304">
+                <text>I NOT recommand if you plan to type a lot and frequently plan to use the mousepad!!!!!!!</text>
+                <Opinions>
+                    <Opinion category="MOUSE#GENERAL" polarity="negative"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:305">
+                <text>Touchpad is Extremely unresponsive.</text>
+                <Opinions>
+                    <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:306">
+                <text>Overall very good, but don't like keyboard.</text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:307">
+                <text>The keyboard layout is very awkward,they shifted everything left and off center in order to add a number pad on the right.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:308">
+                <text>But was surprised and disappointed at the keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:309">
+                <text>Grey numerics on silver keys and no backlighting makes the keyboard extremely difficult to see.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="negative"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:310">
+                <text>Liked everything but the keyboard. </text>
+                <Opinions>
+                    <Opinion category="LAPTOP#GENERAL" polarity="positive"/>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:311">
+                <text>The keyboard is responsive, has a great tactile feel, and is well laid out.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#OPERATION_PERFORMANCE" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:312">
+                <text>The keyboard spacing and feel are really good.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:313">
+                <text>It will be easy to type extended work on this keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:314">
+                <text>The only downside really is the keyboard.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:315">
+                <text>The keyboard is good and easy to touch type on.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:316">
+                <text>The picture is sharp and clear and the keyboard is easy to use.</text>
+                <Opinions>
+                    <Opinion category="DISPLAY#QUALITY" polarity="positive"/>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:317">
+                <text>The keyboard is a nice size and I love having the ten key on the side.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:318">
+                <text>Nice feel to the keyboard and track pad.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#USABILITY" polarity="positive"/>
+                    <Opinion category="MOUSE#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:319">
+                <text>The keyboard and trackpad are decent.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="neutral"/>
+                    <Opinion category="MOUSE#GENERAL" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:320">
+                <text>Keyboard is excellent for the size.</text>
+                <Opinions>
+                    <Opinion category="KEYBOARD#GENERAL" polarity="positive"/>
+                    <Opinion category="KEYBOARD#DESIGN_FEATURES" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:321">
+                <text>The battery is outstanding.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:322">
+                <text>Battery usage is pretty bad for the consumer.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:323">
+                <text>I have to wait for the battery to run out.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#MISCELLANEOUS" polarity="neutral"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:324">
+                <text>Great battery and easy to use.</text>
+                <Opinions>
+                    <Opinion category="BATTERY#GENERAL" polarity="positive"/>
+                    <Opinion category="LAPTOP#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
         </sentences>
     </Review>
 </Reviews>

@@ -1128,7 +1128,7 @@
     <Review rid="B00KMRGF28_386_A1QTE23J88FVZX">
         <sentences>
             <sentence id="B00KMRGF28_386_A1QTE23J88FVZX:0">
-                <text>THE 8.1.WAY DIFFERENT THAN MY OTHER COMPUTER SO WE HAVE TO GET USE  TO IT.</text>
+                <text>THE 8.1.WAY DIFFERENT THAN MY OTHER COMPUTER SO WE HAVE TO GET USE TO IT.</text>
                 <Opinions>
                     <Opinion category="OS#USABILITY" polarity="neutral"/>
                 </Opinions>
@@ -4075,7 +4075,7 @@
                 </Opinions>
             </sentence>
             <sentence id="B00KMRGF28_128_A1BJWKIOJWBL7N:1">
-                <text>It was not responsive at all to touch.</text>
+                <text>The mousepad was not responsive at all to touch.</text>
                 <Opinions>
                     <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
@@ -4278,7 +4278,7 @@
                 </Opinions>
             </sentence>
             <sentence id="B00D7Z84OY_3_A3Q8WSIN4LWVLK:8">
-                <text>But the  touchpad is soooooooooo big that whenever I am typing, my palm touches some part of it and then the cursor goes somewhere else and it's really annoying.</text>
+                <text>But the touchpad is soooooooooo big that whenever I am typing, my palm touches some part of it and then the cursor goes somewhere else and it's really annoying.</text>
                 <Opinions>
                     <Opinion category="MOUSE#DESIGN_FEATURES" polarity="negative"/>
                     <Opinion category="MOUSE#USABILITY" polarity="negative"/>
@@ -4449,7 +4449,7 @@
                 </Opinions>
             </sentence>
             <sentence id="B00FU83YWS_260_A2YQ3TFBY1MASP:7">
-                <text>Today, it hasn't worked at all more than it has.</text>
+                <text>Today, touchpad hasn't worked at all more than it has.</text>
                 <Opinions>
                     <Opinion category="MOUSE#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
