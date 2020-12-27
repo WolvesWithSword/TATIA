@@ -64,6 +64,9 @@ def CreateClassifieur(df,allCategory):
 
     return Classifieur,vectorizer,ClassifyCategory
 
+def orArray(L1,L2):
+    for i in range(len(L1)):
+        L1[i] = L1[i] | L2[i]
 
 def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     dfTest = dfTest.drop(labels = ['id'], axis=1) #No Use
@@ -77,16 +80,29 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     scoresTrue = []
     support = []
     f1score = []
+    predictEntity = dict()
+    realEntity = dict()
     for category in ClassifyCategory:
-        if(sum(y_test[category]) == 0) : 
-            continue
+        
+        
 
         print("Pour la categorie",category,":")
         prediction = Classifieur[category].predict(x_test)
 
+        if(sum(y_test[category]) == 0 and sum(prediction)==0) : 
+            continue
+
         print(classification_report(y_test[category],prediction,zero_division=1))
         
         #DATA FOR PLOT
+        entity = category.split("#")[0]
+        if(not entity in predictEntity):
+            predictEntity[entity] = prediction[:]
+            realEntity[entity] = y_test[category][:]
+        else:
+            orArray(predictEntity[entity],prediction)
+            orArray(realEntity[entity],y_test[category])
+
         report = classification_report(y_test[category],prediction,zero_division=1, output_dict=True)
         support.append(report['1']['support'])
         scoresTrue.append(report['1']['precision'])
@@ -102,6 +118,7 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
 
     plotTrueData(names,scoresTrue,support)
     plotData(names, scores, f1score)
+    plotDataEntity(predictEntity,realEntity)
 
 
 
