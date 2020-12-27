@@ -13448,6 +13448,106 @@
                     <Opinion category="MOUSE#GENERAL" polarity="positive"/>
                 </Opinions>
             </sentence>
+            <sentence id="198:328">
+                <text>I love windows 10, the interface is realy intuitive</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:329">
+                <text>Linux has the best interface, it is easy to use</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:330">
+                <text>I hate Linux interface i can't easily add directorie</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:331">
+                <text>Mac OS has a good learning curve and it's easy to navigate</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:332">
+                <text>It's hard to custom my interface with mac os</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:332">
+                <text>is easy to navigate which this OS</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:333">
+                <text>Took a long time to use Windows 8 after using Mac for many years</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:334">
+                <text>Windows 8 not support my application</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:335">
+                <text>The home page is easy to navigate</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:336">
+                <text>I love this Windows navigation.</text>
+                <Opinions>
+                    <Opinion category="OS#USABILITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+
+            <sentence id="198:337">
+                <text>I decided to send it back, I was reimbursed in one day.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:338">
+                <text>In no time, we'll solve my problem.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:339">
+                <text>Non-existent support.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:340">
+                <text>I had to call support many times without ever getting help.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:341">
+                <text>No help from support in case of problem.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:342">
+                <text>After canceling my order, I was refund back into in less time.</text>
+                <Opinions>
+                    <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            
+
+
         </sentences>
     </Review>
 </Reviews>
