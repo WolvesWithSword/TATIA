@@ -64,19 +64,8 @@ def main():
     
 
     # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"W7 Pro with W8 pro upgrade is nice, but it frequently freezes for a few seconds here and there.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"It took some getting used to on the Widows 8.1, after being an XP user for many years.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Other than a hate of windows 8, she just loves it.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"So with this new order, all the upgrades and windows 8 really caught my eye and I got this for the long haul.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The Windows 8.1 used to boot in just 2s and that was freaking awesome.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"I liked the fact that it came with Windows 7, but also included Windows 8 to install later if I need it.")
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The 8.1 windows is a major disappointment.")
+    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery could be better but it has robust processor and plenty of RAM so that is a trade off I suppose.")
+
 
 
 
