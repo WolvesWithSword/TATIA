@@ -11,7 +11,7 @@ def autolabel(ax,rects):
                 xy=(rect.get_x() + rect.get_width() / 2, height),
                 xytext=(0, 3),  # 3 points vertical offset
                 textcoords="offset points",
-                ha='left', va='bottom', fontsize=6, rotation=90)
+                ha='center', va='bottom', fontsize=6, rotation=90)
 
 def truncate(number, decimals=0):
     """
