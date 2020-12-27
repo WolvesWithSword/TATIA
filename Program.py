@@ -5,6 +5,7 @@ import numpy as np
 import random 
 import json
 from os import path
+import math
 
 #sklearn
 from sklearn.model_selection import train_test_split
@@ -19,6 +20,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 from imblearn.over_sampling import ADASYN
 
+
 # nltk
 from nltk import word_tokenize
 from nltk.corpus import stopwords
@@ -26,6 +28,7 @@ from nltk.stem import WordNetLemmatizer
 
 #graphique
 import matplotlib.pyplot as plt
+import matplotlib
 
 FILE_RANDOM_STATE = "randomState.json"
 
@@ -261,6 +264,7 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
 
     names=[]
     scores = []
+    support = []
     for category in ClassifyCategory:
         if(sum(y_test[category]) == 0) : 
             continue
@@ -269,19 +273,74 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
         prediction = Classifieur[category].predict(x_test)
 
         print(classification_report(y_test[category],prediction,zero_division=1))
-        scores.append(np.mean(precision_score(y_test[category],prediction,average=None)))
+        report = classification_report(y_test[category],prediction,zero_division=1, output_dict=True)
+        support.append(report['1']['support'])
+        scores.append(report['1']['precision'])
+        #scores.append(np.mean(precision_score(y_test[category],prediction,average=None)))
         names.append(category)
 
     #polarity classification
+    print("Pour la polarité :")
     predictionPol = Classifieur['polarity'].predict(x_test)
     print(classification_report(y_test['polarity'],predictionPol,zero_division=1))
 
-    plt.bar(names, scores)
-    plt.xticks(rotation="vertical")
+    plotData(names,scores,support)
+
+def autolabel(ax,rects):
+    #Attach a text label above each bar in *rects*, displaying its height.
+    for rect in rects: 
+        height = rect.get_height()
+        ax.annotate('{}'.format(height),
+                xy=(rect.get_x() + rect.get_width() / 2, height),
+                xytext=(0, 3),  # 3 points vertical offset
+                textcoords="offset points",
+                ha='center', va='bottom', fontsize=8)
+
+def truncate(number, decimals=0):
+    """
+    Returns a value truncated to a specific number of decimal places.
+    """
+    if not isinstance(decimals, int):
+        raise TypeError("decimal places must be an integer.")
+    elif decimals < 0:
+        raise ValueError("decimal places has to be 0 or more.")
+    elif decimals == 0:
+        return math.trunc(number)
+
+    factor = 10.0 ** decimals
+    return math.trunc(number * factor) / factor
+
+def plotData(names, scores, support):
+
+    scoresCut = [truncate(scr,2) for scr in scores]
+
+    x = np.arange(len(names))  # the label locations
+    width = 0.4  # the width of the bars
+
+    fig, ax = plt.subplots()
+    rects1 = ax.bar(x - width/2, scoresCut, width, color='b', label='Precision')
+    ax2 = ax.twinx()
+    rects2 = ax2.bar(x + width/2, support, width, color='g', label='Support')
+
+    # Add some text for labels, title and custom x-axis tick labels, etc.
+    ax.set_ylabel('Precision (%)')
+    ax2.set_ylabel('Number of support')
+    ax.set_title('Precision for each categories')
+    ax.set_xticks(x)
+    ax.set_xticklabels(names)
+    
+    plt.legend(handles=[rects1, rects2], title='Legend', bbox_to_anchor=(1.05, 1), loc='upper left')
+
+    #label rotation
+    for tick in ax.get_xticklabels():
+        tick.set_rotation(90)
+
+    autolabel(ax,rects1)
+    autolabel(ax2,rects2)
+
+    fig.tight_layout()
+
     plt.show()
-
-
-
 
 
 
@@ -415,7 +474,6 @@ def CreateClassifieurWithRandomState(df,randomStateDict):
 
     return Classifieur,vectorizer,ClassifyCategory
 
-
 def computeRandomStateArray(df):
     if(path.exists(FILE_RANDOM_STATE)):
         f = open(FILE_RANDOM_STATE, "r")
@@ -448,16 +506,20 @@ def main():
     print(dfTest)
 
     print("\n\n#################################################################################################\n\n")
-    #classification(df)
-    # Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df)
-    #predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
+    #Classification(df)
+    Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df)
+    predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
 
+
+    print("\n\n#################################################################################################\n\n")
+    '''
     if(path.exists(FILE_RANDOM_STATE)):
         f = open(FILE_RANDOM_STATE, "r")
         randomStateDict=json.load(f)
 
     Classifieur,vectorizer,ClassifyCategory = CreateClassifieurWithRandomState(df,randomStateDict)
     predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
+    '''
 
     # print("\n\n#################################################################################################\n\n")
     # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"W7 Pro with W8 pro upgrade is nice, but it frequently freezes for a few seconds here and there.")
