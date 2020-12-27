@@ -1,0 +1,112 @@
+\documentclass[12pt ,a4paper ]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}      % caractères français
+\usepackage[francais]{babel}  %langue
+\usepackage[left=2.3cm,right=2.5cm,bottom=2.5cm,top=2.3cm]{geometry}   % marges
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{graphicx}         % images
+\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{titlesec}
+
+
+                           
+\begin{document}
+	\begin{titlepage}
+		
+		\vspace{0.5cm}
+		\begin{center}		
+			{\Large  Master 1 Informatique}
+		\end{center}
+		\vspace{1cm}
+		
+		\rule{1\linewidth}{1.1pt}\newline   %regle
+		\begin{center}
+			 {\Huge \textbf{Rapport de Projet : Traitement Automatique du Texte en IA}}
+		\end{center}
+		\rule{1\linewidth}{1.1pt} \\
+		
+		\begin{center}
+		\begin{LARGE}
+		\textbf{Sujet :} \\\vspace{0.6cm} Identification des opinions exprimées dans les avis et commentaires d’un ordinateur.
+		\end{LARGE}
+		\end{center}
+		
+		\vspace{0.5cm}
+		\begin{center}	
+				\begin{Large}
+				Yann MARTIN D'ESCRIENNE \\ 
+				Yohann TOGNETTI \\ 
+				\end{Large}
+		\end{center}
+		\vspace{6cm}
+		
+		\begin{center}
+			{\large « Année universitaire 2020 - 2021 »}
+		\end{center}
+		
+
+\end{titlepage}
+
+\newpage
+\tableofcontents 
+				
+\newpage
+
+
+\begin{multicols}{2} 
+\section{Introduction}
+
+	\subsection{Présentation générale du projet}
+		Dans le cadre de notre cours de Traitement automatique du texte en IA, il nous a été demandé d'effectuer un projet de notre choix impliquant une intelligence artificielle travaillant sur des données textuelles. La restriction sur le sujet se limitant à l'existence d'un jeu de données conséquent.
+	
+	\subsection{Choix du sujet}
+		Notre choix de sujet fut \textbf{l'identification des opinions exprimées dans les avis et commentaires d’un ordinateur.} Plus précisément, comment retrouver parmi un ensemble de commentaires les parties de l'ordinateur visées,  sur quels aspects et quel en est l'avis général qui en ressort. 
+		
+\subsection{Description des tâches}
+Ce sujet est fortement inspiré du "SemEval-2015 Task 12" sur la partie "Aspect Based Sentiment Analysis (ABSA): Laptop Reviews" et partage donc le même objectifs avec des simplifications. Les différentes entités et catégories qui vont suivre provienne également des annotations du sujet de SemEval. Chacun des commentaires est fragmentés phrase par phrase afin de faciliter le travail de l'IA. 
+		
+\paragraph{}
+\noindent Tout d'abord il s'agit de retrouver dans la phrase le(s) entité(s) ciblée. Elles peuvent être l'ordinateur comme un tout, ses parties physique (clavier, écran..) , des logiciels ou OS (Windows, navigateur, jeux...) ou bien même une compagnie et ses services. (DELL, Apple, le support technique, la livraison..). Rien n'interdit d'avoir plusieurs entités dans la même phrase.\\
+		
+\noindent Voici la liste des entités possible : 
+\begin{itemize}
+\item DISPLAY (=moniteur, écran), 
+\item CPU (=processeur), 
+\item MOTHERBOARD (=carte mère),
+\item HARDDISC (=disque dur), 
+\item MEMORY (=mémoire, RAM), 
+\item BATTERY (=batterie), 
+\item POWER\_SUPPLY (=chargeur, unité de chargement, cordon d'alimentation, (power) adapteur),
+\item KEYBOARD (=touche, clavier, pavé numérique), 
+\item MOUSE (=sourie, pavé tactile)
+\item FANS\_COOLING (=ventilateur, système de refroidissement), 
+\item OPTICAL\_DRIVES (=lecteur CD, DVD ou Blue-ray),
+\item PORTS (=USB, HDMI, VGA, lecteur de carte),
+\item GRAPHICS (=carte graphique, carte video),
+\item MULTIMEDIA\_DEVICES (=son, audio, microphone, webcam, haut-parleur, casque, écouteurs).
+\end{itemize}				
+
+\paragraph{}
+\noindent Une fois obtenue il faut également trouver sur quelle(s) catégorie(s) de l'entité le commentaire porte. Cela peut être un aspect général , sa prise en main, ses performances, son design et ses fonctionnalités, etc... Là encore, rien n'interdit d'aborder plusieurs catégorie pour la même entité au sein d'une même phrase.\\
+
+\noindent Voici la liste des catégories possible : 
+\begin{itemize}
+\item GENERAL, 
+\item PRICE (=prix), 
+\item QUALITY (=qualité), 
+\item DESIGN\_FEATURES (=design et fonctionnalités),
+\item OPERATION\_PERFORMANCE, 
+\item USABILITY (=ergonomie, prise en main), 
+\item PORTABILITY (=portabilité),
+\item CONNECTIVITY (=connectivité), 
+\item MISCELLANEOUS (=divers).
+\end{itemize}	
+
+\paragraph{} 
+\noindent L'entité E et la catégorie C qui s'y rapporte forme ainsi un couple E\#C. Il est à noter la possibilité qu'aucun couple E\#C se rapporte à une phrase d'un commentaire.
+
+\end{multicols}
+\end{document}
