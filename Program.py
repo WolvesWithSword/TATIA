@@ -4,7 +4,6 @@ from Classify import *
 from PreProcessing import *
 from PlotResult import *
 
-
 import string
 
 import numpy as np
@@ -44,13 +43,13 @@ def main():
 
     print("\n\n#################################################################################################\n\n")
     #Classification(df)
-    # Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df,ALL_CATEGORIES)
-    # predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
+    Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df,ALL_CATEGORIES)
+    predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
 
 
     print("\n\n#################################################################################################\n\n")
 
-
+    '''
     if(path.exists(FILE_RANDOM_STATE)):
         f = open(FILE_RANDOM_STATE, "r")
         randomStateDict=json.load(f)
@@ -61,6 +60,7 @@ def main():
 
     Classifieur,vectorizer,ClassifyCategory = CreateClassifieurWithRandomState(df,randomStateDict)
     predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
+    '''
     
 
     # print("\n\n#################################################################################################\n\n")

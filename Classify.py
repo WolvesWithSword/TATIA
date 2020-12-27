@@ -29,7 +29,6 @@ def CreateClassifieur(df,allCategory):
    
     for category in allCategory:
 
-        
         #INCREASE POPULATION 
         ADA = ADASYN(sampling_strategy='auto',n_neighbors = 4)
     
@@ -39,62 +38,31 @@ def CreateClassifieur(df,allCategory):
             ClassifyCategory.append(category)
         else :
             continue
-        
-        x_resample, y_resample = x_train,y_train[category]
 
-        correct = False
-        bestClf = None
-        bestClfPrecision = 0
-        nbExec = 0
-        while(not correct):
-            print('**Processing {} comments...**'.format(category))
-            # Using pipeline for applying logistic regression and one vs rest classifier
-            LogReg_pipeline = Pipeline([
-                    ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=500, n_jobs=-1), n_jobs=-1)),
-                ])
+        print('**Processing {} comments...**'.format(category))
+        # Using pipeline for applying logistic regression and one vs rest classifier
+        LogReg_pipeline = Pipeline([
+                ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000, n_jobs=-1), n_jobs=-1)),
+            ])
 
-            # Training logistic regression model on train data
-            currentClf = LogReg_pipeline.fit(x_resample, y_resample)
-    
-            prediction = currentClf.predict(x_resample)
+        # Training logistic regression model on train data
+        clf = LogReg_pipeline.fit(x_resample, y_resample)
 
-            #si incorrect on refait le train
-            precision_Score = precision_score(y_resample, prediction, average=None)
-            if(len(precision_Score) == 2):
-
-                #on a pas de clasifieur on l'ajoute
-                if(bestClf==None or precision_Score[1]>bestClfPrecision):
-                    bestClf = currentClf
-                    bestClfPrecision = precision_Score[1]
-
-                #On relance si la precision n'est pas suffisante (pour nous)
-                if(precision_Score[1]<0.8 and nbExec<10):
-                    nbExec+=1
-                    continue
-            else: #si on a pas de classification c'est le meillieur
-                bestClf = currentClf
-
-            #on garde la classification
-            correct=True
-
-        Classifieur[category] = bestClf
-        prediction = bestClf.predict(x_resample)
+        Classifieur[category] = clf
+        prediction = clf.predict(x_resample)
         report = classification_report(y_resample,prediction,zero_division=1)
         print(report)
-
 
     #POLARITY
     print('**Processing polarity...**')
     LogReg_pipeline = Pipeline([
-        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=500 ,n_jobs=-1), n_jobs=-1)),
+        ('clf', OneVsRestClassifier(LogisticRegression(solver='sag', class_weight='balanced', max_iter=1000 ,n_jobs=-1), n_jobs=-1)),
     ])
     Classifieur['polarity'] = LogReg_pipeline.fit(x_train, y_train['polarity'])
     prediction = Classifieur['polarity'].predict(x_train)
     print(classification_report(y_train['polarity'],prediction,zero_division=1))
 
     return Classifieur,vectorizer,ClassifyCategory
-
-
 
 
 def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
@@ -106,7 +74,9 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
 
     names=[]
     scores = []
+    scoresTrue = []
     support = []
+    f1score = []
     for category in ClassifyCategory:
         if(sum(y_test[category]) == 0) : 
             continue
@@ -115,9 +85,13 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
         prediction = Classifieur[category].predict(x_test)
 
         print(classification_report(y_test[category],prediction,zero_division=1))
+        
+        #DATA FOR PLOT
         report = classification_report(y_test[category],prediction,zero_division=1, output_dict=True)
         support.append(report['1']['support'])
-        scores.append(report['1']['precision'])
+        scoresTrue.append(report['1']['precision'])
+        scores.append(report['macro avg']['precision'])
+        f1score.append(report['macro avg']['f1-score'])
         #scores.append(np.mean(precision_score(y_test[category],prediction,average=None)))
         names.append(category)
 
@@ -126,7 +100,8 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     predictionPol = Classifieur['polarity'].predict(x_test)
     print(classification_report(y_test['polarity'],predictionPol,zero_division=1))
 
-    plotData(names,scores,support)
+    plotTrueData(names,scoresTrue,support)
+    plotData(names, scores, f1score)
 
 
 
