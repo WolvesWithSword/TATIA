@@ -123,7 +123,7 @@ def plotDataEntity(predictEntity,realEntity):
     x = np.arange(len(predictEntity.keys()))  # the label locations
     width = 0.7  # the width of the bars
 
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(20, 10))
     rects1 = ax.bar(x - width/3, precisionCut, width/3, color='b', label='precision')
 
     rects2 = ax.bar(x , recallCut, width/3, color='g', label='recall')
@@ -150,4 +150,5 @@ def plotDataEntity(predictEntity,realEntity):
     fig.tight_layout()
 
     plt.subplots_adjust(left=0.05, bottom=0.2, right=0.86, top=0.95, wspace=0.2, hspace=0.2)
+    plt.savefig("entity_plot.png")
     plt.show()
