@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}      % caractères français
-\usepackage[francais]{babel}  %langue
+\usepackage[french]{babel}  %langue
 \usepackage[left=2.3cm,right=2.5cm,bottom=2.5cm,top=2.3cm]{geometry}   % marges
 \usepackage{verbatim}
 \usepackage{float}
@@ -294,6 +294,19 @@ Le fait d'avoir un commentaire positif semble d'ailleurs plus facile à détecte
 Ainsi, la polarité neutre peut ressortir également de plusieurs tournure de phrase. Aucun mot clé n'est propre à un avis neutre, ce qui rend plus difficile sa classification et lui donne des score relativement médians. \\
 
 Finalement, la polarité mixed possède le score le plus bas car d'une part, le jeu de données est très faible relativement aux autres, mais également, c'est la polarité la plus dure à classifié et n'existe pas réellement. Nous l'avons créer dut à la simplification que nous avons faite d'avoir une polarité générale et non propre à chaque couple E\#C. Il est donc évident qu'elle n'est pas absolue et consiste à la fusion d'un avis positif et négatif. 
+
+\section{Les améliorations possibles}
+Maintenant, nous allons voir ce que nous aurions pue améliorer a notre projet.
+
+\subsection{Les classe}
+Le plus gros problème de notre sujet sont les classes qui on était choisi pour le jeu de données, il y en a beaucoup trop dont la plupart qui sont similaire. Avec plus de temps, il aurais était préférable de refaire la plupart des classe sans garder la forme entité\#categorie. Car pour des phrase de type "L'ordinateur est rapide", cela veux dire que l'on parle de plusieurs entité comme DISPLAY, CPU, LAPTOP, GRAPHICS, SOFTWARE, ... et pour chacun dans les catégorie GENERAL et OPÉRATION PERFORMANCE.\\
+Pour corriger cela, le mieux aurait était de faire moins de classe mais avec des spécificité plus ciblé ce qui aurais permis de mieux classifier et d'être plus précis.
+
+\subsection{La base de données}
+La deuxième amélioration majeur que l'on aurais pue faire est d'ajouter plus de donnée a notre jeu d'entrainement. Nous avons commencer a en ajouter, mais cela reste insuffisant, il nous aurais fallu au moins une vingtaine de commentaire pour chaque classe différente.
+
+\subsection{Les marque et modèle}
+Quand on parle de matérielle informatique il arrive souvent de parler d'un modèle spécifique. Pour les processeur le vocabulaire CPU ou processeur ne vas pas toujours être employé, l'utilisateur utilisera plutôt les mots "i7" ou "intel" ou encore"ryzen" qui sont des modèle des processeur. Cela ce retrouve sur plusieurs entité différente, avec une base de données il serait possible de changer les Token par un mots plus général, si nous reprenons mon exemple il serait possible de remplacer par "processeur". Cela permettrait surement d'améliorer l'efficacité.
 
 \end{multicols}
 \end{document}
