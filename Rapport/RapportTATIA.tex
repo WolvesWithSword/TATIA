@@ -11,6 +11,17 @@
 \usepackage{multicol}
 \usepackage{titlesec}
 
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[hyphenbreaks]{breakurl}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\urlstyle{same}
+
 
                            
 \begin{document}
@@ -299,7 +310,7 @@ Finalement, la polarité mixed possède le score le plus bas car d'une part, le 
 Maintenant, nous allons voir ce que nous aurions pue améliorer a notre projet.
 
 \subsection{Les classe}
-Le plus gros problème de notre sujet sont les classes qui on était choisi pour le jeu de données, il y en a beaucoup trop dont la plupart qui sont similaire. Avec plus de temps, il aurais était préférable de refaire la plupart des classe sans garder la forme entité\#categorie. Car pour des phrase de type "L'ordinateur est rapide", cela veux dire que l'on parle de plusieurs entité comme DISPLAY, CPU, LAPTOP, GRAPHICS, SOFTWARE, ... et pour chacun dans les catégorie GENERAL et OPÉRATION PERFORMANCE.\\
+Le plus gros problème de notre sujet sont les classes qui on était choisi pour le jeu de données, il y en a beaucoup trop (126) dont la plupart qui sont similaire. Avec plus de temps, il aurais était préférable de refaire la plupart des classe sans garder la forme entité\#categorie. Car pour des phrase de type "L'ordinateur est rapide", cela veux dire que l'on parle de plusieurs entité comme DISPLAY, CPU, LAPTOP, GRAPHICS, SOFTWARE, ... et pour chacun dans les catégorie GENERAL et OPÉRATION PERFORMANCE.\\
 Pour corriger cela, le mieux aurait était de faire moins de classe mais avec des spécificité plus ciblé ce qui aurais permis de mieux classifier et d'être plus précis.
 
 \subsection{La base de données}
@@ -308,5 +319,25 @@ La deuxième amélioration majeur que l'on aurais pue faire est d'ajouter plus d
 \subsection{Les marque et modèle}
 Quand on parle de matérielle informatique il arrive souvent de parler d'un modèle spécifique. Pour les processeur le vocabulaire CPU ou processeur ne vas pas toujours être employé, l'utilisateur utilisera plutôt les mots "i7" ou "intel" ou encore"ryzen" qui sont des modèle des processeur. Cela ce retrouve sur plusieurs entité différente, avec une base de données il serait possible de changer les Token par un mots plus général, si nous reprenons mon exemple il serait possible de remplacer par "processeur". Cela permettrait surement d'améliorer l'efficacité.
 
+\subsection{La polarité}
+L'une de nos simplification a était de faire une polarité pour toutes la phrase, il aurait était intéressant d'essayer de faire une polarité pour chaque classe trouvé. Pour cela, il aurais fallu réussir a isoler le morceau de phrase qui a permis de détecter la classe. Puis a partir de ce sous text, faire de nouveau une classification sur la polarité.
+
 \end{multicols}
+
+\section{Conclusion}
+La mise en place de ce projet a était plutôt dure au début.
+Ce projet nous a permis permis de comprendre comment nous pouvons traiter le text automatiquement ainsi que comment il était possible de le classifier. On a pue voir a quel point le pré traitement des données est important.
+De plus ce projet nous a permis de nous familiariser avec les librairie sklearn et nltk. 
+\section{Références}
+\begin{itemize}
+\item Top Rated in Laptop Computers  :\\ \url{https://www.amazon.com/pcr/Top-Rated-Laptop-Computers-Reviews/565108}%
+\item The “Imbalanced classification problem” :\\ \url{https://medium.com/@bluedme_tech/comment-traiter-les-probl%C3%A8mes-de-classification-d%C3%A9s%C3%A9quilibr%C3%A9e-en-machine-learning-8c3bc95ca25b}%
+\item Deep dive into multi-label classification :\\ \url{https://towardsdatascience.com/journey-to-the-center-of-multi-label-classification-384c40229bff}%
+\item Tutoriel TAL pour les débutants :\\ \url{https://www.actuia.com/contribution/victorbigand/tutoriel-tal-pour-les-debutants-classification-de-texte/}%
+\item SemEval-2015 Task 12 :\\ \url{https://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools}%
+\end{itemize}
+
+
+
+
 \end{document}
