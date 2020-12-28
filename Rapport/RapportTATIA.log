@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  28 DEC 2020 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  28 DEC 2020 19:27
 entering extended mode
 **./RapportTATIA.tex
 (RapportTATIA.tex
@@ -454,34 +454,157 @@ File: pretrait_dataf.png Graphic file (type png)
 <use pretrait_dataf.png>
 Package pdftex.def Info: pretrait_dataf.png  used on input line 189.
 (pdftex.def)             Requested size: 224.78146pt x 193.04321pt.
- [5 <./pretrait_dataf.png>] (RapportTATIA.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+<adasyn.png, id=36, 462.528pt x 346.896pt>
+File: adasyn.png Graphic file (type png)
+<use adasyn.png>
+Package pdftex.def Info: adasyn.png  used on input line 208.
+(pdftex.def)             Requested size: 286.76439pt x 215.07329pt.
+
+Overfull \hbox (61.2971pt too wide) in paragraph at lines 208--209
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[5 <./pretrait_dataf.png> <./adasyn.png>]
+<data_plot.png, id=42, 1445.4pt x 722.7pt>
+File: data_plot.png Graphic file (type png)
+<use data_plot.png>
+Package pdftex.def Info: data_plot.png  used on input line 222.
+(pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
+
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 222--223
+ [] 
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+<true_data_plot.png, id=47, 1445.4pt x 722.7pt>
+File: true_data_plot.png Graphic file (type png)
+<use true_data_plot.png>
+Package pdftex.def Info: true_data_plot.png  used on input line 243.
+(pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
+
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 243--244
+ [] 
+ []
+
+[7 <./data_plot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+<entity_plot.png, id=52, 1445.4pt x 722.7pt>
+File: entity_plot.png Graphic file (type png)
+<use entity_plot.png>
+Package pdftex.def Info: entity_plot.png  used on input line 257.
+(pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
+
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 257--258
+ [] 
+ []
+
+[8 <./true_data_plot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
+
+ []
+
+<polarity_plot.png, id=57, 1445.4pt x 722.7pt>
+File: polarity_plot.png Graphic file (type png)
+<use polarity_plot.png>
+Package pdftex.def Info: polarity_plot.png  used on input line 275.
+(pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
+
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 275--276
+ [] 
+ []
+
+[9 <./entity_plot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+[10 <./polarity_plot.png>] (RapportTATIA.aux) ) 
 Here is how much of TeX's memory you used:
- 3959 strings out of 492946
- 53744 string characters out of 3143936
- 146024 words of memory out of 3000000
- 7787 multiletter control sequences out of 15000+200000
+ 3984 strings out of 492946
+ 54204 string characters out of 3143936
+ 147024 words of memory out of 3000000
+ 7807 multiletter control sequences out of 15000+200000
  17011 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,31p,632b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\yannm\AppData\Local\
-MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\yannm\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\
-yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> 
-<C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ect
-i1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecbx1440.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecrm1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk
-/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.
-9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\yannm\AppData\Local
-\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\yannm\App
-Data\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users
-\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
- <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-bx2488.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm1728.pk>
-Output written on RapportTATIA.pdf (6 pages, 258282 bytes).
+ 41i,7n,31p,650b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\yannm\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\yannm\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\y
+annm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <
+C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
+1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
+pi600\ecbx1440.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
+appen/ec/dpi600\ecrm1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\yannm\AppData\Local\
+MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\yannm\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\
+yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> 
+<C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
+x2488.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm1728.pk><D:/LATEX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LATE
+X/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/LATEX/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb>
+Output written on RapportTATIA.pdf (11 pages, 745585 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
+ 529 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

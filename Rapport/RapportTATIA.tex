@@ -112,7 +112,7 @@ Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « A
 \paragraph{} 
 \noindent L'entité E et la catégorie C qui s'y rapporte forme ainsi un couple E\#C. \\
 
-\noindent\textit{Remarque : }Il est à noter la possibilité qu'aucun couple E\#C ne se rapporte à une phrase d'un commentaire.
+\noindent\textit{Remarque : }Il est à noter la possibilité qu'aucun couple E\#C ne se rapporte à une phrase d'un commentaire. Nous ne relevons pas l'état \textit{OUT OF SCOPE} comme dans le SemEval, quand elle a raison, notre IA ne répondra juste rien. 
 
 \subsection{Polarité}
 Enfin, chaque phrase (et non chaque couple E\#C comme dans le sujet de SemEval) se verra attribuer une polarité. Les valeurs de cette polarité sont : \textbf{negative} pour les phrases soulignant des défauts ou de mauvais avis, \textbf{positive} pour celles qui au contraire mettent en valeur des points ou des avis positif, \textbf{neutral} lorsque la phrase ne met pas d'opinion en avant et donne par exemple un conseil et finalement \textbf{mixed} pour les textes critiquant un aspect de l'ordinateur mais appréciant un autre. 
@@ -170,7 +170,7 @@ Ce fichier permet de lire un documents XML du jeu de données et regroupe les in
 \noindent \textbf{0=negative, 1=positive, 2=neutral, 3=mixed.}
 
 \subsection{PreProcessing.py}
-Ce fichier permet d'effectuer un pré traitement sur les textes du premier data frame afin de facilité le travail d'apprentissage de l'IA.\\
+Ce fichier permet d'effectuer un pré traitement sur les textes du premier data frame afin de facilité le travail d'apprentissage de l'IA. Il s'appuie notamment sur la librairie \textit{nltk}.\\
 
 \noindent Tout d'abord le texte va être mit en minuscule afin de ne pas différencier des mots n'ayant pas la même casse. Ensuite chacun de ses mots (y compris la ponctuation) va être transformé en \textbf{« token »}. De ces tokens sera retiré la ponctuation ainsi que ce que l'on appelle les \textbf{STOPWORDS}. Ce sont les mots n'ayant pas de grande valeurs syntaxique comme les déterminants, adjectifs possessifs, conjonctions de coordination, verbes communs (être, avoir)...\\
 
@@ -192,19 +192,108 @@ noire / noir\\
 \end{figure}
 
 \subsection{Classify.py}
-Ce fichier a pour fonction de créer un classificateur pour chaque classe qui a des donnée pour s'entrainer. L'intégralité de ce fichier utilise principalement la librairie sklearn qui est une librairie complète pour l'apprentissage d'une ia.\\
+Ce fichier a pour fonction de créer un classificateur pour chaque classe qui possèdent des données pour s'entrainer. L'intégralité de ce fichier utilise principalement la librairie \textit{sklearn} qui est une librairie complète pour l'apprentissage d'une IA.\\
 
-\noindent La première opération a faire pour pouvoir créer un classificateur, c'est de transformer en vecteur les phrase. Pour cela, nous avons utiliser TfidfVectorizer de la librairie sklearn. Au niveau des paramètre, nous avons décidé d'utiliser la norme "l2" et d'utiliser des ngram entre 1 et 8. Une fois crée nous avons entrainer ce vectoriseur avec les commentaire de notre jeu de d'entrainement.\\
+\noindent \textit{Remarque : } 
+Certaine classe n'étant pas existante dans les données d'entrainement, elle n'ont donc pas de classificateur attitré.\\
 
-Ensuite, nous pouvont commencer la classification. Pour celle-ci nous avons décidé d'utiliser la méthode one-versus-rest (« une contre le reste »). Cette méthode consiste a  traiter chaque classe indépendamment des autre. Du coup notre première étape pour chaque catégorie est d'équilibre le nombre de données entre les élément qui appartiennent a notre classe et eu qui ne le sont pas. Pour cela nous avons utiliser ADASYN qui nous permet de rajouter des vecteur entre les divers point.\\
+La première opération à faire pour pouvoir créer un classificateur, est de transformer les phrases en vecteurs. Pour cela, nous avons utilisé \textbf{TfidfVectorizer} de la librairie sklearn. Au niveau des paramètres, nous avons décidé d'utiliser la norme "l2" et d'utiliser des ngram entre 1 et 8. Une fois créée nous avons entrainé ce vectoriseur avec les commentaires de notre jeu de d'entrainement.\\
 
-Après avoir fait cela, il nous reste plus qua entrainer un classificateur. Nous avons utiliser le classificateur OneVsRestClassifier avec comme solver "sag", le pois de chaque classe en équilibré avec un nombre d'itération max de 1000. Avec ce classificateur, nous avons plus qu'a l'entrainer et le stocker dans un dictionnaire.\\
+Ensuite, nous pouvons commencer la classification. Pour celle-ci nous avons décidé d'utiliser la méthode one-versus-rest (« une contre le reste »). Cette méthode consiste à traiter chaque classe indépendamment des autre. Chaque classe représente ici un de nos couple E\#C.\\
 
-La dernière fonction de cette classe est la prédiction un dataframe test. Pour ce faire, a l'aide du vectorisateur et des classificateur, il nous suffit de vectoriser chaque phrase et d'appeler pour chacune l'intégralité de classificateur stocker dans le dictionnaire pour savoir a quel classe appartient chaque commentaire.
+Dû au peu de données présente pour certaine classe, et l'effort pour en ajouter d'autre étant trop élevé, nous avons eu recourt à un algorithme d'échantillonnage pour augmenter les classes minoritaires. Cet algorithme n'est autre que \textbf{ADASYN} (Adaptive Synthetic). A partir des données existantes (au moins 5 ici), l'algorithme va en créer d'autre en utilisant le principe des « K plus proche voisins ». L'image ci-dessous montre l'efficacité d'ADASYN.\\
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.62]{adasyn.png}
+    \end{center}
+\caption{\small{L'algorithme ADASYN}}
+\end{figure}
+
+Après avoir fait cela, il nous reste plus qu'a entrainer chacun des classificateur. Nous avons utiliser donc utilisé \textbf{OneVsRestClassifier} avec comme solver "sag", un poids equilibré entre chaque classe et un nombre d'itération maximum de 1000. Afin de pouvoir réutiliser ces classificateurs pour notamment évaluer une phrase à la volée, nous les stockons dans un dictionnaire ayant pour clé la catégorie et pour valeur le classificateur.\\
+
+La dernière fonction de cette classe est la prédiction un dataframe test. Pour ce faire, à l'aide du vectoriseur et des classificateur, il nous suffit de pré-traiter et vectoriser chaque phrases et d'appeler pour chacune l'intégralité des classificateurs stockés dans le dictionnaire pour prédire à quelles classes (ou couple E\#C) appartient chaque commentaire.
 
 \subsection{PlotResult.py}
-Cette classe utilise la libraire matplotlib de python pour pouvoir voir les résultat sous forme de graphe, ce qui permet d'avoir une vision d'ensemble de la classification effectué. Grâce a cela nous pouvons voir instantanément la precision de notre classification pour chaque classe.
-Nos graphe sont orienté sur les moyenne non pondéré car comme il y a peut de phrase dans le jeu de test, il nous suffirait de répondre que chaque phrase n'appartiens a aucune classe pour avoir un score de 99\%, ce qui n'a aucun intérêt pour notre projet.
+Ce fichier utilise la libraire \textit{matplotlib} de python. Il permet de mettre en place la représentation graphiques des résultats obtenus. Les données sont récupérées lors de la classification du fichier précédent, puis sont misent dans des diagrammes en barre. Cela permet d'avoir une vision générale mais rapide des différents score évalués. En effet il y a beaucoup de classe différentes et un rapport de classification détaillés pour chacune d'elle ne serais pas pertinent.
+
+\begin{figure*}[t]
+    \begin{center}
+        \includegraphics[width=1.15\textwidth]{data_plot.png}
+    \end{center}
+    \caption{F1-score de chaque classe pour 0 et 1}
+\end{figure*}
+\newpage
+\section{Résultat obtenus}
+Il est à noter que les résultats peuvent être légèrement différent à chaque appel du programme ainsi les graphiques qui vont suivre ne sont pas forcément absolus. 
+
+\subsection{Résultat général}
+Il est facilement remarquable sur la \textit{figure 5} que la valeur 0 (donc l'absence du couple E\#C) possèdent un bien meilleur score que la valeur 1. En effet un commentaire parlant d'un clavier uniquement ne vont pas parler d'un écran ou d'une souris, ce qui créer un nombre conséquent de données négative (c-à-d 0) pour chaque classes. Il est alors plus facile pour l'IA de déterminé si la phrase n'appartient pas à un couple que l'inverse.\\
+
+On constate effectivement que le f1-score des valeurs 1 de chaque classe est assez variable et atteins parfois même 0\%. Cela s'explique avec deux raisons.
+ 
+\noindent Soit par une précision de 0\%, car certain couple dans les données de test n'ont qu'une apparition ce qui rend le résultat binaire ou bien simplement par l'échec de l'IA à classer correctement les phrases des données de test (les justifications de cette lacune sera expliquée dans l'analyse du résultat suivant). 
+
+\noindent Soit par un recall faible, car l'IA peut facilement trouvé la bonne entité mais pas la bonne catégorie et vis-versa, et cela se traduit par une réduction du recall et donc du f1-score.\\
+
+Comme dit précédemment, la valeur du f1-score des valeurs 0 est très élévé, environ 95\%, ainsi ne nous y attarderont pas plus que ça et nous concentrerons plus sur les résultats et scores obtenus pour les valeurs 1.
+
+\begin{figure*}[t]
+    \begin{center}
+        \includegraphics[width=1.15\textwidth]{true_data_plot.png}
+    \end{center}
+    \caption{précision et support de la valeur 1}
+\end{figure*}
+\newpage
+\subsection{Résultat pour la valeur 1}
+On remarque premièrement que les précisions de chaque couple E\#C ne sont pas homogène. Cela s'explique par la différence majeure entre chaque entités et les catégories qui s'y rapporte. En effet il est beaucoup plus simple et parler de l'ergonomie d'une souris (ou d'un pavé tactile) que de l'ergonomie d'un OS, ce qui explique l'écart de précision entre ces deux couples. \\
+
+De plus, certain couples possèdent un jeu de données qui se veut parfois peu ressemblant entre chaque élément y appartenant. Par exemple, pour parler d'un clavier, il y aura beaucoup de chance de trouver les mots "touche","clavier" ou bien "pavé numérique", ce qui focalise l'IA sur certain éléments clés et en ressort une bonne précision. Mais par exemple, le couple \textit{COMPANY\#GENERAL} peut très bien parler de Window comme d'Apple, Dell , toshiba ... de mille et une façon, ce que l'IA a du mal à assimiler. \\
+
+Enfin, une relation logique apparait entre le support (nombre d'éléments) et la précision. Moins on a de données plus la précision est extrême (0\% ou bien 100\%) car soit l'IA a tout juste, soit tout faux. Au contraire, lors d'une présence d'un nombre de données assez conséquent (environ 10), la précision tend à dépasser les 50\% ce qui pourrait être plus représentatif du niveau de classification de l'IA. Par exemple le nombre de données le plus élevé (214) est celui du couple \textit{LAPTOP\#GENERAL} (ce qui est assez logique en soit) et il possède une précision de 71\%.
+
+\begin{figure*}[t]
+    \begin{center}
+        \includegraphics[width=1.15\textwidth]{entity_plot.png}
+    \end{center}
+    \caption{score par entités}
+\end{figure*}
+\newpage
+\subsection{Résultat par entités}
+Suite à de nombreux tests sur des classifications de phrases, nous avons remarqué que l'IA se trompe parfois dans le ou les couple E\#C mais arrive tout de même à reconnaitre la ou les entités E qui est la cible de la phrase. Nous avons donc regroupé par entité et avons calculé la precision, le recall et le f1-score de chacune.\\
+
+Là encore attention, malgré le regroupement par entité, certaines n'ont qu'un seule données, ce qui explique les scores à 50\%. En effet nous avons récupéré la macro-moyenne et non la moyenne pondérée car celle-ci est figé à 99\% pour toutes les entités (dû à grand nombre de cas à 0 et très peu d'erreur de l'IA dessus comme expliqué précédemment), il n'est donc pas intéressant de faire une étude dessus. Cette macro-moyenne se retrouve donc à cette valeur lorsqu'il n'y a qu'une donnée pour la valeur 1 et que l'IA ne retrouve pas la bonne entité E suivant le simple calcule suivant : 
+
+\begin{equation}
+(99 + 0) / 2 \simeq 50 \%.
+\end{equation}
+
+Mis à part ces cas précis, les scores obtenus sont relativement corrects et on peut facilement affirmer que l'IA arrive à reconnaitre les entités cible d'un commentaires. Toutefois, nous avons remarqué que lorsque la phrase aborde différentes entités de manière brève, par exemple \textit{"L'ordinateur est cool, le clavier et le son sont correct mais l'affichage est magnifique"}, la classification de toutes ces entités semble très difficile pour l'IA. \\
+
+\begin{figure*}[t]
+    \begin{center}
+        \includegraphics[width=1.15\textwidth]{polarity_plot.png}
+    \end{center}
+    \caption{score de la polarité}
+\end{figure*}
+\newpage
+\subsection{Résultat de la polarité}
+Tout d'abord voici le nombre de données de base par polarité :
+\begin{itemize}
+\item negative : 768
+\item positive : 917
+\item neutral : 430
+\item mixed : 46
+\end{itemize}
+\medskip
+On constate que la précision, le recall et le f1-score sont relativement proche pour chaque polarité ce qui ne souligne pas de problème particulier dans une classe. 
+Il est notable que \textit{positive} et \textit{negative} sont les classes qui comportent le plus de données, il est donc normal que leur score soit les plus élevés. \\
+
+Le fait d'avoir un commentaire positif semble d'ailleurs plus facile à détecter qu'un commentaire négatif. Cela s'explique par le fait que souvent, un commentaire négatif consiste en l'énumération des défauts de l'ordinateur sans forcément de mot clé signifiant une insatisfaction ou un mécontentement, l'IA à donc plus de mal à déterminé si cela est négatif (une énumération de fait pouvant être neutre). \\
+
+Ainsi, la polarité neutre peut ressortir également de plusieurs tournure de phrase. Aucun mot clé n'est propre à un avis neutre, ce qui rend plus difficile sa classification et lui donne des score relativement médians. \\
+
+Finalement, la polarité mixed possède le score le plus bas car d'une part, le jeu de données est très faible relativement aux autres, mais également, c'est la polarité la plus dure à classifié et n'existe pas réellement. Nous l'avons créer dut à la simplification que nous avons faite d'avoir une polarité générale et non propre à chaque couple E\#C. Il est donc évident qu'elle n'est pas absolue et consiste à la fusion d'un avis positif et négatif. 
 
 \end{multicols}
 \end{document}
