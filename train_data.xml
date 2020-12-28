@@ -12529,7 +12529,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:204">
-                <text>The motherboard automatically detects a new ram it's realy good.</text>
+                <text>The motherboard automatically detects a new ram it's really good.</text>
                 <Opinions>
                     <Opinion category="MOTHERBOARD#QUALITY" polarity="positive"/>
                 </Opinions>
@@ -12547,7 +12547,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:207">
-                <text>I cant dual boot it's a realy bad motherboard.</text>
+                <text>I cant dual boot it's a really bad motherboard.</text>
                 <Opinions>
                     <Opinion category="MOTHERBOARD#QUALITY" polarity="negative"/>
                 </Opinions>
@@ -13449,7 +13449,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:328">
-                <text>I love windows 10, the interface is realy intuitive</text>
+                <text>I love windows 10, the interface is really intuitive</text>
                 <Opinions>
                     <Opinion category="OS#USABILITY" polarity="positive"/>
                 </Opinions>
@@ -13546,7 +13546,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:343">
-                <text>This processor is realy speed</text>
+                <text>This processor speed is amazing</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
@@ -13558,7 +13558,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:345">
-                <text>Realy slow processing to compress</text>
+                <text>really slow processing to compress</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
@@ -13606,7 +13606,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:353">
-                <text>Realy bad processor speed.</text>
+                <text>really bad processor speed.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
@@ -13631,7 +13631,7 @@
                 </Opinions>
             </sentence>
             <sentence id="198:357">
-                <text>Fabulous Processor, it was realy fast.</text>
+                <text>Fabulous Processor, it is really fast.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
@@ -13643,19 +13643,19 @@
                 </Opinions>
             </sentence>
             <sentence id="198:359">
-                <text>Realy bad CPU performance.</text>
+                <text>really bad CPU performance.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:360">
-                <text>Realy slow CPU performance.</text>
+                <text>really slow CPU performance.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:361">
-                <text>Realy slow CPU.</text>
+                <text>really slow CPU.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
@@ -13673,43 +13673,43 @@
                 </Opinions>
             </sentence>
             <sentence id="198:364">
-                <text>Realy speed CPU.</text>
+                <text>really speed CPU.</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="198:365">
-                <text>Realy speed i7</text>
+                <text>really speed i7</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="198:366">
-                <text>Realy speed i5</text>
+                <text>really speed i5</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="198:367">
-                <text>Realy speed i3</text>
+                <text>really speed i3</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
             <sentence id="198:368">
-                <text>Realy slow i7</text>
+                <text>really slow i7</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:369">
-                <text>Realy slow i5</text>
+                <text>Really slow i5</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
             </sentence>
             <sentence id="198:370">
-                <text>Realy slow i3</text>
+                <text>Really slow i3</text>
                 <Opinions>
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
                 </Opinions>
@@ -13732,6 +13732,7 @@
                     <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
                 </Opinions>
             </sentence>
+            
 
         </sentences>
     </Review>
