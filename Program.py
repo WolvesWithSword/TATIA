@@ -11,23 +11,13 @@ import random
 import json
 from os import path
 
+CLF = None
 
-def ClassifyString(Classifieur,vectorizer,ClassifyCategory,string):
-    print(string, " -> ")
-    preComputeString = vectorizer.transform([preProcessing(string)])
 
-    for category in ClassifyCategory:
-        
-        prediction = Classifieur[category].predict(preComputeString)
-        if(prediction[0]==1):
-            print(category)
-    
-    #POLARITY
-    predictionPol = Classifieur['polarity'].predict(preComputeString)
-    print("The polarity is :",POLARITY_DIC_ANSWER[predictionPol[0]])
+
 
 def main():
-
+    global CLF
     df = getDFFromXML("train_data.xml")
     print(df)
 
@@ -43,51 +33,23 @@ def main():
 
     print("\n\n#################################################################################################\n\n")
     #Classification(df)
-    Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df,ALL_CATEGORIES)
-    predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
+    CLF = LaptopClassifier()
+    CLF.CreateClassifieur(df,ALL_CATEGORIES)
+    CLF.predictTestData(dfTest)
 
-    '''
-    if(path.exists(FILE_RANDOM_STATE)):
-        f = open(FILE_RANDOM_STATE, "r")
-        randomStateDict=json.load(f)
-
-    categoryToGenerate= ALL_CATEGORIES[:]
-    categoryToGenerate.append("polarity")
-    randomStateDict=generateRandomStateDictionary(df,categoryToGenerate,randomState=randomStateDict)
-
-    Classifieur,vectorizer,ClassifyCategory = CreateClassifieurWithRandomState(df,randomStateDict)
-    predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
-    '''
     
 
     print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery could be better but it has robust processor and plenty of RAM so that is a trade off I suppose.")
+    CLF.ClassifyString("Battery could be better but it has robust processor and plenty of RAM so that is a trade off I suppose.")
     print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"slow processor, just not it")
+    CLF.ClassifyString("slow processor, just not it")
     print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery life is astonishing given the processing power and high resolution display.")
+    CLF.ClassifyString("Battery life is astonishing given the processing power and high resolution display.")
     print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The processor shows a speed of 1.7gz.")
+    CLF.ClassifyString("The processor shows a speed of 1.7gz.")
     print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Overall good but processing power isn't very good.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"And processor feels pressured even though I run medium scale programs, watching the way exhaust speed increases.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Pretty much every major game save for Solitare won't even play on it due to the slower processor.")
-
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Performance wise, it's a bit slow, but that's to be expected from a Celeron-class processor.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Other than the slow CPU it works great for everyday use.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The i7 is incredibly fast, the RAM makes it proper for several games (not on maximum quality).")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Retina screen, solid build quality, weight, fast processor and the reliability of the Apple brand.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The laptop is very responsice with the Core i7 processor and 8GB of RAM and the sound out of the Beats audio is great.")
-    print("\n\n#################################################################################################\n\n")
-    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"")
-
+    CLF.ClassifyString( "Overall good but processing power isn't very good.")
+    
 
 
 
