@@ -13545,8 +13545,193 @@
                     <Opinion category="SUPPORT#QUALITY" polarity="positive"/>
                 </Opinions>
             </sentence>
-            
+            <sentence id="198:343">
+                <text>This processor is realy speed</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:344">
+                <text>The processing power is amazing.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:345">
+                <text>Realy slow processing to compress</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:346">
+                <text>The processor clock is amazing</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:347">
+                <text>The processor is overloading quickly</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:348">
+                <text>This processor is good for this old model.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:349">
+                <text>The CPU clock is amazing</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:350">
+                <text>The CPU is overloading quickly</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:351">
+                <text>This CPU is good for this old model.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:352">
+                <text>This i5 processor is perfect for playing a game with good performance.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:353">
+                <text>Realy bad processor speed.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:354">
+                <text>I love this robust processor.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
 
+            <sentence id="198:355">
+                <text>the processor is in trouble just to go on the web.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:356">
+                <text>bad and slower processor, we can't play with this.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:357">
+                <text>Fabulous Processor, it was realy fast.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:358">
+                <text>I can do anything with it, the processor is really fast.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:359">
+                <text>Realy bad CPU performance.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:360">
+                <text>Realy slow CPU performance.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:361">
+                <text>Realy slow CPU.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:362">
+                <text>Best CPU speed.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:363">
+                <text>slow CPU, I need 10 hours for compress my small video</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:364">
+                <text>Realy speed CPU.</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:365">
+                <text>Realy speed i7</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:366">
+                <text>Realy speed i5</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:367">
+                <text>Realy speed i3</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:368">
+                <text>Realy slow i7</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:369">
+                <text>Realy slow i5</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:370">
+                <text>Realy slow i3</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:371">
+                <text>I love this i7 power</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:372">
+                <text>I hate this i5 power</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="negative"/>
+                </Opinions>
+            </sentence>
+            <sentence id="198:373">
+                <text>I love this i3 power</text>
+                <Opinions>
+                    <Opinion category="CPU#OPERATION_PERFORMANCE" polarity="positive"/>
+                </Opinions>
+            </sentence>
 
         </sentences>
     </Review>

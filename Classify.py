@@ -89,9 +89,6 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
         print("Pour la categorie",category,":")
         prediction = Classifieur[category].predict(x_test)
 
-        if(sum(y_test[category]) == 0 and sum(prediction)==0) : 
-            continue
-
         print(classification_report(y_test[category],prediction,zero_division=1))
         
         #DATA FOR PLOT
@@ -103,6 +100,9 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
             orArray(predictEntity[entity],prediction)
             orArray(realEntity[entity],y_test[category])
 
+        if(sum(y_test[category]) == 0) : 
+            continue
+        
         report = classification_report(y_test[category],prediction,zero_division=1, output_dict=True)
         support.append(report['1']['support'])
         scoresTrue.append(report['1']['precision'])

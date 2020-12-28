@@ -63,8 +63,33 @@ def main():
     '''
     
 
-    # print("\n\n#################################################################################################\n\n")
-    # ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery could be better but it has robust processor and plenty of RAM so that is a trade off I suppose.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery could be better but it has robust processor and plenty of RAM so that is a trade off I suppose.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"slow processor, just not it")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Battery life is astonishing given the processing power and high resolution display.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The processor shows a speed of 1.7gz.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Overall good but processing power isn't very good.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"And processor feels pressured even though I run medium scale programs, watching the way exhaust speed increases.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Pretty much every major game save for Solitare won't even play on it due to the slower processor.")
+
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Performance wise, it's a bit slow, but that's to be expected from a Celeron-class processor.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Other than the slow CPU it works great for everyday use.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The i7 is incredibly fast, the RAM makes it proper for several games (not on maximum quality).")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"Retina screen, solid build quality, weight, fast processor and the reliability of the Apple brand.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"The laptop is very responsice with the Core i7 processor and 8GB of RAM and the sound out of the Beats audio is great.")
+    print("\n\n#################################################################################################\n\n")
+    ClassifyString(Classifieur,vectorizer,ClassifyCategory,"")
 
 
 
