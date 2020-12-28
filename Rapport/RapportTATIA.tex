@@ -66,7 +66,7 @@
 		Notre choix de sujet fut \textbf{l'identification des opinions exprimées dans les avis et commentaires d’un ordinateur.} Plus précisément, comment retrouver parmi un ensemble de commentaires les parties de l'ordinateur visées,  sur quels aspects et quel en est l'avis général qui en ressort. 
 		
 \section{Description des tâches}
-Ce sujet est fortement inspiré du "SemEval-2015 Task 12" sur la partie "Aspect Based Sentiment Analysis (ABSA): Laptop Reviews" et partage donc le même objectifs avec des simplifications. Les différentes entités et catégories qui vont suivre provienne également des annotations du sujet de SemEval. Chacun des commentaires est fragmentés phrase par phrase afin de faciliter le travail de l'IA. 
+Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « Aspect Based Sentiment Analysis (ABSA): Laptop Reviews » et partage donc le même objectifs avec des simplifications. Les différentes entités et catégories qui vont suivre provienne également des annotations du sujet de SemEval. Chacun des commentaires est fragmentés phrase par phrase afin de faciliter le travail de l'IA. 
 		
 \subsection{Entités}
 \noindent Tout d'abord il s'agit de retrouver dans la phrase le(s) entité(s) ciblée. Elles peuvent être l'ordinateur comme un tout, ses parties physique (clavier, écran..) , des logiciels ou OS (Windows, navigateur, jeux...) ou bien même une compagnie et ses services. (DELL, Apple, le support technique, la livraison..).\\
@@ -139,6 +139,59 @@ En effet notre IA répond de la présence ou non de chaque couple E\#C dans la p
 \noindent Environ 350 phrases ont été ajoutées, toutes sont la section 'sentences' d'\textbf{ID 198}. Certaines proviennent d'avis de consommateur sur les ordinateur portables les plus commentés sur Amazon (en anglais), notamment pour les phrases portant sur les clavier, écran, pavé tactile et batterie. Nous avons rédigés le reste pour les catégories plus complexe et moins abordées en générale. Par exemple la qualité des lecteurs DVD ou bien l'ergonomie des OS. \\ 
 
 \noindent \textit{Remarque : } Il est à noté que certain couple n'apparaissent ni dans les données d'entrainement, ni dans les données de test. Par simplification, ces couples ont été ignorés et aucunes phrases n'est étiquetées avec.
+
+\begin{figure*}[ht]
+    \begin{center}
+        \includegraphics[width=1\textwidth]{first_dataf.png}
+    \end{center}
+\caption{\small{dataframe du fichier XML}}
+\end{figure*}
+
+\newpage
+\section{Implémentation de l'algorithme}
+Notre algorithme est développé en python. Il se divise en 4 fichiers de code ayant chacun un rôle précis dans l'implémentation de l'algorithme d'apprentissage. 
+
+\subsection{DataInitializer.py}
+Ce fichier permet de lire un documents XML du jeu de données et regroupe les informations essentielles dans un dataframe de la librairie \textit{panda}. Chacune des phrases correspondent à une ligne dans le dataframe. \\
+
+\noindent Il vient tout d'abord récupérer l'ID et le texte de chaque phrase. \\
+
+\noindent Ensuite il récupère chaque couple E\#C et transforme le tout en un vecteur binaire ayant des 1 uniquement aux colonnes correspondant au couple comme sur l'image ci-dessus. Étant donné le nombre de couples possible, il s'agit d'une vecteur à 197 dimensions comportant majoritairement des 0.\\
+
+\noindent Finalement, le programme récupérera la polarité de chaque couple E\#C et en conclue une polarité générale de la phrase selon les règles suivantes :
+\begin{enumerate}
+\item \textbf{\small{neutral + X = X, X une polarité. }}
+\item \textbf{\small{positive + negative = mixed.}}
+\item \textbf{\small{mixed + X = mixed, X une polarité.}}
+\end{enumerate}
+
+\noindent Cette polarité général est ensuite convertie en entier:
+
+\noindent \textbf{0=negative, 1=positive, 2=neutral, 3=mixed.}
+
+\subsection{PreProcessing.py}
+Ce fichier permet d'effectuer un pré traitement sur les textes du premier data frame afin de facilité le travail d'apprentissage de l'IA.\\
+
+\noindent Tout d'abord le texte va être mit en minuscule afin de ne pas différencier des mots n'ayant pas la même casse. Ensuite chacun de ses mots (y compris la ponctuation) va être transformé en \textbf{« token »}. De ces tokens sera retiré la ponctuation ainsi que ce que l'on appelle les \textbf{STOPWORDS}. Ce sont les mots n'ayant pas de grande valeurs syntaxique comme les déterminants, adjectifs possessifs, conjonctions de coordination, verbes communs (être, avoir)...\\
+
+\noindent L'étape suivante consiste à effectuer une \textbf{lemmatisation} sur chacun des tokens. La lemmatisation est un traitement lexical qui consiste à appliquer aux verbes, substantifs, adjectifs... un codage renvoyant à leur entrée lexicale commune, leur « forme canonique ».\\\\
+
+\noindent \textit{Exemple :}\\
+Les / la\\
+étoiles /étoile\\
+claires / clair\\
+luisent / luire\\
+noire / noir\\
+
+\noindent Voici une image des phrases du dataframe précédent où celles-ci ont été pré-traitées : 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale=0.62]{pretrait_dataf.png}
+    \end{center}
+\caption{\small{Phrases pré-traitées}}
+\end{figure}
+
+\subsection{Classify.py}
 
 \end{multicols}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  27 DEC 2020 22:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  28 DEC 2020 11:21
 entering extended mode
 **./RapportTATIA.tex
 (RapportTATIA.tex
@@ -343,11 +343,6 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout3 = `RapportTATIA.toc'.
 
  [1]
-Underfull \hbox (badness 6284) in paragraph at lines 69--70
-[]\T1/cmr/m/n/12 Ce su-jet est for-te-ment ins-piré du
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
@@ -403,33 +398,90 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-[3 <./xml_struct.png>] (RapportTATIA.aux) ) 
+<first_dataf.png, id=23, 976.24725pt x 310.761pt>
+File: first_dataf.png Graphic file (type png)
+<use first_dataf.png>
+Package pdftex.def Info: first_dataf.png  used on input line 145.
+(pdftex.def)             Requested size: 460.93457pt x 146.72629pt.
+[3 <./xml_struct.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 170--171
+\T1/cmr/bx/n/12 0=negative, 1=po-si-tive, 2=neu-tral,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--185
+
+ []
+
+[4 <./first_dataf.png>]
+<pretrait_dataf.png, id=35, 362.5545pt x 311.36325pt>
+File: pretrait_dataf.png Graphic file (type png)
+<use pretrait_dataf.png>
+Package pdftex.def Info: pretrait_dataf.png  used on input line 189.
+(pdftex.def)             Requested size: 224.78146pt x 193.04321pt.
+ [5 <./pretrait_dataf.png>] (RapportTATIA.aux) ) 
 Here is how much of TeX's memory you used:
- 3947 strings out of 492946
- 53516 string characters out of 3143936
- 152024 words of memory out of 3000000
- 7778 multiletter control sequences out of 15000+200000
- 16228 words of font info for 36 fonts, out of 3000000 for 9000
+ 3959 strings out of 492946
+ 53744 string characters out of 3143936
+ 146024 words of memory out of 3000000
+ 7787 multiletter control sequences out of 15000+200000
+ 17011 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,31p,618b,423s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\yannm\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\yannm\AppData\L
-ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\yannm
-\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\U
-sers\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440
-.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappe
-n/ec/dpi600\ecbx1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\yannm\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\yannm\AppData\
-Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\yann
-m\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\
-Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm172
-8.pk>
-Output written on RapportTATIA.pdf (4 pages, 128229 bytes).
+ 41i,7n,31p,632b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\yannm\AppData\Local\
+MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\yannm\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\
+yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> 
+<C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ect
+i1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecbx1440.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecrm1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk
+/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.
+9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\yannm\AppData\Local
+\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\yannm\App
+Data\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users
+\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk>
+ <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ec
+bx2488.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm1728.pk>
+Output written on RapportTATIA.pdf (6 pages, 258282 bytes).
 PDF statistics:
- 346 PDF objects out of 1000 (max. 8388607)
+ 427 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

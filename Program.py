@@ -1,5 +1,5 @@
 from GenerateRandomState import *
-from DataInitialiser import *
+from DataInitializer import *
 from Classify import *
 from PreProcessing import *
 from PlotResult import *

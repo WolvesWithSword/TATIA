@@ -11,3 +11,7 @@
 \contentsline {subsection}{\numberline {3.1}Structure des jeux de donn\IeC {\'e}es}{3}% 
 \contentsline {subsection}{\numberline {3.2}Modification des jeux de donn\IeC {\'e}es}{3}% 
 \contentsline {paragraph}{}{3}% 
+\contentsline {section}{\numberline {4}Impl\IeC {\'e}mentation de l'algorithme}{4}% 
+\contentsline {subsection}{\numberline {4.1}DataInitializer.py}{4}% 
+\contentsline {subsection}{\numberline {4.2}PreProcessing.py}{4}% 
+\contentsline {subsection}{\numberline {4.3}Classify.py}{5}% 
