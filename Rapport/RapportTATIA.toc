@@ -1,23 +1,30 @@
 \babel@toc {french}{}
-\contentsline {section}{\numberline {1}Introduction}{2}% 
-\contentsline {subsection}{\numberline {1.1}Pr\IeC {\'e}sentation g\IeC {\'e}n\IeC {\'e}rale du projet}{2}% 
-\contentsline {subsection}{\numberline {1.2}Choix du sujet}{2}% 
-\contentsline {section}{\numberline {2}Description des t\IeC {\^a}ches}{2}% 
-\contentsline {subsection}{\numberline {2.1}Entit\IeC {\'e}s}{2}% 
-\contentsline {subsection}{\numberline {2.2}Cat\IeC {\'e}gories}{2}% 
-\contentsline {paragraph}{}{3}% 
-\contentsline {subsection}{\numberline {2.3}Polarit\IeC {\'e}}{3}% 
-\contentsline {section}{\numberline {3}Jeux de donn\IeC {\'e}es}{3}% 
-\contentsline {subsection}{\numberline {3.1}Structure des jeux de donn\IeC {\'e}es}{3}% 
-\contentsline {subsection}{\numberline {3.2}Modification des jeux de donn\IeC {\'e}es}{3}% 
-\contentsline {paragraph}{}{3}% 
-\contentsline {section}{\numberline {4}Impl\IeC {\'e}mentation de l'algorithme}{4}% 
-\contentsline {subsection}{\numberline {4.1}DataInitializer.py}{4}% 
-\contentsline {subsection}{\numberline {4.2}PreProcessing.py}{4}% 
-\contentsline {subsection}{\numberline {4.3}Classify.py}{5}% 
-\contentsline {subsection}{\numberline {4.4}PlotResult.py}{6}% 
-\contentsline {section}{\numberline {5}R\IeC {\'e}sultat obtenus}{7}% 
-\contentsline {subsection}{\numberline {5.1}R\IeC {\'e}sultat g\IeC {\'e}n\IeC {\'e}ral}{7}% 
-\contentsline {subsection}{\numberline {5.2}R\IeC {\'e}sultat pour la valeur 1}{8}% 
-\contentsline {subsection}{\numberline {5.3}R\IeC {\'e}sultat par entit\IeC {\'e}s}{9}% 
-\contentsline {subsection}{\numberline {5.4}R\IeC {\'e}sultat de la polarit\IeC {\'e}}{10}% 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Pr\IeC {\'e}sentation g\IeC {\'e}n\IeC {\'e}rale du projet}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Choix du sujet}{2}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Description des t\IeC {\^a}ches}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Entit\IeC {\'e}s}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Cat\IeC {\'e}gories}{2}{subsection.2.2}% 
+\contentsline {paragraph}{}{3}{paragraph*.1}% 
+\contentsline {subsection}{\numberline {2.3}Polarit\IeC {\'e}}{3}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Jeux de donn\IeC {\'e}es}{3}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Structure des jeux de donn\IeC {\'e}es}{3}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Modification des jeux de donn\IeC {\'e}es}{3}{subsection.3.2}% 
+\contentsline {paragraph}{}{3}{paragraph*.2}% 
+\contentsline {section}{\numberline {4}Impl\IeC {\'e}mentation de l'algorithme}{4}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}DataInitializer.py}{4}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}PreProcessing.py}{4}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Classify.py}{5}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}PlotResult.py}{6}{subsection.4.4}% 
+\contentsline {section}{\numberline {5}R\IeC {\'e}sultat obtenus}{7}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}R\IeC {\'e}sultat g\IeC {\'e}n\IeC {\'e}ral}{7}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}R\IeC {\'e}sultat pour la valeur 1}{8}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}R\IeC {\'e}sultat par entit\IeC {\'e}s}{9}{subsection.5.3}% 
+\contentsline {subsection}{\numberline {5.4}R\IeC {\'e}sultat de la polarit\IeC {\'e}}{10}{subsection.5.4}% 
+\contentsline {section}{\numberline {6}Les am\IeC {\'e}liorations possibles}{11}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Les classe}{11}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Le jeu de donn\IeC {\'e}es}{11}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}Les marques et mod\IeC {\`e}les}{11}{subsection.6.3}% 
+\contentsline {subsection}{\numberline {6.4}La polarit\IeC {\'e}}{11}{subsection.6.4}% 
+\contentsline {section}{\numberline {7}Conclusion}{12}{section.7}% 
+\contentsline {section}{\numberline {8}R\IeC {\'e}f\IeC {\'e}rences}{12}{section.8}% 

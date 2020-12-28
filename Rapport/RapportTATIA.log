@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  28 DEC 2020 19:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  28 DEC 2020 22:39
 entering extended mode
 **./RapportTATIA.tex
 (RapportTATIA.tex
@@ -42,14 +42,6 @@ File: switch.def 2018/11/13 3.27 Babel switching mechanism
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(D:\LATEX\tex/generic/babel-french\francais.ldf
-Language: francais 2018/09/14 v3.5c French support from the babel system
-
-
-Package francais.ldf Warning: Option `francais' for Babel is *deprecated*,
-(francais.ldf)                it might be removed sooner or later. Please
-(francais.ldf)                use `french' instead; reported on input line 31.
-
 (D:\LATEX\tex/generic/babel-french\french.ldf
 Language: french 2018/09/14 v3.5c French support from the babel system
 
@@ -82,7 +74,7 @@ Package babel Info: Making ? an active character on input line 417.
 \leftmarginFB=\dimen109
 \parindentFFN=\dimen110
 \FBfnindent=\dimen111
-))) (D:\LATEX\tex/latex/carlisle\scalefnt.sty)
+)) (D:\LATEX\tex/latex/carlisle\scalefnt.sty)
 (D:\LATEX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
@@ -205,24 +197,133 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen133
 \titlewidthlast=\dimen134
 \titlewidthfirst=\dimen135
-) (RapportTATIA.aux)
+) (D:\LATEX\tex/latex/url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(D:\LATEX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(D:\LATEX\tex/generic/oberdiek\hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(D:\LATEX\tex/generic/oberdiek\hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(D:\LATEX\tex/latex/oberdiek\auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(D:\LATEX\tex/latex/oberdiek\kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen136
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
+
+(D:\LATEX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count113
+
+(D:\LATEX\tex/latex/00miktex\hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count114
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen137
+\Fld@menulength=\count115
+\Field@Width=\dimen138
+\Fld@charsize=\dimen139
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count116
+\c@Item=\count117
+\c@Hfootnote=\count118
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(D:\LATEX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count119
+\c@bookmark@seq@number=\count120
+
+(D:\LATEX\tex/latex/oberdiek\rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip47
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+ (RapportTATIA.aux)
 \openout1 = `RapportTATIA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Info: Redefining \degres on input line 16.
-LaTeX Info: Redefining \dots on input line 16.
-LaTeX Info: Redefining \up on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Info: Redefining \degres on input line 26.
+LaTeX Info: Redefining \dots on input line 26.
+LaTeX Info: Redefining \up on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -260,52 +361,22 @@ LaTeX Info: Redefining \up on input line 16.
 
 (D:\LATEX\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen136
+\scratchcounter=\count121
+\scratchdimen=\dimen140
 \scratchbox=\box56
-\nofMPsegments=\count112
-\nofMParguments=\count113
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen137
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen141
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks25
 ) (D:\LATEX\tex/latex/oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(D:\LATEX\tex/generic/oberdiek\infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 (D:\LATEX\tex/latex/oberdiek\grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(D:\LATEX\tex/generic/oberdiek\kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-(D:\LATEX\tex/generic/oberdiek\ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-(D:\LATEX\tex/latex/oberdiek\kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(D:\LATEX\tex/generic/oberdiek\kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(D:\LATEX\tex/generic/oberdiek\etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-(D:\LATEX\tex/generic/oberdiek\ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(D:\LATEX\tex/generic/oberdiek\pdftexcmds.sty
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -314,17 +385,46 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 25--26
+\AtBeginShipoutBox=\box57
+
+(D:\LATEX\tex/latex/graphics\color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(D:\LATEX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+Package hyperref Info: Link coloring ON on input line 26.
+
+(D:\LATEX\tex/latex/hyperref\nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(D:\LATEX\tex/generic/oberdiek\gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count127
+)
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
+ (RapportTATIA.out)
+(RapportTATIA.out)
+\@outlinefile=\write3
+\openout3 = `RapportTATIA.out'.
+
+
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
@@ -339,272 +439,308 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
 )
-\tf@toc=\write3
-\openout3 = `RapportTATIA.toc'.
+\tf@toc=\write4
+\openout4 = `RapportTATIA.toc'.
 
- [1]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 \newpage
+              [1]
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 []\T1/cmr/m/n/12 POWER_SUPPLY (=char-geur,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 []\T1/cmr/m/n/12 FANS_COOLING (=ven-ti-la-teur,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\T1/cmr/m/n/12 MULTIMEDIA_DEVICES (=son,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 [2]
-<xml_struct.png, id=21, 410.13225pt x 115.632pt>
+<xml_struct.png, id=160, 410.13225pt x 115.632pt>
 File: xml_struct.png Graphic file (type png)
 <use xml_struct.png>
-Package pdftex.def Info: xml_struct.png  used on input line 128.
+Package pdftex.def Info: xml_struct.png  used on input line 138.
 (pdftex.def)             Requested size: 225.57343pt x 63.5978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-<first_dataf.png, id=23, 976.24725pt x 310.761pt>
+<first_dataf.png, id=162, 976.24725pt x 310.761pt>
 File: first_dataf.png Graphic file (type png)
 <use first_dataf.png>
-Package pdftex.def Info: first_dataf.png  used on input line 145.
+Package pdftex.def Info: first_dataf.png  used on input line 155.
 (pdftex.def)             Requested size: 460.93457pt x 146.72629pt.
 [3 <./xml_struct.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 170--171
+Underfull \hbox (badness 5189) in paragraph at lines 180--181
 \T1/cmr/bx/n/12 0=negative, 1=po-si-tive, 2=neu-tral,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--185
+Underfull \hbox (badness 10000) in paragraph at lines 189--195
 
  []
 
 [4 <./first_dataf.png>]
-<pretrait_dataf.png, id=35, 362.5545pt x 311.36325pt>
+<pretrait_dataf.png, id=183, 362.5545pt x 311.36325pt>
 File: pretrait_dataf.png Graphic file (type png)
 <use pretrait_dataf.png>
-Package pdftex.def Info: pretrait_dataf.png  used on input line 189.
+Package pdftex.def Info: pretrait_dataf.png  used on input line 199.
 (pdftex.def)             Requested size: 224.78146pt x 193.04321pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<adasyn.png, id=36, 462.528pt x 346.896pt>
+<adasyn.png, id=184, 462.528pt x 346.896pt>
 File: adasyn.png Graphic file (type png)
 <use adasyn.png>
-Package pdftex.def Info: adasyn.png  used on input line 208.
+Package pdftex.def Info: adasyn.png  used on input line 218.
 (pdftex.def)             Requested size: 286.76439pt x 215.07329pt.
 
-Overfull \hbox (61.2971pt too wide) in paragraph at lines 208--209
+Overfull \hbox (61.2971pt too wide) in paragraph at lines 218--219
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
 [5 <./pretrait_dataf.png> <./adasyn.png>]
-<data_plot.png, id=42, 1445.4pt x 722.7pt>
+<data_plot.png, id=193, 1445.4pt x 722.7pt>
 File: data_plot.png Graphic file (type png)
 <use data_plot.png>
-Package pdftex.def Info: data_plot.png  used on input line 222.
+Package pdftex.def Info: data_plot.png  used on input line 232.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 222--223
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 232--233
  [] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-<true_data_plot.png, id=47, 1445.4pt x 722.7pt>
+<true_data_plot.png, id=199, 1445.4pt x 722.7pt>
 File: true_data_plot.png Graphic file (type png)
 <use true_data_plot.png>
-Package pdftex.def Info: true_data_plot.png  used on input line 243.
+Package pdftex.def Info: true_data_plot.png  used on input line 253.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 243--244
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 253--254
  [] 
  []
 
 [7 <./data_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-<entity_plot.png, id=52, 1445.4pt x 722.7pt>
+<entity_plot.png, id=206, 1445.4pt x 722.7pt>
 File: entity_plot.png Graphic file (type png)
 <use entity_plot.png>
-Package pdftex.def Info: entity_plot.png  used on input line 257.
+Package pdftex.def Info: entity_plot.png  used on input line 267.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 257--258
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 267--268
  [] 
  []
 
 [8 <./true_data_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
-<polarity_plot.png, id=57, 1445.4pt x 722.7pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+<polarity_plot.png, id=213, 1445.4pt x 722.7pt>
 File: polarity_plot.png Graphic file (type png)
 <use polarity_plot.png>
-Package pdftex.def Info: polarity_plot.png  used on input line 275.
+Package pdftex.def Info: polarity_plot.png  used on input line 285.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 275--276
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 285--286
  [] 
  []
 
 [9 <./entity_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
-[10 <./polarity_plot.png>] (RapportTATIA.aux) ) 
+[10 <./polarity_plot.png>] [11]
+Overfull \hbox (65.79283pt too wide) in paragraph at lines 336--337
+[][]$\T1/cmr/m/n/12 https : / / medium . com / @bluedme _ tech / comment -[] tr
+aiter -[] les -[] probl % C3 % A8mes -[] de -[] classication -[]
+ []
+
+
+Overfull \hbox (1.2088pt too wide) in paragraph at lines 337--338
+[][]$\T1/cmr/m/n/12 https : / / towardsdatascience . com / journey -[] to -[] t
+he -[] center -[] of -[] multi -[] label -[] classication -[]
+ []
+
+
+Overfull \hbox (6.10443pt too wide) in paragraph at lines 338--339
+[][]$\T1/cmr/m/n/12 https : / / www . actuia . com / contribution / victorbigan
+d / tutoriel -[] tal -[] pour -[] les -[] debutants -[]
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 345.
+[12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 345.
+ (RapportTATIA.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 345.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 345.
+Package rerunfilecheck Info: File `RapportTATIA.out' has not changed.
+(rerunfilecheck)             Checksum: F6EABB3CA3A5B4152EFB7EEFA8646396;1809.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 345.
+ ) 
 Here is how much of TeX's memory you used:
- 3984 strings out of 492946
- 54204 string characters out of 3143936
- 147024 words of memory out of 3000000
- 7807 multiletter control sequences out of 15000+200000
+ 7560 strings out of 492946
+ 108096 string characters out of 3143936
+ 231279 words of memory out of 3000000
+ 11310 multiletter control sequences out of 15000+200000
  17011 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,31p,650b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\yannm\AppData\Local\M
-iKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\yannm\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\y
-annm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <
-C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
-1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecbx1440.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkn
-appen/ec/dpi600\ecrm1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9
-\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\yannm\AppData\Local\
-MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\yannm\AppD
-ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\
-yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> 
-<C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecb
-x2488.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecrm1728.pk><D:/LATEX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LATE
-X/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/LATEX/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb>
-Output written on RapportTATIA.pdf (11 pages, 745585 bytes).
+ 28i,8n,31p,699b,672s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecbx1095.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecrm1095.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\yannm\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\yannm\AppData\Lo
+cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\yannm\
+AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Us
+ers\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.
+pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ecrm1440.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecrm2074.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\yannm\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\yannm\AppData\Local\MiKTe
+X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><D:/LATEX/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><D:/LATEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D
+:/LATEX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on RapportTATIA.pdf (13 pages, 779350 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 740 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
