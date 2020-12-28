@@ -64,23 +64,21 @@ def plotTrueData(names, scores, support):
 
     plt.show()
 
-def plotData(names, scores, f1score):
+def plotDataF1Score(names,FalseScore, TrueScores):
 
-    scoresCut = [truncate(scr,2) for scr in scores]
-    f1Cut = [truncate(scr,2) for scr in f1score]
+    scoresFalseCut = [truncate(scr,2) for scr in FalseScore]
+    scoresTrueCut = [truncate(scr,2) for scr in TrueScores]
 
     x = np.arange(len(names))  # the label locations
     width = 0.4  # the width of the bars
 
     fig, ax = plt.subplots(figsize=(20, 10))
-    rects1 = ax.bar(x - width/2, scoresCut, width, color='b', label='precision')
-    ax2 = ax.twinx()
-    rects2 = ax2.bar(x + width/2, f1Cut, width, color='g', label='f1-score')
+    rects1 = ax.bar(x - width/2, scoresFalseCut, width, color='b', label='f1-score of 0')
+    rects2 = ax.bar(x + width/2, scoresTrueCut, width, color='g', label='f1-score of 1')
 
     # Add some text for labels, title and custom x-axis tick labels, etc.
-    ax.set_ylabel('Precision (%)')
-    ax2.set_ylabel('F1-score (%)')
-    ax.set_title('Precision and F1-score for each categories')
+    ax.set_ylabel('F1-score (%)')
+    ax.set_title('F1-score of 0 and 1 for each categories')
     ax.set_xticks(x)
     ax.set_xticklabels(names)
     
@@ -91,7 +89,7 @@ def plotData(names, scores, f1score):
         tick.set_rotation(90)
 
     autolabel(ax,rects1,6)
-    autolabel(ax2,rects2,6)
+    autolabel(ax,rects2,6)
 
     fig.tight_layout()
 
@@ -103,14 +101,15 @@ def plotData(names, scores, f1score):
 
 
 def plotDataEntity(predictEntity,realEntity):
-    print("hello ###############################")
+
     precision=[]
     recall=[]
     f1score=[]
     for entity in predictEntity.keys():
         reportDic = classification_report(realEntity[entity],predictEntity[entity],zero_division=1, output_dict=True)
-        print("For :", entity)
+        print("\nPour l'entité :", entity)
         print(classification_report(realEntity[entity],predictEntity[entity],zero_division=1))
+        print()
         print(confusion_matrix(realEntity[entity],predictEntity[entity]))
         precision.append(reportDic["macro avg"]["precision"])
         recall.append(reportDic["macro avg"]["recall"])

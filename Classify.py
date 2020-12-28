@@ -76,10 +76,10 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     y_test = dfTest.drop(labels = ['text'], axis=1)
 
     names=[]
-    scores = []
+    f1scoresFalse = []
+    f1scoresTrue = []
     scoresTrue = []
-    support = []
-    f1score = []
+    supportTrue = []
     predictEntity = dict()
     realEntity = dict()
     for category in ClassifyCategory:
@@ -104,10 +104,10 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
             continue
         
         report = classification_report(y_test[category],prediction,zero_division=1, output_dict=True)
-        support.append(report['1']['support'])
+        supportTrue.append(report['1']['support'])
         scoresTrue.append(report['1']['precision'])
-        scores.append(report['macro avg']['precision'])
-        f1score.append(report['macro avg']['f1-score'])
+        f1scoresFalse.append(report['0']['f1-score'])
+        f1scoresTrue.append(report['1']['f1-score'])
         #scores.append(np.mean(precision_score(y_test[category],prediction,average=None)))
         names.append(category)
 
@@ -116,8 +116,8 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     predictionPol = Classifieur['polarity'].predict(x_test)
     print(classification_report(y_test['polarity'],predictionPol,zero_division=1))
 
-    plotTrueData(names,scoresTrue,support)
-    plotData(names, scores, f1score)
+    plotTrueData(names,scoresTrue,supportTrue)
+    plotDataF1Score(names, f1scoresFalse, f1scoresTrue)
     plotDataEntity(predictEntity,realEntity)
 
 

@@ -46,9 +46,6 @@ def main():
     Classifieur,vectorizer,ClassifyCategory = CreateClassifieur(df,ALL_CATEGORIES)
     predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest)
 
-
-    print("\n\n#################################################################################################\n\n")
-
     '''
     if(path.exists(FILE_RANDOM_STATE)):
         f = open(FILE_RANDOM_STATE, "r")
