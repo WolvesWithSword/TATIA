@@ -84,8 +84,6 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     realEntity = dict()
     for category in ClassifyCategory:
         
-        
-
         print("Pour la categorie",category,":")
         prediction = Classifieur[category].predict(x_test)
 
@@ -119,7 +117,7 @@ def predictTestData(Classifieur,vectorizer,ClassifyCategory,dfTest):
     plotTrueData(names,scoresTrue,supportTrue)
     plotDataF1Score(names, f1scoresFalse, f1scoresTrue)
     plotDataEntity(predictEntity,realEntity)
-
+    plotPolarity(predictionPol,y_test['polarity'],)
 
 
 def getNumberOfClass(y_tab):
