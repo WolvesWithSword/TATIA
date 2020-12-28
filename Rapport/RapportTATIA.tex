@@ -192,6 +192,19 @@ noire / noir\\
 \end{figure}
 
 \subsection{Classify.py}
+Ce fichier a pour fonction de créer un classificateur pour chaque classe qui a des donnée pour s'entrainer. L'intégralité de ce fichier utilise principalement la librairie sklearn qui est une librairie complète pour l'apprentissage d'une ia.\\
+
+\noindent La première opération a faire pour pouvoir créer un classificateur, c'est de transformer en vecteur les phrase. Pour cela, nous avons utiliser TfidfVectorizer de la librairie sklearn. Au niveau des paramètre, nous avons décidé d'utiliser la norme "l2" et d'utiliser des ngram entre 1 et 8. Une fois crée nous avons entrainer ce vectoriseur avec les commentaire de notre jeu de d'entrainement.\\
+
+Ensuite, nous pouvont commencer la classification. Pour celle-ci nous avons décidé d'utiliser la méthode one-versus-rest (« une contre le reste »). Cette méthode consiste a  traiter chaque classe indépendamment des autre. Du coup notre première étape pour chaque catégorie est d'équilibre le nombre de données entre les élément qui appartiennent a notre classe et eu qui ne le sont pas. Pour cela nous avons utiliser ADASYN qui nous permet de rajouter des vecteur entre les divers point.\\
+
+Après avoir fait cela, il nous reste plus qua entrainer un classificateur. Nous avons utiliser le classificateur OneVsRestClassifier avec comme solver "sag", le pois de chaque classe en équilibré avec un nombre d'itération max de 1000. Avec ce classificateur, nous avons plus qu'a l'entrainer et le stocker dans un dictionnaire.\\
+
+La dernière fonction de cette classe est la prédiction un dataframe test. Pour ce faire, a l'aide du vectorisateur et des classificateur, il nous suffit de vectoriser chaque phrase et d'appeler pour chacune l'intégralité de classificateur stocker dans le dictionnaire pour savoir a quel classe appartient chaque commentaire.
+
+\subsection{PlotResult.py}
+Cette classe utilise la libraire matplotlib de python pour pouvoir voir les résultat sous forme de graphe, ce qui permet d'avoir une vision d'ensemble de la classification effectué. Grâce a cela nous pouvons voir instantanément la precision de notre classification pour chaque classe.
+Nos graphe sont orienté sur les moyenne non pondéré car comme il y a peut de phrase dans le jeu de test, il nous suffirait de répondre que chaque phrase n'appartiens a aucune classe pour avoir un score de 99\%, ce qui n'a aucun intérêt pour notre projet.
 
 \end{multicols}
 \end{document}
