@@ -18,7 +18,7 @@
 \contentsline {subsection}{\numberline {4.4}PlotResult.py}{6}{subsection.4.4}% 
 \contentsline {section}{\numberline {5}R\IeC {\'e}sultat obtenus}{7}{section.5}% 
 \contentsline {subsection}{\numberline {5.1}R\IeC {\'e}sultat g\IeC {\'e}n\IeC {\'e}ral}{7}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}R\IeC {\'e}sultat pour la valeur 1}{8}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.2}R\IeC {\'e}sultat pour la valeur "1"}{8}{subsection.5.2}% 
 \contentsline {subsection}{\numberline {5.3}R\IeC {\'e}sultat par entit\IeC {\'e}s}{9}{subsection.5.3}% 
 \contentsline {subsection}{\numberline {5.4}R\IeC {\'e}sultat de la polarit\IeC {\'e}}{10}{subsection.5.4}% 
 \contentsline {section}{\numberline {6}Les am\IeC {\'e}liorations possibles}{11}{section.6}% 

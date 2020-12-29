@@ -3,7 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}      % caractères français
 \usepackage[french]{babel}  %langue
-\usepackage[left=2.3cm,right=2.5cm,bottom=2.5cm,top=2.3cm]{geometry}   % marges
+\usepackage[left=2.3cm,right=2.5cm,bottom=2cm,top=2.3cm]{geometry}   % marges
 \usepackage{verbatim}
 \usepackage{float}
 \usepackage{graphicx}         % images
@@ -73,13 +73,13 @@
 		Dans le cadre de notre cours de Traitement automatique du texte en IA, il nous a été demandé d'effectuer un projet de notre choix impliquant une intelligence artificielle travaillant sur des données textuelles. La restriction sur le sujet se limitant à l'existence d'un jeu de données conséquent.
 	
 	\subsection{Choix du sujet}
-		Notre choix de sujet fut \textbf{l'identification des opinions exprimées dans les avis et commentaires d’un ordinateur.} Plus précisément, comment retrouver parmi un ensemble de commentaires les parties de l'ordinateur visées,  sur quels aspects et quel en est l'avis général qui en ressort. 
+		Notre choix de sujet fut \textbf{l'identification des opinions exprimées dans les avis et commentaires d’un ordinateur.} Plus précisément, comment retrouver parmi un ensemble de commentaires portant sur un ordinateur, les parties visées,  sur quels aspects et quel en est l'avis général qui en ressort. 
 		
 \section{Description des tâches}
-Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « Aspect Based Sentiment Analysis (ABSA): Laptop Reviews » et partage donc le même objectifs avec des simplifications. Les différentes entités et catégories qui vont suivre provienne également des annotations du sujet de SemEval. Chacun des commentaires est fragmentés phrase par phrase afin de faciliter le travail de l'IA. 
+Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « Aspect Based Sentiment Analysis (ABSA): Laptop Reviews » et partage donc le même objectifs avec des simplifications. Les différentes entités et catégories qui vont suivre proviennent également des annotations du sujet de SemEval. Chacun des commentaires est fragmentés phrase par phrase afin de faciliter le travail de l'IA. 
 		
 \subsection{Entités}
-\noindent Tout d'abord il s'agit de retrouver dans la phrase le(s) entité(s) ciblée. Elles peuvent être l'ordinateur comme un tout, ses parties physique (clavier, écran..) , des logiciels ou OS (Windows, navigateur, jeux...) ou bien même une compagnie et ses services. (DELL, Apple, le support technique, la livraison..).\\
+\noindent Tout d'abord il s'agit de retrouver dans la phrase le(s) entité(s) ciblées. Elles peuvent être l'ordinateur comme un tout, ses parties physique (clavier, écran..) , des logiciels ou l'OS (Windows, navigateur, jeux...) ou bien même une compagnie et ses services. (DELL, Apple, le support technique, la livraison..).\\
 
 \noindent\textit{Remarque : } Rien n'interdit d'avoir plusieurs entités dans la même phrase.\\
 		
@@ -97,12 +97,12 @@ Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « A
 \item FANS\_COOLING (=ventilateur, système de refroidissement), 
 \item OPTICAL\_DRIVES (=lecteur CD, DVD ou Blue-ray),
 \item PORTS (=USB, HDMI, VGA, lecteur de carte),
-\item GRAPHICS (=carte graphique, carte video),
+\item GRAPHICS (=carte graphique, carte vidéo),
 \item MULTIMEDIA\_DEVICES (=son, audio, microphone, webcam, haut-parleur, casque, écouteurs).
 \end{itemize}				
 
 \subsection{Catégories}
-\noindent Une fois obtenue il faut également trouver sur quelle(s) catégorie(s) de l'entité le commentaire porte. Cela peut être un aspect général , sa prise en main, ses performances, son design et ses fonctionnalités, etc... \\
+\noindent Une fois l'entité obtenue il faut également trouver sur quelle(s) catégorie(s) le commentaire porte. Cela peut être un aspect général , sa prise en main, ses performances, son design et ses fonctionnalités, etc... \\
 
 \noindent\textit{Remarque : }Là encore, rien n'interdit d'aborder plusieurs catégorie pour la même entité au sein d'une même phrase.\\
 
@@ -120,12 +120,12 @@ Ce sujet est fortement inspiré du « SemEval-2015 Task 12 » sur la partie « A
 \end{itemize}	
 
 \paragraph{} 
-\noindent L'entité E et la catégorie C qui s'y rapporte forme ainsi un couple E\#C. \\
+\noindent L'entité E et la catégorie C qui s'y rapporte forme ainsi un couple E\#C (qui sera souvent écrit comme tel dans le reste du document). \\
 
-\noindent\textit{Remarque : }Il est à noter la possibilité qu'aucun couple E\#C ne se rapporte à une phrase d'un commentaire. Nous ne relevons pas l'état \textit{OUT OF SCOPE} comme dans le SemEval, quand elle a raison, notre IA ne répondra juste rien. 
+\noindent\textit{Remarque : }Il est à noter la possibilité qu'aucun couple E\#C ne se rapporte à un commentaire. Nous ne relevons pas l'état \textit{OUT OF SCOPE} comme dans le SemEval. Si elle ne se trompe pas en affectant une mauvaise catégorie, notre IA ne répondra juste rien. 
 
 \subsection{Polarité}
-Enfin, chaque phrase (et non chaque couple E\#C comme dans le sujet de SemEval) se verra attribuer une polarité. Les valeurs de cette polarité sont : \textbf{negative} pour les phrases soulignant des défauts ou de mauvais avis, \textbf{positive} pour celles qui au contraire mettent en valeur des points ou des avis positif, \textbf{neutral} lorsque la phrase ne met pas d'opinion en avant et donne par exemple un conseil et finalement \textbf{mixed} pour les textes critiquant un aspect de l'ordinateur mais appréciant un autre. 
+Enfin, chaque phrases (et non chaque couple E\#C comme dans le sujet de SemEval) se verra attribuer une polarité. Les valeurs de cette polarité sont : \textbf{negative} pour les phrases soulignant des défauts ou de mauvais avis, \textbf{positive} pour celles qui au contraire mettent en valeur des points ou des avis positif, \textbf{neutral} lorsque la phrase ne met pas d'opinion en avant et donne par exemple un conseil et finalement \textbf{mixed} pour les textes critiquant un aspect de l'ordinateur mais appréciant un autre. 
 
 \section{Jeux de données}
 Les jeux de données se divisent en deux groupes : le jeu de données d'entrée correspondant à ce que l'IA va utiliser pour s'entrainer et celui de test sur lequel les mesures seront effectuées. Tout deux proviennent du site du SemEval. 
@@ -143,20 +143,19 @@ Les jeux de données se divisent en deux groupes : le jeu de données d'entrée 
 \subsection{Modification des jeux de données}
 Suite à notre implémentation de notre IA qui sera décrite dans le chapitre suivant, de nombreux problèmes nous ont forcés à ajouter nous même des phrases dans le jeu de données d'entrainement.\\
 
-En effet notre IA répond de la présence ou non de chaque couple E\#C dans la phrase actuelle pour chaque combinaison d'entité E et catégorie C. Cela se traduit par une nécessité de nombreuses données appartenant à chacun des couples pouvant apparaitre afin d'obtenir une fonction d'évaluation optimale. 
+En effet notre IA répond de la présence ou non de chaque couple E\#C pour chaque combinaison d'entité E et catégorie C. Cela se traduit par une nécessité de nombreuses données appartenant à chacun des couples pouvant apparaitre afin d'obtenir une fonction d'évaluation optimale. Dans le cas contraire le résultat est rarement celui attendu, il nous a donc fallu compléter le jeu de données.
 
 \paragraph{}
-\noindent Environ 350 phrases ont été ajoutées, toutes sont la section 'sentences' d'\textbf{ID 198}. Certaines proviennent d'avis de consommateur sur les ordinateur portables les plus commentés sur Amazon (en anglais), notamment pour les phrases portant sur les clavier, écran, pavé tactile et batterie. Nous avons rédigés le reste pour les catégories plus complexe et moins abordées en générale. Par exemple la qualité des lecteurs DVD ou bien l'ergonomie des OS. \\ 
+Environ 350 phrases ont été ajoutées, toutes sont la section 'sentences' d'\textbf{ID 198}. Certaines proviennent d'avis de consommateur sur les ordinateur portables les plus commentés sur Amazon (en anglais), notamment pour les phrases portant sur les clavier, écran, pavé tactile et batterie, qui sont de manière générale beaucoup cité dans une revue de produit. Nous avons rédigés le reste pour les catégories plus complexe et moins abordées. Par exemple la qualité des lecteurs DVD ou bien l'ergonomie des OS. Cela s'éloigne d'un cas réel mais reste tout de même nécessaire au bon apprentissage de l'IA. \\ 
 
 \noindent \textit{Remarque : } Il est à noté que certain couple n'apparaissent ni dans les données d'entrainement, ni dans les données de test. Par simplification, ces couples ont été ignorés et aucunes phrases n'est étiquetées avec.
 
-\begin{figure*}[ht]
+\begin{figure*}[th]
     \begin{center}
         \includegraphics[width=1\textwidth]{first_dataf.png}
     \end{center}
 \caption{\small{dataframe du fichier XML}}
 \end{figure*}
-
 \newpage
 \section{Implémentation de l'algorithme}
 Notre algorithme est développé en python. Il se divise en 4 fichiers de code ayant chacun un rôle précis dans l'implémentation de l'algorithme d'apprentissage. 
@@ -166,9 +165,9 @@ Ce fichier permet de lire un documents XML du jeu de données et regroupe les in
 
 \noindent Il vient tout d'abord récupérer l'ID et le texte de chaque phrase. \\
 
-\noindent Ensuite il récupère chaque couple E\#C et transforme le tout en un vecteur binaire ayant des 1 uniquement aux colonnes correspondant au couple comme sur l'image ci-dessus. Étant donné le nombre de couples possible, il s'agit d'une vecteur à 197 dimensions comportant majoritairement des 0.\\
+\noindent Ensuite il récupère chaque couple E\#C et transforme le tout en un vecteur binaire ayant des 1 uniquement aux colonnes correspondant au couple comme sur l'image ci-dessus encadré en rouge. Étant donné le nombre de couples possible, il s'agit d'une vecteur à 197 dimensions comportant majoritairement des 0.\\
 
-\noindent Finalement, le programme récupérera la polarité de chaque couple E\#C et en conclue une polarité générale de la phrase selon les règles suivantes :
+\noindent Finalement, le programme récupérera la polarité de chaque couple E\#C et conclue une polarité générale de la phrase selon les règles suivantes :
 \begin{enumerate}
 \item \textbf{\small{neutral + X = X, X une polarité. }}
 \item \textbf{\small{positive + negative = mixed.}}
@@ -202,16 +201,16 @@ noire / noir\\
 \end{figure}
 
 \subsection{Classify.py}
-Ce fichier a pour fonction de créer un classificateur pour chaque classe qui possèdent des données pour s'entrainer. L'intégralité de ce fichier utilise principalement la librairie \textit{sklearn} qui est une librairie complète pour l'apprentissage d'une IA.\\
+Ce fichier a pour fonction de créer un classificateur pour chaque classes qui possèdent des données pour s'entrainer. L'intégralité de ce fichier utilise principalement la librairie \textit{sklearn} qui est une librairie complète pour l'apprentissage d'une IA.\\
 
 \noindent \textit{Remarque : } 
-Certaine classe n'étant pas existante dans les données d'entrainement, elle n'ont donc pas de classificateur attitré.\\
+Comme dit précédemment , certaines classes n'étant pas existante dans les données d'entrainement (ET dans les données de test), elles n'ont donc pas de classificateur attitré.\\
 
-La première opération à faire pour pouvoir créer un classificateur, est de transformer les phrases en vecteurs. Pour cela, nous avons utilisé \textbf{TfidfVectorizer} de la librairie sklearn. Au niveau des paramètres, nous avons décidé d'utiliser la norme "l2" et d'utiliser des ngram entre 1 et 8. Une fois créée nous avons entrainé ce vectoriseur avec les commentaires de notre jeu de d'entrainement.\\
+La première opération à faire pour pouvoir créer un classificateur, est de transformer les phrases en vecteurs. Pour cela, nous avons utilisé \textbf{TfidfVectorizer} de la librairie sklearn. Au niveau des paramètres, nous avons décidé d'utiliser\textbf{ la norme "l2"} et d'utiliser des \textbf{ngram entre 1 et 8}. Une fois créé nous avons entrainé ce vectoriseur avec les commentaires de notre jeu de d'entrainement.\\
 
-Ensuite, nous pouvons commencer la classification. Pour celle-ci nous avons décidé d'utiliser la méthode one-versus-rest (« une contre le reste »). Cette méthode consiste à traiter chaque classe indépendamment des autre. Chaque classe représente ici un de nos couple E\#C.\\
+Ensuite, nous pouvons commencer la classification. Pour celle-ci nous avons décidé d'utiliser la méthode \textbf{one-versus-rest} (« une contre le reste »). Cette méthode consiste à traiter chaque classe indépendamment des autre. Chaque classe représente ici un de nos couple E\#C.\\
 
-Dû au peu de données présente pour certaine classe, et l'effort pour en ajouter d'autre étant trop élevé, nous avons eu recourt à un algorithme d'échantillonnage pour augmenter les classes minoritaires. Cet algorithme n'est autre que \textbf{ADASYN} (Adaptive Synthetic). A partir des données existantes (au moins 5 ici), l'algorithme va en créer d'autre en utilisant le principe des « K plus proche voisins ». L'image ci-dessous montre l'efficacité d'ADASYN.\\
+Dû au peu de données présente pour certaine classe, et l'effort pour en ajouter d'autre étant trop élevé, nous avons eu recourt à un algorithme d'échantillonnage pour augmenter les classes minoritaires. Cet algorithme n'est autre que \textbf{ADASYN} (Adaptive Synthetic). A partir des données existantes (au moins 5 ici), l'algorithme va en créer d'autre en utilisant le principe des \textit{« K plus proche voisins »}. L'image ci-dessous montre l'efficacité d'ADASYN.\\
 
 \begin{figure}[H]
     \begin{center}
@@ -220,12 +219,12 @@ Dû au peu de données présente pour certaine classe, et l'effort pour en ajout
 \caption{\small{L'algorithme ADASYN}}
 \end{figure}
 
-Après avoir fait cela, il nous reste plus qu'a entrainer chacun des classificateur. Nous avons utiliser donc utilisé \textbf{OneVsRestClassifier} avec comme solver "sag", un poids equilibré entre chaque classe et un nombre d'itération maximum de 1000. Afin de pouvoir réutiliser ces classificateurs pour notamment évaluer une phrase à la volée, nous les stockons dans un dictionnaire ayant pour clé la catégorie et pour valeur le classificateur.\\
+Après avoir fait cela, il nous reste plus qu'à entrainer chacun des classificateurs. Nous avons utiliser donc utilisé \textbf{OneVsRestClassifier} avec comme\textbf{ solver "sag"}, un \textbf{poids équilibré entre chaque classe} et un nombre d'\textbf{itération maximum de 1000}. Afin de pouvoir réutiliser ces classificateurs pour notamment évaluer une phrase à la volée, nous les stockons dans un dictionnaire ayant pour clé la catégorie et pour valeur le classificateur de cette catégorie.\\
 
-La dernière fonction de cette classe est la prédiction un dataframe test. Pour ce faire, à l'aide du vectoriseur et des classificateur, il nous suffit de pré-traiter et vectoriser chaque phrases et d'appeler pour chacune l'intégralité des classificateurs stockés dans le dictionnaire pour prédire à quelles classes (ou couple E\#C) appartient chaque commentaire.
+La dernière fonction de cette classe est la prédiction un dataframe test. Pour ce faire, à l'aide du vectoriseur et des classificateurs, il nous suffit de pré-traiter et vectoriser chaque phrases et d'appeler pour chacune l'intégralité des classificateurs stockés dans le dictionnaire pour prédire à quelles classes (ou couple E\#C) appartient chaque commentaire.
 
 \subsection{PlotResult.py}
-Ce fichier utilise la libraire \textit{matplotlib} de python. Il permet de mettre en place la représentation graphiques des résultats obtenus. Les données sont récupérées lors de la classification du fichier précédent, puis sont misent dans des diagrammes en barre. Cela permet d'avoir une vision générale mais rapide des différents score évalués. En effet il y a beaucoup de classe différentes et un rapport de classification détaillés pour chacune d'elle ne serais pas pertinent.
+Ce fichier utilise la libraire \textit{matplotlib} de python. Il permet de mettre en place la représentation graphiques des résultats obtenus. Les données sont récupérées lors de la classification du fichier précédent, puis sont misent dans des diagrammes en barre. Cela permet d'avoir une vision générale mais rapide des différents score évalués. En effet il y a beaucoup de classes différentes et un rapport de classification détaillés pour chacune d'elle ne serais pas pertinent.
 
 \begin{figure*}[t]
     \begin{center}
@@ -238,15 +237,15 @@ Ce fichier utilise la libraire \textit{matplotlib} de python. Il permet de mettr
 Il est à noter que les résultats peuvent être légèrement différent à chaque appel du programme ainsi les graphiques qui vont suivre ne sont pas forcément absolus. 
 
 \subsection{Résultat général}
-Il est facilement remarquable sur la \textit{figure 5} que la valeur 0 (donc l'absence du couple E\#C) possèdent un bien meilleur score que la valeur 1. En effet un commentaire parlant d'un clavier uniquement ne vont pas parler d'un écran ou d'une souris, ce qui créer un nombre conséquent de données négative (c-à-d 0) pour chaque classes. Il est alors plus facile pour l'IA de déterminé si la phrase n'appartient pas à un couple que l'inverse.\\
+Il est facilement remarquable sur la \textit{figure 5} que la valeur 0 (donc l'absence du couple E\#C) possèdent un bien meilleur score que la valeur 1. En effet un commentaire parlant d'un clavier uniquement ne va pas parler d'un écran ou d'une souris, ce qui créer un nombre conséquent de données négative (c-à-d 0) pour chaque classes. Il est alors plus facile pour l'IA de déterminé si la phrase n'appartient pas à un couple que l'inverse.\\
 
-On constate effectivement que le f1-score des valeurs 1 de chaque classe est assez variable et atteins parfois même 0\%. Cela s'explique avec deux raisons.
+On constate effectivement que le f1-score des valeurs 1 de chaque classe est assez variable et atteins parfois même 0\%. Cela s'explique avec deux raisons: 
  
-\noindent Soit par une précision de 0\%, car certain couple dans les données de test n'ont qu'une apparition ce qui rend le résultat binaire ou bien simplement par l'échec de l'IA à classer correctement les phrases des données de test (les justifications de cette lacune sera expliquée dans l'analyse du résultat suivant). 
+\noindent Soit par une \textit{précision} de 0\%, car certain couple dans les données de test n'ont qu'une apparition ce qui rend le résultat binaire ou bien simplement par l'échec de l'IA à classer correctement les phrases (les justifications de cette lacune sera expliquée dans l'analyse du résultat suivant). 
 
-\noindent Soit par un recall faible, car l'IA peut facilement trouvé la bonne entité mais pas la bonne catégorie et vis-versa, et cela se traduit par une réduction du recall et donc du f1-score.\\
+\noindent Soit par un \textit{recall} faible, car l'IA peut facilement trouvé la bonne entité mais pas la bonne catégorie et vis-versa, et cela se traduit par une réduction du recall et donc du f1-score.\\
 
-Comme dit précédemment, la valeur du f1-score des valeurs 0 est très élévé, environ 95\%, ainsi ne nous y attarderont pas plus que ça et nous concentrerons plus sur les résultats et scores obtenus pour les valeurs 1.
+Comme dit précédemment, la valeur du f1-score des valeurs 0 est très élévé, environ 95\%, ainsi ne nous y attarderont pas plus que ça dans les analyses suivantes et nous concentrerons plus sur les résultats et scores obtenus pour les valeurs 1.
 
 \begin{figure*}[t]
     \begin{center}
@@ -255,12 +254,12 @@ Comme dit précédemment, la valeur du f1-score des valeurs 0 est très élévé
     \caption{précision et support de la valeur 1}
 \end{figure*}
 \newpage
-\subsection{Résultat pour la valeur 1}
-On remarque premièrement que les précisions de chaque couple E\#C ne sont pas homogène. Cela s'explique par la différence majeure entre chaque entités et les catégories qui s'y rapporte. En effet il est beaucoup plus simple et parler de l'ergonomie d'une souris (ou d'un pavé tactile) que de l'ergonomie d'un OS, ce qui explique l'écart de précision entre ces deux couples. \\
+\subsection{Résultat pour la valeur "1"}
+On remarque premièrement que les précisions de chaque couple E\#C ne sont pas homogène. Cela s'explique par la différence majeure entre chaque entités et les catégories qui s'y rapportent. En effet il est beaucoup plus simple et parler de l'ergonomie d'une souris (ou d'un pavé tactile) que de l'ergonomie d'un OS, ce qui explique par exemple l'écart de précision entre ces deux couples. \\
 
-De plus, certain couples possèdent un jeu de données qui se veut parfois peu ressemblant entre chaque élément y appartenant. Par exemple, pour parler d'un clavier, il y aura beaucoup de chance de trouver les mots "touche","clavier" ou bien "pavé numérique", ce qui focalise l'IA sur certain éléments clés et en ressort une bonne précision. Mais par exemple, le couple \textit{COMPANY\#GENERAL} peut très bien parler de Window comme d'Apple, Dell , toshiba ... de mille et une façon, ce que l'IA a du mal à assimiler. \\
+De plus, certain couples possèdent un jeu de données qui se veut parfois peu ressemblant entre chaque élément y appartenant. Par exemple, dans le commentaire d'un clavier, il y aura beaucoup de chance de trouver les mots "touche","clavier" ou bien "pavé numérique", ce qui focalise l'IA sur certain éléments clés et ressort de tout cela une bonne précision. Mais par exemple, le couple \textit{COMPANY\#GENERAL} peut très bien parler de \textit{Windows} comme d'\textit{Apple}, \textit{Dell} , \textit{toshiba} ... de mille et une façon, ce que l'IA a du mal à assimiler. \\
 
-Enfin, une relation logique apparait entre le support (nombre d'éléments) et la précision. Moins on a de données plus la précision est extrême (0\% ou bien 100\%) car soit l'IA a tout juste, soit tout faux. Au contraire, lors d'une présence d'un nombre de données assez conséquent (environ 10), la précision tend à dépasser les 50\% ce qui pourrait être plus représentatif du niveau de classification de l'IA. Par exemple le nombre de données le plus élevé (214) est celui du couple \textit{LAPTOP\#GENERAL} (ce qui est assez logique en soit) et il possède une précision de 71\%.
+Enfin, une relation logique apparait entre le support (nombre d'éléments) et la précision. Moins on a de données plus la précision est extrême (0\% ou bien 100\%) car soit l'IA a tout juste, soit tout faux. Au contraire, lors d'une présence d'un nombre de données assez conséquent (environ 10), la précision tend à dépasser les 50\% ce qui pourrait être plus représentatif du niveau de classification. Typiquement, le nombre de données le plus élevé (214) est celui du couple \textit{LAPTOP\#GENERAL} (ce qui est assez logique en soit) et il possède une précision de 71\%.
 
 \begin{figure*}[t]
     \begin{center}
@@ -270,9 +269,9 @@ Enfin, une relation logique apparait entre le support (nombre d'éléments) et l
 \end{figure*}
 \newpage
 \subsection{Résultat par entités}
-Suite à de nombreux tests sur des classifications de phrases, nous avons remarqué que l'IA se trompe parfois dans le ou les couple E\#C mais arrive tout de même à reconnaitre la ou les entités E qui est la cible de la phrase. Nous avons donc regroupé par entité et avons calculé la precision, le recall et le f1-score de chacune.\\
+Suite à de nombreux tests sur des classifications de phrases, nous avons remarqué que l'IA se trompe parfois dans le ou les couple E\#C mais arrive tout de même à reconnaitre la ou les entités E qui sont ciblés dans la phrase. Nous avons donc regroupé par entité pour plus de pertinence et avons calculé la \textit{precision}, le \textit{recall} et le \textit{f1-score} de chacune.\\
 
-Là encore attention, malgré le regroupement par entité, certaines n'ont qu'un seule données, ce qui explique les scores à 50\%. En effet nous avons récupéré la macro-moyenne et non la moyenne pondérée car celle-ci est figé à 99\% pour toutes les entités (dû à grand nombre de cas à 0 et très peu d'erreur de l'IA dessus comme expliqué précédemment), il n'est donc pas intéressant de faire une étude dessus. Cette macro-moyenne se retrouve donc à cette valeur lorsqu'il n'y a qu'une donnée pour la valeur 1 et que l'IA ne retrouve pas la bonne entité E suivant le simple calcule suivant : 
+Là encore attention, malgré le regroupement par entité, certaines n'ont qu'un seule données, ce qui explique les scores à 50\%. De plus, nous avons récupéré la macro-moyenne (moyenne brute) et non la moyenne pondérée car celle-ci est figé à 99\% pour toutes les entités (dû à grand nombre de cas à 0 et très peu d'erreur de l'IA dessus comme expliqué précédemment), il n'est donc pas intéressant de faire une étude dessus. Cette macro-moyenne se retrouve donc à cette valeur lorsqu'il n'y a qu'une donnée pour la valeur 1 et que l'IA ne retrouve pas la bonne entité E suivant le simple calcule suivant : 
 
 \begin{equation}
 (99 + 0) / 2 \simeq 50 \%.
@@ -296,39 +295,39 @@ Tout d'abord voici le nombre de données de base par polarité :
 \item mixed : 46
 \end{itemize}
 \medskip
-On constate que la précision, le recall et le f1-score sont relativement proche pour chaque polarité ce qui ne souligne pas de problème particulier dans une classe. 
-Il est notable que \textit{positive} et \textit{negative} sont les classes qui comportent le plus de données, il est donc normal que leur score soit les plus élevés. \\
+On constate que la \textit{précision}, le \textit{recall} et le \textit{f1-score} sont relativement proche pour chaque polarité ce qui ne souligne pas de problème particulier dans une classe. 
+Il est notable que \textit{positive} et \textit{negative} sont les deux  classes qui comportent le plus de données, il est donc normal que leur score soit les plus élevés. \\
 
 Le fait d'avoir un commentaire positif semble d'ailleurs plus facile à détecter qu'un commentaire négatif. Cela s'explique par le fait que souvent, un commentaire négatif consiste en l'énumération des défauts de l'ordinateur sans forcément de mot clé signifiant une insatisfaction ou un mécontentement, l'IA à donc plus de mal à déterminé si cela est négatif (une énumération de fait pouvant être neutre). \\
 
-Ainsi, la polarité neutre peut ressortir également de plusieurs tournure de phrase. Aucun mot clé n'est propre à un avis neutre, ce qui rend plus difficile sa classification et lui donne des score relativement médians. \\
+Ainsi, la polarité \textit{neutral} peut ressortir également de plusieurs tournure de phrase. Aucun mot clé n'est propre à un avis neutre, ce qui rend plus difficile sa classification et lui donne des score relativement médians. \\
 
-Finalement, la polarité mixed possède le score le plus bas car d'une part, le jeu de données est très faible relativement aux autres, mais également, c'est la polarité la plus dure à classifié et n'existe pas réellement. Nous l'avons créer dut à la simplification que nous avons faite d'avoir une polarité générale et non propre à chaque couple E\#C. Il est donc évident qu'elle n'est pas absolue et consiste à la fusion d'un avis positif et négatif. 
+Finalement, la polarité \textit{mixed} possède le score le plus bas car d'une part, le jeu de données est très faible relativement aux autres, mais également, c'est la polarité la plus dure à classifiée et n'existe pas réellement. Nous l'avons créer dû à la simplification que nous avons faite d'avoir une polarité générale et non propre à chaque couples E\#C. Il est donc évident qu'elle n'est pas absolue et consiste à la fusion d'un avis positif et négatif. 
 
 \newpage
 \section{Les améliorations possibles}
 Dans cette nous allons voir ce que nous aurions pu améliorer dans notre projet.
 
 \subsection{Les classe}
-Le plus gros problème de notre sujet sont les classes qui ont été choisies pour le jeu de données, il y en a beaucoup trop (126) dont la plupart qui sont similaire. Avec plus de temps, il aurais été préférable de refaire la plupart des classes sans garder la forme \textit{entité\#categorie}. Car pour des phrase comme "L'ordinateur est rapide", cela veux dire que l'on parle de plusieurs entités comme DISPLAY, CPU, LAPTOP, GRAPHICS, SOFTWARE, ... et pour chacune, des catégories GENERAL et OPÉRATION PERFORMANCE.\\
+Le plus gros problème de notre sujet sont les classes qui ont été choisies pour le jeu de données, il y en a beaucoup trop (126) dont la plupart qui sont similaire. Avec plus de temps, il aurais été préférable de refaire la plupart des classes sans garder la forme \textit{entité\#categorie}. Car pour des phrase comme \textit{"L'ordinateur est rapide"}, cela veux dire que l'on parle de plusieurs entités comme DISPLAY, CPU, LAPTOP, GRAPHICS, SOFTWARE, ... et pour chacune, des catégories GENERAL et OPÉRATION PERFORMANCE.\\
 Pour corriger cela, le mieux aurait été de faire moins de classe mais avec des spécificité plus générale (comme \textit{"composant", "service"..}) ce qui aurais permit de mieux classifier et d'être plus précis.
 
 \subsection{Le jeu de données}
-La deuxième amélioration majeure que l'on aurais pu faire aurait été d'ajouter plus de données à notre jeu d'entrainement ou bien même avoir un jeu de données plus conséquent et plus orienté dans la conception choisie avec les différents couples. 
+La deuxième amélioration majeure que l'on aurais pu faire aurait été d'ajouter plus de données à notre jeu d'entrainement ou bien même avoir un jeu de données plus conséquent et plus orienté dans la conception choisie avec les différents couples. Cet élément est ce qui nous à poser le plus de problème dans le projet.
 
 \subsection{Les marques et modèles}
-Quand on parle de matériels informatique, il arrive souvent de parler d'un modèle spécifique. Pour les processeur le vocabulaire CPU ou processeur ne vas pas toujours être employé, l'utilisateur utilisera plutôt les mots "i7" ou "intel" ou encore"ryzen" qui sont des modèle des processeurs. Cela se retrouve sur plusieurs entités différentes. Avec un jeu de données sous forme de base de données, il aurait possible de changer les Tokens des modèles spécifiques par un mots plus général, si nous reprenons l'exemple il serait possible de tout remplacer par le mot "processeur". Cela aurait surement amélioré l'efficacité de l'IA dans sa classification.
+Quand on parle de matériels informatique, il arrive souvent de parler d'un modèle spécifique. Pour les processeur le vocabulaire CPU ou processeur ne vas pas toujours être employé, l'utilisateur utilisera plutôt les mots \textit{"i7"} ou \textit{"intel"} ou encore\textit{"ryzen"} qui sont des modèle des processeurs. Cela se retrouve sur plusieurs entités différentes. Avec un jeu de données sous forme de base de données, il aurait possible de changer les Tokens des modèles spécifiques lors de leur récupération par un mot plus général, si nous reprenons l'exemple il serait possible de tout remplacer par le mot \textit{"processeur"}. Cela aurait surement amélioré l'efficacité de l'IA dans sa classification.
 
 \subsection{La polarité}
-L'une de nos simplification a été de faire une polarité générale par phrase, il aurait été intéressant d'essayer de faire une polarité pour chaque couple trouvées comme demandé dans le SemEval. Pour cela, il aurais fallu réussir à isoler le morceau de phrase qui a permit de détecter la classe. Puis à partir de ce sous-ensemble, faire de nouveau une classification sur la polarité. Par manque de temps et d'expérience, cette isolation de sous-ensemble par couple fut trop complexe, il aurai fallu partir d'une IA avec une classification déjà presque parfaite afin de ne pas sélectionner une sous-ensemble incohérent. 
+Avec le choix de faire une polarité générale par phrase, il y a un travail assez intéressant qui s'est retrouvé écarté. En effet, il aurait été intéressant d'essayer de faire une polarité pour chaque couple trouvées comme demandé dans le SemEval. Pour cela, il aurais fallu réussir à isoler le morceau de phrase qui a permit de détecter la classe. Puis à partir de ce sous-ensemble, faire de nouveau une classification sur la polarité. Par manque de temps et d'expérience, cette isolation de sous-ensemble par couple fut trop complexe, il aurai fallu partir d'une IA avec une classification déjà presque parfaite afin de ne pas sélectionner une sous-ensemble incohérent. Ce qui n'était pas notre cas. 
 
 \end{multicols}
 \newpage
 \section{Conclusion}
-La mise en place de ce projet fut un challenge. En effet, il nous a fallu construire nous même chaque couple entité-catégorie et utiliser la classification one-vs-rest que nous ne maitrisions pas du tout.\\
+La mise en place de ce projet fut un challenge. En effet, il nous a fallu construire nous même chaque couple entité-catégorie et utiliser la classification \textit{one-vs-rest} que nous ne maitrisions pas du tout.\\
 La partie la plus simple fut de pré-traiter le texte et de récupérer les données depuis le document XML et d'en faire des diagrammes. Sûrement dû à nos connaissances acquises au court de notre cursus et de cette matière. \\
-Une fois la classification mise en place, nous avons heurter le problème du manque de données qui dans un premier temps ne fût pas corriger par l'algorithme ADASYN, le jeu données étant vraiment trop pauvre pour certaine classes pour celui-ci en créer de nouvelles un peu plus diverse (l'IA répondait toujours non aux tests pour les classes concernées). Il nous a donc fallu ajouter énormément de données ce qui est dommage car nous n'en avons tiré aucun apprentissage.\\
-Plus généralement, ce projet nous aura permit de nous familiariser avec les librairies sklearn et nltk, d'apprendre de nouvelles façon de classifier lorsque plusieurs classes peuvent apparaitre pour un même cas, mais également de solutionner le problème du dés-équilibrage des classes et des valeurs et de manipuler l'apprentissage d'une IA avec des données textuelles et leur pré-traitement.
+Une fois la classification mise en place, nous avons heurter le problème du manque de données qui dans un premier temps ne fût pas corriger par l'algorithme \textit{ADASYN,} car le jeu données étant vraiment trop pauvre pour certaine classes celui-ci en créait de nouvelles un peu diverse (l'IA répondait toujours non aux tests pour les classes concernées). Il nous a donc fallu ajouter énormément de données ce qui est dommage car nous n'en avons tiré aucun apprentissage.\\
+Plus généralement, ce projet nous aura permit de nous familiariser avec les librairies \textit{sklearn} et \textit{nltk}, d'apprendre de nouvelles façon de classifier lorsque plusieurs classes peuvent apparaitre pour un même cas, mais également de solutionner le problème du dés-équilibrage des classes et des valeurs et finalement de manipuler l'apprentissage d'une IA avec des données textuelles et leur pré-traitement.
 
 \section{Références}
 \begin{itemize}
@@ -337,6 +336,7 @@ Plus généralement, ce projet nous aura permit de nous familiariser avec les li
 \item Deep dive into multi-label classification :\\ \url{https://towardsdatascience.com/journey-to-the-center-of-multi-label-classification-384c40229bff}%
 \item Tutoriel TAL pour les débutants :\\ \url{https://www.actuia.com/contribution/victorbigand/tutoriel-tal-pour-les-debutants-classification-de-texte/}%
 \item SemEval-2015 Task 12 :\\ \url{https://alt.qcri.org/semeval2015/task12/index.php?id=data-and-tools}%
+\item WIKIPEDIA FR :\\ \url{https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal}%
 \end{itemize}
 
 
