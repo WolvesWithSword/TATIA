@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  15 JAN 2021 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.23)  15 JAN 2021 13:55
 entering extended mode
 **./RapportTATIA.tex
 (RapportTATIA.tex
@@ -458,98 +458,97 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
-[]\T1/cmr/m/n/12 POWER_SUPPLY (=char-geur,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 []\T1/cmr/m/n/12 FANS_COOLING (=ven-ti-la-teur,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+[]\T1/cmr/m/n/12 POWER_SUPPLY (=char-geur,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 []\T1/cmr/m/n/12 MULTIMEDIA_DEVICES (=son,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+
+ []
+
 <xml_struct.png, id=160, 410.13225pt x 115.632pt>
 File: xml_struct.png Graphic file (type png)
 <use xml_struct.png>
-Package pdftex.def Info: xml_struct.png  used on input line 139.
+Package pdftex.def Info: xml_struct.png  used on input line 145.
 (pdftex.def)             Requested size: 225.57343pt x 63.5978pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
 <first_dataf.png, id=162, 976.24725pt x 310.761pt>
 File: first_dataf.png Graphic file (type png)
 <use first_dataf.png>
-Package pdftex.def Info: first_dataf.png  used on input line 156.
+Package pdftex.def Info: first_dataf.png  used on input line 162.
 (pdftex.def)             Requested size: 460.93457pt x 146.72629pt.
 [3 <./xml_struct.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 180--181
+Underfull \hbox (badness 5189) in paragraph at lines 186--187
 \T1/cmr/bx/n/12 0=negative, 1=po-si-tive, 2=neu-tral,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--201
 
  []
 
@@ -557,45 +556,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--195
 <pretrait_dataf.png, id=183, 362.5545pt x 311.36325pt>
 File: pretrait_dataf.png Graphic file (type png)
 <use pretrait_dataf.png>
-Package pdftex.def Info: pretrait_dataf.png  used on input line 199.
+Package pdftex.def Info: pretrait_dataf.png  used on input line 205.
 (pdftex.def)             Requested size: 224.78146pt x 193.04321pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 <adasyn.png, id=184, 462.528pt x 346.896pt>
 File: adasyn.png Graphic file (type png)
 <use adasyn.png>
-Package pdftex.def Info: adasyn.png  used on input line 218.
+Package pdftex.def Info: adasyn.png  used on input line 224.
 (pdftex.def)             Requested size: 286.76439pt x 215.07329pt.
 
-Overfull \hbox (61.2971pt too wide) in paragraph at lines 218--219
+Overfull \hbox (61.2971pt too wide) in paragraph at lines 224--225
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
@@ -603,120 +602,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 <data_plot.png, id=193, 1445.4pt x 722.7pt>
 File: data_plot.png Graphic file (type png)
 <use data_plot.png>
-Package pdftex.def Info: data_plot.png  used on input line 232.
+Package pdftex.def Info: data_plot.png  used on input line 238.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 232--233
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 238--239
  [] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
 <true_data_plot.png, id=199, 1445.4pt x 722.7pt>
 File: true_data_plot.png Graphic file (type png)
 <use true_data_plot.png>
-Package pdftex.def Info: true_data_plot.png  used on input line 253.
+Package pdftex.def Info: true_data_plot.png  used on input line 259.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 253--254
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 259--260
  [] 
  []
 
 [7 <./data_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 <entity_plot.png, id=206, 1445.4pt x 722.7pt>
 File: entity_plot.png Graphic file (type png)
 <use entity_plot.png>
-Package pdftex.def Info: entity_plot.png  used on input line 267.
+Package pdftex.def Info: entity_plot.png  used on input line 273.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 267--268
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 273--274
  [] 
  []
 
 [8 <./true_data_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
 <polarity_plot.png, id=213, 1445.4pt x 722.7pt>
 File: polarity_plot.png Graphic file (type png)
 <use polarity_plot.png>
-Package pdftex.def Info: polarity_plot.png  used on input line 285.
+Package pdftex.def Info: polarity_plot.png  used on input line 291.
 (pdftex.def)             Requested size: 530.07193pt x 265.03493pt.
 
-Overfull \hbox (69.13736pt too wide) in paragraph at lines 285--286
+Overfull \hbox (69.13736pt too wide) in paragraph at lines 291--292
  [] 
  []
 
 [9 <./entity_plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 299--301
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 [10 <./polarity_plot.png>] [11]
-Overfull \hbox (65.79283pt too wide) in paragraph at lines 336--337
+Overfull \hbox (65.79283pt too wide) in paragraph at lines 342--343
 [][]$\T1/cmr/m/n/12 https : / / medium . com / @bluedme _ tech / comment -[] tr
 aiter -[] les -[] probl % C3 % A8mes -[] de -[] classication -[]
  []
 
 
-Overfull \hbox (1.2088pt too wide) in paragraph at lines 337--338
+Overfull \hbox (1.2088pt too wide) in paragraph at lines 343--344
 [][]$\T1/cmr/m/n/12 https : / / towardsdatascience . com / journey -[] to -[] t
 he -[] center -[] of -[] multi -[] label -[] classication -[]
  []
 
 
-Overfull \hbox (6.10443pt too wide) in paragraph at lines 338--339
+Overfull \hbox (6.10443pt too wide) in paragraph at lines 344--345
 [][]$\T1/cmr/m/n/12 https : / / www . actuia . com / contribution / victorbigan
 d / tutoriel -[] tal -[] pour -[] les -[] debutants -[]
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 352.
 [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 352.
  (RapportTATIA.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 352.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 352.
 Package rerunfilecheck Info: File `RapportTATIA.out' has not changed.
 (rerunfilecheck)             Checksum: 1172378666A5B9921977BB8C121AC572;1811.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 346.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 352.
  ) 
 Here is how much of TeX's memory you used:
  7560 strings out of 492946
  108096 string characters out of 3143936
- 231276 words of memory out of 3000000
+ 232276 words of memory out of 3000000
  11310 multiletter control sequences out of 15000+200000
  17011 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -738,7 +737,7 @@ s/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\yannm\AppData\Local\MiKTe
 X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><D:/LATEX/fonts/type1/publ
 ic/amsfonts/cm/cmmi12.pfb><D:/LATEX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D
 :/LATEX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on RapportTATIA.pdf (13 pages, 786028 bytes).
+Output written on RapportTATIA.pdf (13 pages, 786275 bytes).
 PDF statistics:
  755 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
