@@ -10,14 +10,14 @@ import numpy as np
 import random 
 import json
 from os import path
-
-CLF = None
-
+from joblib import dump, load
 
 
 
-def main():
-    global CLF
+def loadCLF():
+    return load("clf.joblib")
+
+def create():
     df = getDFFromXML("train_data.xml")
     print(df)
 
@@ -26,16 +26,22 @@ def main():
     print("\n\n#################################################################################################\n\n")
     #classification(df)
 
+
+    CLF = LaptopClassifier()
+    CLF.CreateClassifieur(df,ALL_CATEGORIES)
+    dump(CLF,"clf.joblib")
+    return CLF
+
+def predictTest(CLF):
     dfTest = getDFFromXML("test_data.xml")
     print(dfTest)
     dfTest['text'] = dfTest.text.apply(lambda text : preProcessing(text))
     print(dfTest)
 
     print("\n\n#################################################################################################\n\n")
-    #Classification(df)
-    CLF = LaptopClassifier()
-    CLF.CreateClassifieur(df,ALL_CATEGORIES)
+    
     CLF.predictTestData(dfTest)
+    
 
     
 
@@ -49,6 +55,13 @@ def main():
     CLF.ClassifyString("The processor shows a speed of 1.7gz.")
     print("\n\n#################################################################################################\n\n")
     CLF.ClassifyString( "Overall good but processing power isn't very good.")
+
+def main():
+    
+    #a = create()
+    CLF = loadCLF()
+    predictTest(CLF)
+   
     
 
 
